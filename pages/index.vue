@@ -7,10 +7,10 @@
       <h2 class="subtitle">
         Julián Duque - Developer &amp; Educator
       </h2>
-      <div class="links">
-        <nuxt-link
-          to="/about"
-        >About me</nuxt-link>
+      <div>
+        <nuxt-link to="/about">About me</nuxt-link>
+        -
+        <a href="https://www.youtube.com/user/julianduquej">YouTube Channel</a>
       </div>
     </div>
   </section>

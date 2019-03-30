@@ -1,5 +1,6 @@
 {
   "version": 2,
+  "alias": "julianduque.co",
   "builds": [
     { "src": "package.json", "use": "@now/static-build" }
   ]
