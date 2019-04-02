@@ -9,7 +9,9 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "now-build": "npm run generate"
+    "now-build": "npm run generate",
+    "start-static": "npm run generate && serve dist/",
+    "lint": "standard --fix"
   },
   "dependencies": {
     "@nuxtjs/bulma": "^1.2.1",
@@ -18,6 +20,8 @@
     "nuxt": "^2.4.0"
   },
   "devDependencies": {
-    "nodemon": "^1.18.9"
+    "nodemon": "^1.18.9",
+    "serve": "^10.1.2",
+    "standard": "^12.0.1"
   }
 }

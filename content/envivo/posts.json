@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Node.js ¡En Vivo! - ¿Asíncrono? - Parte II",
+    "description": "¡Acompáñame a recorrer el camino asíncrono! - Promise y async/await",
+    "image": "envivo/NodeEnVivo-02-II.png",
+    "slug": "asincrono-parte-2",
+    "video": "https://www.youtube.com/embed/SqKH-1B3ii4",
+    "date": "10/24/2018"
+  },
+  {
+    "title": "Node.js ¡En Vivo! - ¿Asíncrono? - Parte I",
+    "description": "¡Acompáñame a recorrer el camino asíncrono! - callback, EventEmitter y Stream",
+    "image": "envivo/NodeEnVivo-02.png",
+    "slug": "asincrono-parte-1",
+    "video": "https://www.youtube.com/embed/9ClFPTqNY2k",
+    "date": "10/24/2018"
+  },
+  {
+    "title": "Node.js ¡En Vivo! - Desmitificando el Event Loop",
+    "description": "En esta edición hablamos sobre el Event Loop, Libuv, y por qué es imporante conocer su funcionamiento para escribir aplicaciones con buen performance.",
+    "image": "envivo/NodeEnVivo-01.png",
+    "slug": "desmitificando-event-loop",
+    "video": "https://www.youtube.com/embed/Eqq2Rb7LzYE",
+    "date": "09/29/2018"
+  }
+]

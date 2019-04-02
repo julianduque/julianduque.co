@@ -1,5 +1,5 @@
 import pkg from './package'
-import posts from './content/posts/posts.json'
+import envivo from './content/envivo/posts.json'
 
 export default {
   mode: 'universal',
@@ -50,9 +50,9 @@ export default {
   */
   generate: {
     routes: () => {
-      return posts.map(post => {
+      return envivo.map(post => {
         return {
-          route: `/posts/${post.slug}`,
+          route: `/envivo/${post.slug}`,
           payload: post
         }
       })
@@ -73,7 +73,7 @@ export default {
     /*
     ** You can extend webpack config here
     */
-    extend(config, ctx) {
+    extend (config, ctx) {
     }
   }
 }
