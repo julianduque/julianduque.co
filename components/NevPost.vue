@@ -1,9 +1,7 @@
 <template>
   <section class="container">
-    <h1>{{ title }}</h1>
+    <h1 class="title">{{ title }}</h1>
     <p>{{date}}</p>
-    <p>{{description}}</p>
-    <img :src="imageUrl" />
     <nev-video :url="video" />
     <div v-html="content" class="content"></div>
   </section>

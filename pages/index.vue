@@ -1,26 +1,13 @@
 <template>
-  <section class="container">
-    <div>
-      <h1 class="title">
-        Julián Duque - Developer &amp; Educator
-      </h1>
-      <h2 class="subtitle">
-        Node.js ¡En Vivo!
-      </h2>
-      <div>
-        <nuxt-link to="/about">About me</nuxt-link>
-        -
-        <nuxt-link to="/envivo">Node.js ¡En Vivo!</nuxt-link>
-        -
-        <a href="https://www.youtube.com/user/julianduquej">YouTube Channel</a>
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title">Julián Duque</h1>
+        <h2 class="subtitle">Delevoper and Educator</h2>
       </div>
     </div>
+    <p>This site is under construction and doesn't have styles or all the content migrated yet :)np</p>
   </section>
 </template>
 
-<script>
-export default {
-  components: {
-  }
-}
-</script>
+
