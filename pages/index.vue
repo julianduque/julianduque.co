@@ -6,7 +6,9 @@
         <h2 class="subtitle">Delevoper and Educator</h2>
       </div>
     </div>
-    <p>This site is under construction and doesn't have styles or all the content migrated yet :)np</p>
+    <p>
+      This site is under construction and doesn't have styles or all the content migrated yet :)
+    </p>
   </section>
 </template>
 
