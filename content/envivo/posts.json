@@ -1,5 +1,37 @@
 [
   {
+    "title": "Node.js ¡En Vivo! - Desplegando Node.js",
+    "description": "Aprendamos cómo desplegar aplicaciones de Node.js en la nube",
+    "image": "envivo/NodeEnVivo-06.png",
+    "slug": "desplegando-nodejs",
+    "video": "https://www.youtube.com/embed/eNJFjX0Vyc0",
+    "date": "01/19/2019"
+  },
+  {
+    "title": "Node.js ¡En Vivo! - Docker",
+    "description": "Aprendamos sobre Docker y como Dockerizar una aplicación Node.js",
+    "image": "envivo/NodeEnVivo-05.png",
+    "slug": "docker",
+    "video": "https://www.youtube.com/embed/ws_BtdSnZ04",
+    "date": "12/22/2018"
+  },
+  {
+    "title": "Node.js ¡En Vivo! - GraphQL",
+    "description": "Aprende conmigo sobre GraphQL",
+    "image": "envivo/NodeEnVivo-04.png",
+    "slug": "graphql",
+    "video": "https://www.youtube.com/embed/Ur3yiOYpV7M",
+    "date": "12/08/2018"
+  },
+  {
+    "title": "Node.js ¡En Vivo! - Node 10 LTS",
+    "description": "Conozcamos las nuevas características de Node 10 LTS",
+    "image": "envivo/NodeEnVivo-03.png",
+    "slug": "node-10-lts",
+    "video": "https://www.youtube.com/embed/QfgdzYoKZH0",
+    "date": "12/01/2018"
+  },
+  {
     "title": "Node.js ¡En Vivo! - ¿Asíncrono? - Parte II",
     "description": "¡Acompáñame a recorrer el camino asíncrono! - Promise y async/await",
     "image": "envivo/NodeEnVivo-02-II.png",
@@ -13,7 +45,7 @@
     "image": "envivo/NodeEnVivo-02.png",
     "slug": "asincrono-parte-1",
     "video": "https://www.youtube.com/embed/9ClFPTqNY2k",
-    "date": "10/24/2018"
+    "date": "10/06/2018"
   },
   {
     "title": "Node.js ¡En Vivo! - Desmitificando el Event Loop",
