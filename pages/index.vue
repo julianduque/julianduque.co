@@ -7,7 +7,7 @@
       </div>
     </div>
     <p>
-      This site is under construction and doesn't have styles or all the content migrated yet :)
+      This site is under construction
     </p>
   </section>
 </template>

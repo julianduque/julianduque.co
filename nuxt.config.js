@@ -1,5 +1,21 @@
 import pkg from './package'
-import envivo from './content/envivo/posts.json'
+import seasons from './content/envivo/seasons.json'
+
+async function generateRoutes () {
+  const routes = []
+
+  for (let season of seasons) {
+    const posts = await import(`./content/envivo/${season.slug}/posts.json`)
+    for (let post of posts.default) {
+      routes.push({
+        route: `/envivo/${season.slug}/${post.slug}`,
+        payload: post
+      })
+    }
+  }
+
+  return routes
+}
 
 export default {
   mode: 'universal',
@@ -8,7 +24,7 @@ export default {
   ** Headers of the page
   */
   head: {
-    title: pkg.name,
+    title: 'Julián Duque - Developer and Educator',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -52,14 +68,7 @@ export default {
   ** Generate
   */
   generate: {
-    routes: () => {
-      return envivo.map(post => {
-        return {
-          route: `/envivo/${post.slug}`,
-          payload: post
-        }
-      })
-    }
+    routes: generateRoutes
   },
 
   /*

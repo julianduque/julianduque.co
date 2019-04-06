@@ -1,5 +1,6 @@
 <template>
   <section>
+    <nuxt-link :to="seasonLink">Back</nuxt-link>
     <nev-post
       :title="payload.title"
       :description="payload.description"
@@ -13,23 +14,26 @@
 </template>
 
 <script>
-  import posts from "~/content/envivo/posts.json";
-  import NevPost from "~/components/NevPost.vue";
+  import NevPost from '~/components/NevPost.vue'
 
   export default {
     components: {
-      "nev-post": NevPost
+      'nev-post': NevPost
     },
     async asyncData({ params, payload }) {
+      const { season, slug } = params
+
+      const posts = await import(`~/content/envivo/${season}/posts.json`)
       if (!payload) {
-        payload = posts.find(p => p.slug === params.slug);
+        payload = posts.default.find(p => p.slug === slug)
       }
 
-      const content = await import(`~/content/envivo/${params.slug}.md`);
+      const content = await import(`~/content/envivo/${season}/${slug}.md`)
       return {
+        seasonLink: `/envivo/${season}`,
         content: content.default,
         payload
-      };
+      }
     }
-  };
+  }
 </script>

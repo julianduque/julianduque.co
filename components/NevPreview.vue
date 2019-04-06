@@ -10,6 +10,7 @@
         <div class="content">
           <strong>{{ title }}</strong>
           <p>{{ description }}</p>
+          <small>{{ date }}</small>
         </div>
       </div>
     </article>
@@ -18,7 +19,7 @@
 
 <script>
 export default {
-  props: [ 'title', 'slug', 'image', 'description' ]
+  props: [ 'title', 'slug', 'image', 'description', 'date' ]
 }
 </script>
 

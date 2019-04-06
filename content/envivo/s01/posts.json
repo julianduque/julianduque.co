@@ -1,5 +1,45 @@
 [
   {
+    "title": "Bonus - Node.js ¡En Vivo! - Nuxt Static y Now 2.0",
+    "description": "Aprendamos cómo desplegar aplicaciones de Node.js en la nube",
+    "image": "envivo/NodeEnVivo-11.png",
+    "slug": "bonus-nuxt-static-now",
+    "video": "https://www.youtube.com/embed/Nx3J8c-Kd9U",
+    "date": "03/30/2019"
+  },
+  {
+    "title": "Node.js ¡En Vivo! - Worker Threads",
+    "description": "Aprendamos más sobre worker threads con microjob",
+    "image": "envivo/NodeEnVivo-10.png",
+    "slug": "worker-threads",
+    "video": "https://www.youtube.com/embed/GjQQ5tV2FLM",
+    "date": "03/02/2019"
+  },
+  {
+    "title": "Node.js ¡En Vivo! - Child Processes e Introducción a Worker Threads",
+    "description": "Aprendamos sobre child processes y worker threads",
+    "image": "envivo/NodeEnVivo-09.png",
+    "slug": "child-processes",
+    "video": "https://www.youtube.com/embed/oIjBlpf_UaA",
+    "date": "02/16/2019"
+  },
+  {
+    "title": "Node.js ¡En Vivo! - ¿Que necesito saber para ser un buen desarrollador backend?",
+    "description": "Exploremos la ruta de aprendizaje del desarrollador backend",
+    "image": "envivo/NodeEnVivo-08.png",
+    "slug": "desarrollador-backend-aprendizaje",
+    "video": "https://www.youtube.com/embed/oDDf8M3lpeo",
+    "date": "02/09/2019"
+  },
+  {
+    "title": "Node.js ¡En Vivo! - Buenas prácticas en producción",
+    "description": "Aprendamos sobre buenas prácticas para tener en cuenta en ambientes de producción",
+    "image": "envivo/NodeEnVivo-07.png",
+    "slug": "buenas-practicas-en-produccion",
+    "video": "https://www.youtube.com/embed/w4NyfuXqtkY",
+    "date": "02/02/2019"
+  },
+  {
     "title": "Node.js ¡En Vivo! - Desplegando Node.js",
     "description": "Aprendamos cómo desplegar aplicaciones de Node.js en la nube",
     "image": "envivo/NodeEnVivo-06.png",
