@@ -4,9 +4,9 @@
       <div class="navbar-end">
         <nuxt-link to="/" class="navbar-item">Home</nuxt-link>
         <nuxt-link to="/about" class="navbar-item">About me</nuxt-link>
-        <nuxt-link to="/envivo" class="navbar-item">Node.js ¡En Vivo!</nuxt-link>
+        <nuxt-link to="/envivo" class="navbar-item">MNTD - Node.js ¡En Vivo!</nuxt-link>
         <a href="https://www.youtube.com/user/julianduquej" class="navbar-item" target="_blank">
-          YouTube Channel
+          MNTD YouTube Channel
         </a>
       </div>
     </div>
