@@ -13,13 +13,16 @@
     <div class="menu">
         <ul class="list-none pl-0">
             <li class="navitem text-center uppercase {{ page.url | isHomeLink('/') }}">
-                <a href="/" class="block no-underline">Posts</a>
+                <a href="/" class="block no-underline">Home</a>
             </li>
-            <li class="navitem text-center uppercase {{ page.url | isActiveLink('/who') }}">
-                <a href="/who/" class="block no-underline">Who</a>
+            <li class="navitem text-center uppercase {{ page.url | isActiveLink('/about') }}">
+                <a href="/about/" class="block no-underline">About</a>
             </li>
-            <li class="navitem text-center uppercase {{ page.url | isActiveLink('/why') }}">
-                <a href="/why/" class="block no-underline">Why</a>
+            <li class="navitem text-center uppercase {{ page.url | isActiveLink('/mntd') }}">
+                <a href="/mntd/" class="block no-underline">MNTD</a>
+            </li>
+             <li class="navitem text-center uppercase {{ page.url | isActiveLink('/posts') }}">
+                <a href="/posts/" class="block no-underline">Posts</a>
             </li>
             <li class="navitem text-center uppercase {{ page.url | isActiveLink('/archive') }}">
                 <a href="/archive/" class="block no-underline">Archive</a>
@@ -96,7 +99,7 @@
         </a>
         {% endif %}
         {% if siteconfig.socialYouTube %}
-        <a href="https://www.youtube.com/channel/{{ siteconfig.socialYouTube }}" aria-label="Open YouTube channel"  target="_blank" class="w-5 h-5" rel="noopener">
+        <a href="https://www.youtube.com/c/{{ siteconfig.socialYouTube }}" aria-label="Open YouTube channel"  target="_blank" class="w-5 h-5" rel="noopener">
             <svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="p-0.5">
                 <title>YouTube icon</title> 
                 <path d="M23.498,3.186 C23.2220635,2.14660344 22.4135596,1.33276534 21.376,1.05 C19.505,0.545 12,0.545 12,0.545 C12,0.545 4.495,0.545 2.623,1.05 C1.5859324,1.33325676 0.777941373,2.14696201 0.502,3.186 C0,5.07 0,9 0,9 C0,9 0,12.93 0.502,14.814 C0.777936456,15.8533966 1.58644041,16.6672347 2.624,16.95 C4.495,17.455 12,17.455 12,17.455 C12,17.455 19.505,17.455 21.377,16.95 C22.4146666,16.6674185 23.2232481,15.8535024 23.499,14.814 C24,12.93 24,9 24,9 C24,9 24,5.07 23.498,3.186 Z M8.545,13.432 L8.545,3.432 L18.545,8.432 L8.545,13.432 Z" id="Shape"></path>

@@ -42,3 +42,4 @@ assets/js/min.*
 
 # Local Netlify folder
 .netlify
+.vercel

@@ -28,7 +28,7 @@
                             {% endif %}
                         </div>
                         <div id="topbar-desktop-title" class="hidden sm:inline-block leading-12 align-middle ml-8 lg:ml-32 text-base text-gray-500 dark:text-gray-400 pr-8 truncate">
-                            {% if date %}<a href="/" class="text-indigo-900 dark:text-indigo-300 font-normal dark:font-light">Posts</a> › {% endif %}{{ title }}</div>
+                            {% if date %}<a href="/posts" class="text-indigo-900 dark:text-indigo-300 font-normal dark:font-light">Posts</a> › {% endif %}{{ title }}</div>
                         <div id="search-desktop-title" class="hidden sm:hidden leading-12 align-middle ml-8 lg:ml-32 text-base text-gray-500 dark:text-gray-400">
                         </div>
                         {% if siteconfig.algoliaSearch and siteconfig.algoliaSearch.enabled %}

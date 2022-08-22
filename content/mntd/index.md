@@ -1,7 +1,7 @@
 ---
 eleventyExcludeFromCollections: true
 layout: page.njk
-title: Why
+title: MNTD
 ---
 
-You can put your own page here.
+MNTD...
