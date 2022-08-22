@@ -2,6 +2,7 @@
 eleventyExcludeFromCollections: true
 layout: page.njk
 title: MNTD
+image: /assets/images/banner.jpg
 ---
 
-MNTD...
+## What is MNTD?

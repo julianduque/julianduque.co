@@ -11,7 +11,8 @@ module.exports = {
     purge,
     darkMode: "class",
     content: [
-        './content/**/*.{html,js,njk}'
+        './content/**/*.{html,js,njk}',
+        "./src/*.js"
     ],
     plugins: [
         function ({ addUtilities }) {
@@ -38,7 +39,7 @@ module.exports = {
         extend: {
             backgroundColor: (theme) => ({
                 ...theme("colors"),
-                "dark-nav": "#242424",
+                "dark-nav": "#231F20",
                 "dark-body": "#1B1B1E",
                 "dark-heading": "#27282B"
             }),
@@ -46,7 +47,7 @@ module.exports = {
                 "sidebar-dark":
                     "radial-gradient(circle, #242424 0%, #1d1f27 100%)",
                 "sidebar-light":
-                    "radial-gradient(circle,rgba(42, 30, 107, 1) 0%,rgba(35, 37, 46, 1) 100%)"
+                    "radial-gradient(circle,rgba(42, 30, 107, 1) 0%,rgba(36, 11, 61, 1) 100%)"
             }),
             borderWidth: (theme) => ({
                 ...theme("width"),
@@ -73,7 +74,7 @@ module.exports = {
                 content: "95rem"
             },
             textColor: {
-                "orange-hover": "#d2603a"
+                "orange-hover": "#F8A535"
             }
         }
     }
