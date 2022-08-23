@@ -9,16 +9,13 @@ Developer Relations, Education, and Community
 
 ## 👥 Communities & Events
 
-* [JSConf Colombia](https://jsconf.co/) | 2016 - 2019
 * [NodeConf Colombia](https://colombia.nodeconf.com/) | 2019 - 2020
+* [JSConf Colombia](https://jsconf.co/) | 2016 - 2019
 * [MedellinJS](https://meetup.com/MedellinJS) | 2011 - 2019
-
-## 💼 Work
-
-* TBD
 
 ## 🎙 Interviews
 
+* [Interview with Julián Duque from Heroku](https://www.youtube.com/watch?v=S1ZoWhkKjWo) | Developer Advocate Stories by EuropeClouds - 2020
 * [Entrevista a Julián Duque](https://www.youtube.com/watch?v=VHcsZgTNYg4) | Ciclo de Charlas Online de Chicas Programando - 2020
 * [Cómo ser Developer Advocate](https://www.youtube.com/watch?v=AH4zsKyrjpE) | LeonidasEsteban - 2020
 * [Entrevista a Julián Duque de Heroku](https://www.youtube.com/watch?v=pmNtWrhXaH8) | SoftwareGuru - 2020
