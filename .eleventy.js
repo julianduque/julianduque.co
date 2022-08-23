@@ -151,6 +151,11 @@ module.exports = function (eleventyConfig) {
         return text.substring(0,5000);
     });
 
+    // Add md5 filter
+    eleventyConfig.addFilter("md5", function (content) {
+        return MD5(content);
+    });
+
     return {
         dir: {
             // Consolidating everything below the `content` folder
