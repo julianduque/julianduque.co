@@ -1,51 +1,84 @@
 <meta charset="utf-8">
-<title>{% if title %}{{ title }} | {% endif %}{{ siteconfig.title }}</title>
+<title>
+    {% if title %}{{ title }} | {% endif %}{{ siteconfig.title }}</title>
 {% if siteconfig.googleAnalytics %}
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id={{ siteconfig.googleAnalytics }}"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ siteconfig.googleAnalytics }}"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
 
-  gtag('config', '{{ siteconfig.googleAnalytics }}');
-</script>
+        gtag('config', '{{ siteconfig.googleAnalytics }}');
+    </script>
 {% endif %}
 <script>
-// Toggle dark/light mode, inline JS to avoid any theme flicker
-function toggleDarkLightMode (isInit) {
-    // First time visitors
-    if (!("theme" in localStorage)) {
-        if (window.matchMedia("(prefers-color-scheme: light)").matches) {
-            document.querySelector("html").classList.remove("dark");
-            document.querySelector("html").classList.add("light");
-            localStorage.theme = "light";
-        } else {
-            localStorage.theme = "dark";
-        }
-    } else {
-        if (!isInit) {
-            if (localStorage.theme === "light") {
-                document.querySelector("html").classList.add("dark");
-                document.querySelector("html").classList.remove("light");
-                localStorage.theme = "dark";
-            } else if (localStorage.theme === "dark") {
-                document.querySelector("html").classList.add("light");
-                document.querySelector("html").classList.remove("dark");
+    // Toggle dark/light mode, inline JS to avoid any theme flicker
+    function toggleDarkLightMode(isInit) {
+        // First time visitors
+        if (!("theme" in localStorage)) {
+            if (window.matchMedia("(prefers-color-scheme: light)").matches) {
+                document
+                    .querySelector("html")
+                    .classList
+                    .remove("dark");
+                document
+                    .querySelector("html")
+                    .classList
+                    .add("light");
                 localStorage.theme = "light";
+            } else {
+                localStorage.theme = "dark";
             }
         } else {
-            if (localStorage.theme === "light") {
-                document.querySelector("html").classList.remove("dark");
-                document.querySelector("html").classList.add("light");
-            } else if (localStorage.theme === "dark") {
-                document.querySelector("html").classList.remove("light");
-                document.querySelector("html").classList.add("dark");
+            if (!isInit) {
+                if (localStorage.theme === "light") {
+                    document
+                        .querySelector("html")
+                        .classList
+                        .add("dark");
+                    document
+                        .querySelector("html")
+                        .classList
+                        .remove("light");
+                    localStorage.theme = "dark";
+                } else if (localStorage.theme === "dark") {
+                    document
+                        .querySelector("html")
+                        .classList
+                        .add("light");
+                    document
+                        .querySelector("html")
+                        .classList
+                        .remove("dark");
+                    localStorage.theme = "light";
+                }
+            } else {
+                if (localStorage.theme === "light") {
+                    document
+                        .querySelector("html")
+                        .classList
+                        .remove("dark");
+                    document
+                        .querySelector("html")
+                        .classList
+                        .add("light");
+                } else if (localStorage.theme === "dark") {
+                    document
+                        .querySelector("html")
+                        .classList
+                        .remove("light");
+                    document
+                        .querySelector("html")
+                        .classList
+                        .add("dark");
+                }
             }
         }
-    }
-};
-toggleDarkLightMode(true);
+    };
+    toggleDarkLightMode(true);
 </script>
 <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/favicons/apple-touch-icon.png' | addHash }}">
 <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/favicons/favicon-32x32.png' | addHash }}">
@@ -53,9 +86,9 @@ toggleDarkLightMode(true);
 <link rel="manifest" href="{{ '/assets/favicons/site.webmanifest' | addHash }}" crossorigin="use-credentials">
 <link rel="mask-icon" href="{{ '/assets/favicons/safari-pinned-tab.svg' | addHash }}" color="#5bbad5">
 <link rel="shortcut icon" href="{{ '/assets/favicons/favicon.ico' | addHash }}">
-<link rel="canonical" href="{{ page.url | absoluteUrl }}" />
+<link rel="canonical" href="{{ page.url | absoluteUrl }}"/>
 {% for name, item in meta %}
-<meta name="{{ name }}" content="{{ item.value }}">
+    <meta name="{{ name }}" content="{{ item.value }}">
 {% endfor %}
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="msapplication-config" content="{{ '/assets/favicons/browserconfig.xml' | addHash }}">
