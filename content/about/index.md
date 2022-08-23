@@ -8,7 +8,7 @@ imageAlt: Julián Duque speaking at NodeConfEU 2019
 
 ## Who am I?
 
-Hello, my name is **Julián Duque** _(hoolyAAn dOOkeh)_ and my pronouns are He/Him; I'm from Medellín, Colombia 🇨🇴 but currently living in Tampa Bay, FL 🇺🇸.
+Hello, my name is **Julián Duque** _(hoolyAAn dOOkeh)_ and my pronouns are He/Him; I'm from Medellín, Colombia 🇨🇴 and currently living in Tampa Bay, FL 🇺🇸.
 
 I'm a community leader, public speaker, JavaScript/Node.js developer, and an official Node.js collaborator (Emeritus).
 
