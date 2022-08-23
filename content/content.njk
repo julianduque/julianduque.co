@@ -1,7 +1,7 @@
 ---
 eleventyExcludeFromCollections: true
 layout: base.njk
-title: Posts
+title: Content
 pagination:
   data: collections.posts
   size: 10
@@ -11,7 +11,6 @@ meta:
   robots:
     value: noindex
 ---
-
 <div class="postlist pb-8 mt-8 font-light dark:font-extralight">
     {% for post in posts %}
     <div>
