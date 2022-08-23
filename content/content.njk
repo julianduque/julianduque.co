@@ -18,7 +18,7 @@ meta:
 				<a class="text-indigo-900 dark:text-indigo-300 text-xl dark:font-light font-normal postlistheading" href="{{ post.url | url }}">{{ post.data.title }}</a>
 			</div>
 			{% if post.data.category %}
-				<div class="pb-6 text-sm text-gray-500 dark:text-gray-400 flex">{{ post.data.category }}</div>
+				<div class="pb-3 text-sm text-gray-500 dark:text-gray-400 flex">{{ post.data.category }}</div>
 			{% endif %}
 			<div class="pb-4 text-gray-900 dark:text-gray-400">{% excerpt post %}</div>
 			<div class="pb-6 text-sm text-gray-500 dark:text-gray-400 border-b-1 border-gray-800 dark:border-gray-700 border-opacity-20 flex">

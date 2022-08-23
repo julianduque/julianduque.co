@@ -1,5 +1,4 @@
 ---
-eleventyExcludeFromCollections: true
 layout: page.njk
 title: Work
 image: /assets/images/headshot.jpg
