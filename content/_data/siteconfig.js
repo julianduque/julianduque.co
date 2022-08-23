@@ -2,13 +2,13 @@ require("dotenv").config();
 
 module.exports = {
     // Website title, shown in left sidebar and in page title
-    title: "Julián Duque",
+    title: "MNTD - Julián Duque",
     // Site URL to generate absolute URLs. Used across the board.
     url: process.env.URL || "http://localhost:8080",
     // Profile image for left sidebar
     image: "/assets/images/mntd_hexagon.png",
     // Image alt text for left sidebar
-    imageAlt: "MNTD - Software Development & Education",
+    imageAlt: "MNTD - Software Development and Education",
     // Author name, shown in left sidebar, and used in JSON-LD
     author: "Julián Duque",
     // Site description, shown below site image (optional)
@@ -26,7 +26,7 @@ module.exports = {
     // YouTube ID/Channel  (optional, remove it not needed), used for link in the left sidebar
     socialYouTube: "JulianDavidDuque",
     // Google Analytics ID  (optional, remove it not needed), used for... well, Google Analytics
-    googleAnalytics: "YOUR_GA-ID",
+    googleAnalytics: "G-ZESQYNPRR9",
     // Algolia-powered search  (optional, remove it not needed),
     // See: https://github.com/algolia/algoliasearch-netlify
     algoliaSearch: {
