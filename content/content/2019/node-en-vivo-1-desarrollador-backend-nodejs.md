@@ -1,8 +1,8 @@
 ---
-title: Node.js ¡En Vivo! - ¿Que necesito saber para ser un buen desarrollador backend con Node.js? [es]
+title: Node.js En Vivo - ¿Que necesito saber para ser un buen desarrollador backend con Node.js? [es]
 date: 2019-02-09
 tags: ['node-en-vivo']
-category: 'Node.js ¡En Vivo! - Primer Temporada'
+category: 'Node.js En Vivo - Temporada 1'
 ---
 En esta edición de Node.js En Vivo hablamos sobre el camino de aprendizaje para ser un buen desarrollador backend con Node.js (y otras tecnologías).
 

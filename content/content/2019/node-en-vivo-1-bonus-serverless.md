@@ -1,8 +1,8 @@
 ---
-title: Node.js ¡En Vivo! - [BONUS] Serverless [es]
+title: Node.js En Vivo - [BONUS] Serverless [es]
 date: 2019-04-08
 tags: ['node-en-vivo']
-category: 'Node.js ¡En Vivo! - Primer Temporada'
+category: 'Node.js En Vivo - Temporada 1'
 ---
 En esta edición bonus hablamos sobre Serverless con serverless framework, arc.codes y now.
 

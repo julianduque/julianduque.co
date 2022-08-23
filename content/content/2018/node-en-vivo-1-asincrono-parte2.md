@@ -1,8 +1,8 @@
 ---
-title: Node.js ¡En Vivo! - ¿Asíncrono? - Parte II [es]
+title: Node.js En Vivo - ¿Asíncrono? - Parte II [es]
 date: 2018-10-24
 tags: ['node-en-vivo']
-category: 'Node.js ¡En Vivo! - Primer Temporada'
+category: 'Node.js En Vivo - Temporada 1'
 ---
 ¡Acompáñame a recorrer el camino asíncrono!
 

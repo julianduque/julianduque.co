@@ -1,8 +1,8 @@
 ---
-title: Node.js ¡En Vivo! - GraphQL [es]
+title: Node.js En Vivo - GraphQL [es]
 date: 2018-12-15
 tags: ['node-en-vivo']
-category: 'Node.js ¡En Vivo! - Primer Temporada'
+category: 'Node.js En Vivo - Temporada 1'
 ---
 En esta edición de Node.js en Vivo hablamos sobre GraphQL
 

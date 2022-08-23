@@ -1,8 +1,8 @@
 ---
-title: Node.js ¡En Vivo! - Node 10 LTS [es]
+title: Node.js En Vivo - Node 10 LTS [es]
 date: 2018-12-14
 tags: ['node-en-vivo']
-category: 'Node.js ¡En Vivo! - Primer Temporada'
+category: 'Node.js En Vivo - Temporada 1'
 ---
 En esta edición de Node.js En Vivo hablamos sobre las nuevas características de Node 10 LTS
 

@@ -1,8 +1,8 @@
 ---
-title: Node.js ¡En Vivo! - [BONUS] Nuxt Static y Now v2.0 [es]
+title: Node.js En Vivo - [BONUS] Nuxt Static y Now v2.0 [es]
 date: 2019-04-02
 tags: ['node-en-vivo']
-category: 'Node.js ¡En Vivo! - Primer Temporada'
+category: 'Node.js En Vivo - Temporada 1'
 ---
 Acompáñenme a rehacer julianduque.co con Nuxt Static y zeithq Now v2.0 (Diseño no incluido)
 
