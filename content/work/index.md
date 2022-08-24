@@ -45,7 +45,7 @@ Here you can find some of the content I've created professionally as a Developer
 
 * [Salesforce Podcast - Episode 109: Salesforce Functions with Jonathan Jenkins](https://developer.salesforce.com/podcast/2021/11/episode-109-salesforce-functions-with-jonathan-jenkins) | 2021-11-21
 * [Code[ish] - 108. Building Community with the Wicked CoolKit](https://www.heroku.com/podcasts/codeish/108-building-community-with-the-wicked-coolkit) | 2021-01-26
-* [Code[ish] - 99. The Technical Side of Deep Fakes](https://www.heroku.com/podcasts/codeish/99-the-technical-side-of-deep-fake) | 2020-12-01
+* [Code[ish] - 99. The Technical Side of Deep Fakes](https://www.heroku.com/podcasts/codeish/99-the-technical-side-of-deep-fakes) | 2020-12-01
 * [Code[ish] - 98. The Ethical Side of Deep Fakes](https://www.heroku.com/podcasts/codeish/98-the-ethical-side-of-deep-fakes) | 2020-11-24
 * [Code[ish] - 93. Conferences in a Virtual World](https://www.heroku.com/podcasts/codeish/93-conferences-in-a-virtual-world) | 2020-10-20
 * [Code[ish] - Special Episode: Giving Back in Today's World](https://www.heroku.com/podcasts/codeish/special-episode-giving-back-in-todays-world) | 2020-07-09
