@@ -24,12 +24,14 @@ Here you can find some of the content I've created professionally as a Developer
 
 #### 📺 Videos
 
+* [codeLive: Apex for Node.js Developers - Part 2](https://www.youtube.com/watch?v=MNAdl8vcrzU) | 2020-08-25
 * [codeLive: Apex for Node.js Developers](https://www.youtube.com/watch?v=be9T9U6ZK-Y) | 2022-08-18
+* [codeLive: Invoking Functions from LWC, Flow, and Platform Events](https://www.youtube.com/watch?v=s1-bsGyLBqs) | 2022-06-30
+* [TDX'22 Developer Session: Integrate Salesforce Functions with Heroku Data](https://www.youtube.com/watch?v=qOaBPtCmSSI) | 2022-06-24
 * [Ask Me Anything with Salesforce Developers | Developer Tooling](https://www.youtube.com/watch?v=dNrC-WZoVus) | 2022-06-15
 * [codeLive: Heroku Data in Functions with Apache Kafka](https://www.youtube.com/watch?v=5GO7B109D6U) | 2022-06-09
 * [codeLive: Heroku Data in Functions with Redis](https://www.youtube.com/watch?v=Eu-bZqCTGx8) | 2022-06-02
 * [codeLive: Heroku Data in Functions with Postgres](https://www.youtube.com/watch?v=Q4dlw_eWctw) | 2022-05-26
-* [TDX'22 Developer Session: Integrate Salesforce Functions with Heroku Data](https://www.youtube.com/watch?v=qOaBPtCmSSI) | 2022-06-24
 * [Ask Me Anything with Salesforce Developer Advocates | Salesforce Functions](https://www.youtube.com/watch?v=BPhxTFE-D7Y) | 2021-11-24
 * [codeLive: Integrating a Node.js application with Salesforce](https://www.youtube.com/watch?v=Vqkwdv8RAGk) | 2021-05-13
 * [codeLive: Integrando una aplicación Node.js con Salesforce](https://www.youtube.com/watch?v=0ihvAJx6a38) | 2021-05-06
