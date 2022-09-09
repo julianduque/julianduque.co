@@ -24,7 +24,9 @@ Here you can find some of the content I've created professionally as a Developer
 
 #### 📺 Videos
 
-* [codeLive: Apex for Node.js Developers - Part 2](https://www.youtube.com/watch?v=MNAdl8vcrzU) | 2020-08-25
+* [codeLive: Building a CLI application with oclif](https://www.youtube.com/watch?v=ro87riVVDRg) | 2022-09-08
+* [codeLive: Apex for Node.js Developers - Part 3](https://www.youtube.com/watch?v=BavJyS64Rf4) | 2022-09-01
+* [codeLive: Apex for Node.js Developers - Part 2](https://www.youtube.com/watch?v=MNAdl8vcrzU) | 2022-08-25
 * [codeLive: Apex for Node.js Developers](https://www.youtube.com/watch?v=be9T9U6ZK-Y) | 2022-08-18
 * [codeLive: Invoking Functions from LWC, Flow, and Platform Events](https://www.youtube.com/watch?v=s1-bsGyLBqs) | 2022-06-30
 * [TDX'22 Developer Session: Integrate Salesforce Functions with Heroku Data](https://www.youtube.com/watch?v=qOaBPtCmSSI) | 2022-06-24
