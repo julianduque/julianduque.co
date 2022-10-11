@@ -24,6 +24,8 @@ Here you can find some of the content I've created professionally as a Developer
 
 #### 📺 Videos
 
+* [codeLive: Building a CLI application with oclif - Part 3](https://www.youtube.com/watch?v=D3DMWap-efk) | 2022-10-06
+* [codeLive: Building a CLI application with oclif - Part 2](https://www.youtube.com/watch?v=nzn-g-GZjk4) | 2022-09-15
 * [codeLive: Building a CLI application with oclif](https://www.youtube.com/watch?v=ro87riVVDRg) | 2022-09-08
 * [codeLive: Apex for Node.js Developers - Part 3](https://www.youtube.com/watch?v=BavJyS64Rf4) | 2022-09-01
 * [codeLive: Apex for Node.js Developers - Part 2](https://www.youtube.com/watch?v=MNAdl8vcrzU) | 2022-08-25
