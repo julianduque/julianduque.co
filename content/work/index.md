@@ -13,6 +13,7 @@ Here you can find some of the content I've created professionally as a Developer
 
 #### 📝 Blog Posts
 
+* [Building a CLI Application with oclif](https://developer.salesforce.com/blogs/2022/10/building-a-cli-application-with-oclif) | 2022-10-26
 * [Exploring the Salesforce GraphQL API – Part Two](https://developer.salesforce.com/blogs/2022/05/exploring-the-salesforce-graphql-api-part-two) | 2022-05-10
 * [Develop Functions Faster with Containerless Local Development](https://developer.salesforce.com/blogs/2022/02/develop-functions-faster-with-containerless-local-development) | 2022-02-28
 * [Getting Started with Salesforce Functions Locally. No license required!](https://developer.salesforce.com/blogs/2021/11/getting-started-with-salesforce-functions-locally-no-license-required) | 2021-11-23
@@ -24,9 +25,10 @@ Here you can find some of the content I've created professionally as a Developer
 
 #### 📺 Videos
 
-* [codeLive: Building a CLI application with oclif - Part 3](https://www.youtube.com/watch?v=D3DMWap-efk) | 2022-10-06
-* [codeLive: Building a CLI application with oclif - Part 2](https://www.youtube.com/watch?v=nzn-g-GZjk4) | 2022-09-15
-* [codeLive: Building a CLI application with oclif](https://www.youtube.com/watch?v=ro87riVVDRg) | 2022-09-08
+* [codeLive: Building a CLI Application with oclif - Part 4](https://www.youtube.com/watch?v=67hxN6kLdXU) | 2022-10-13
+* [codeLive: Building a CLI Application with oclif - Part 3](https://www.youtube.com/watch?v=D3DMWap-efk) | 2022-10-06
+* [codeLive: Building a CLI Application with oclif - Part 2](https://www.youtube.com/watch?v=nzn-g-GZjk4) | 2022-09-15
+* [codeLive: Building a CLI Application with oclif](https://www.youtube.com/watch?v=ro87riVVDRg) | 2022-09-08
 * [codeLive: Apex for Node.js Developers - Part 3](https://www.youtube.com/watch?v=BavJyS64Rf4) | 2022-09-01
 * [codeLive: Apex for Node.js Developers - Part 2](https://www.youtube.com/watch?v=MNAdl8vcrzU) | 2022-08-25
 * [codeLive: Apex for Node.js Developers](https://www.youtube.com/watch?v=be9T9U6ZK-Y) | 2022-08-18
