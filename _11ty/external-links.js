@@ -8,7 +8,8 @@ const processHrefs = async (el) => {
     if (
         !el.href.startsWith("/") &&
         !el.href.startsWith(siteconfig.url) &&
-        !el.href.startsWith("about:blank#")
+        !el.href.startsWith("about:blank#") &&
+        !el.href.startsWith("https://fosstodon.org")
     ) {
         el.target = "_blank";
         el.rel = "noopener";
