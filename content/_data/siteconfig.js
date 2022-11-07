@@ -27,6 +27,8 @@ module.exports = {
     socialYouTube: "JulianDavidDuque",
     // Google Analytics ID  (optional, remove it not needed), used for... well, Google Analytics
     googleAnalytics: "G-ZESQYNPRR9",
+    // Mastodon
+    socialMastodon: "https://fosstodon.org/@julianduque",
     // Algolia-powered search  (optional, remove it not needed),
     // See: https://github.com/algolia/algoliasearch-netlify
     algoliaSearch: {
