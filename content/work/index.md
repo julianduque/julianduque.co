@@ -13,6 +13,7 @@ Here you can find some of the content I've created professionally as a Developer
 
 #### 📝 Blog Posts
 
+* [Recipes for Accessing Heroku Data from Salesforce Functions](https://developer.salesforce.com/blogs/2022/11/recipes-for-accessing-heroku-data-from-salesforce-functions) | 2022-11-22
 * [Building a CLI Application with oclif](https://developer.salesforce.com/blogs/2022/10/building-a-cli-application-with-oclif) | 2022-10-26
 * [Exploring the Salesforce GraphQL API – Part Two](https://developer.salesforce.com/blogs/2022/05/exploring-the-salesforce-graphql-api-part-two) | 2022-05-10
 * [Develop Functions Faster with Containerless Local Development](https://developer.salesforce.com/blogs/2022/02/develop-functions-faster-with-containerless-local-development) | 2022-02-28
@@ -25,6 +26,7 @@ Here you can find some of the content I've created professionally as a Developer
 
 #### 📺 Videos
 
+* [codeLive: How to Build a Salesforce CLI Plug-in?](https://www.youtube.com/watch?v=Hi9kS8mcEVE) | 2022-11-10
 * [codeLive: Building a CLI Application with oclif - Part 4](https://www.youtube.com/watch?v=67hxN6kLdXU) | 2022-10-13
 * [codeLive: Building a CLI Application with oclif - Part 3](https://www.youtube.com/watch?v=D3DMWap-efk) | 2022-10-06
 * [codeLive: Building a CLI Application with oclif - Part 2](https://www.youtube.com/watch?v=nzn-g-GZjk4) | 2022-09-15
