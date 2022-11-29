@@ -20,5 +20,5 @@ I think the best way of learning is by doing and teaching it to others, so this 
 ## Projects
 
 * [DevRel En Español - Twitter Space & Community](https://twitter.com/i/communities/1515390096446570497) con [@ALAColombia](https://twitter.com/ALAColombia)
-* MNTD - Node.js En Vivo - **Coming back in 2022**
+* MNTD - Node.js En Vivo - **Back on Twitch**
 * MNTD - El Atanor - **Coming soon in 2022**
