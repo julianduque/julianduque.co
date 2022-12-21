@@ -28,9 +28,8 @@ module.exports = {
     // Google Analytics ID  (optional, remove it not needed), used for... well, Google Analytics
     googleAnalytics: "G-ZESQYNPRR9",
     // Mastodon
-    socialMastodon: "https://fosstodon.org/@julianduque",
+    socialMastodon: "https://hachyderm.io/@julianduque",
     // Algolia-powered search  (optional, remove it not needed),
-    // See: https://github.com/algolia/algoliasearch-netlify
     algoliaSearch: {
         // When enabled shows the search bar in the UI
         enabled: true,
