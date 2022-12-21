@@ -26,6 +26,7 @@ Here you can find some of the content I've created professionally as a Developer
 
 #### 📺 Videos
 
+* [codeLive: Creating LWR Static Sites on Node.js](https://www.youtube.com/watch?v=V6BdUSOtU2c) | 2022-12-15
 * [codeLive: How to Build a Salesforce CLI Plug-in?](https://www.youtube.com/watch?v=Hi9kS8mcEVE) | 2022-11-10
 * [Exploring the sf CLI | Developer Quick Takes](https://www.youtube.com/watch?v=2EwZY5UX7fo) | 2022-11-08
 * [codeLive: Building a CLI Application with oclif - Part 4](https://www.youtube.com/watch?v=67hxN6kLdXU) | 2022-10-13
