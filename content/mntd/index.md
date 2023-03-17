@@ -5,20 +5,20 @@ image: /assets/images/banner.jpg
 ---
 ## What is MNTD?
 
-**MNTD** (Mantid) is a collaborative learning project that aims to help developers (and myself) to learn web development technologies, especially Node.js but not limited to it.
+**MNTD** (Mantid) is a collaborative learning project aimed at helping developers (including myself) learn web development technologies, with a focus on Node.js but not limited to it.
 
-Since my native language is Spanish, most of the content I create and the community I build is in Spanish, but, I'm also planning to create content in English as well.
+As my native language is Spanish, most of the content I create and the community I build is in Spanish. However, I'm also planning to create content in English.
 
 ## How?
 
-The main idea is to use live streaming platforms to teach coding while doing it myself, that gives me an opportunity to learn new technologies and to improve my skills while you watch and learn with me.
+The main idea is to utilize live streaming platforms to teach coding while learning it myself. This approach gives me the opportunity to learn new technologies and improve my skills while others watch and learn alongside me.
 
 ## Why?
 
-I think the best way of learning is by doing and teaching it to others, so this is the best way for me to both, upskill myself and upskill those that are learning with me.
+I believe that the best way to learn is by doing and teaching others. This approach allows me to both upskill myself and help others upskill as they learn with me.
 
 ## Projects
 
 * [DevRel En Español - Twitter Space & Community](https://twitter.com/i/communities/1515390096446570497) con [@ALAColombia](https://twitter.com/ALAColombia)
 * MNTD - Node.js En Vivo - **Back on Twitch**
-* MNTD - El Atanor - **Coming soon in 2022**
+* MNTD - El Atanor - **Coming soon in 2023**

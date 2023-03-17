@@ -13,6 +13,7 @@ Here you can find some of the content I've created professionally as a Developer
 
 #### 📝 Blog Posts
 
+* [Building a Salesforce CLI Plug-In](https://developer.salesforce.com/blogs/2023/01/building-a-salesforce-cli-plug-in) | 2023-01-10
 * [Recipes for Accessing Heroku Data from Salesforce Functions](https://developer.salesforce.com/blogs/2022/11/recipes-for-accessing-heroku-data-from-salesforce-functions) | 2022-11-22
 * [Building a CLI Application with oclif](https://developer.salesforce.com/blogs/2022/10/building-a-cli-application-with-oclif) | 2022-10-26
 * [Exploring the Salesforce GraphQL API – Part Two](https://developer.salesforce.com/blogs/2022/05/exploring-the-salesforce-graphql-api-part-two) | 2022-05-10
@@ -26,6 +27,16 @@ Here you can find some of the content I've created professionally as a Developer
 
 #### 📺 Videos
 
+* [codeLive: External Services in Apex](https://www.youtube.com/watch?v=JreEjNhEd0c) | 2023-03-16
+* ⭐ [TDX23 - From Idea to Production - Building Scalable Apps on Heroku](https://www.salesforce.com/plus/experience/trailblazerdx_2023/series/Developers_for_TrailblazerDX_2023/episode/episode-s1e2) | 2023-03-08
+* ⭐ [TDX23 - Event Emcee on Salesforce+](https://www.salesforce.com/plus/experience/trailblazerdx_2023/series/TrailblazerDX_Highlights_from_TrailblazerDX_2023/episode/episode-s1e1) | 2023-03-07
+* [codeLive: Real-Time LWC With empApi and WebSockets](https://www.youtube.com/watch?v=zRjoCB5xaq0) | 2023-03-02
+* [codeLive: Mastering Asynchronous JavaScript](https://www.youtube.com/watch?v=dYc-YZSQ8dY) | 2023-02-23
+* [codeLive: Implementing Custom Invocable Actions for Flows](https://www.youtube.com/watch?v=ZZvuYj8bMcA) | 2023-02-16
+* [codeLive: LWC UI API and Apex Integration](https://www.youtube.com/watch?v=B_Pr2Ulf0xI) | 2023-02-09
+* [HTTP Requests from LWC with the Fetch API | Developer Quick Takes](https://www.youtube.com/watch?v=kOZFk1obYdY) | 2023-02-07
+* [codeLive: How to Implement a GraphQL API from Scratch](https://www.youtube.com/watch?v=WXSnXAhKvag) | 2023-01-12
+* [codeLive: External Services in Flow](https://www.youtube.com/watch?v=zyaVA-Vhur8) | 2023-01-05
 * [codeLive: Creating LWR Static Sites on Node.js](https://www.youtube.com/watch?v=V6BdUSOtU2c) | 2022-12-15
 * [codeLive: How to Build a Salesforce CLI Plug-in?](https://www.youtube.com/watch?v=Hi9kS8mcEVE) | 2022-11-10
 * [Exploring the sf CLI | Developer Quick Takes](https://www.youtube.com/watch?v=2EwZY5UX7fo) | 2022-11-08
