@@ -27,6 +27,11 @@ Here you can find some of the content I've created professionally as a Developer
 
 #### 📺 Videos
 
+* [codeLive: Revamp & Power Up - Salesforce API Transformation to MuleSoft with Jeff Douglas - Part 2](https://www.youtube.com/watch?v=0durd-U827g) | 2023-04-27
+* [Revamp & Power Up - Salesforce API Transformation to MuleSoft with Jeff Douglas - Part 1](https://www.youtube.com/watch?v=9P0xWswm6Cc) | 2023-04-13
+* [codeLive: Communication Between Components with Events and LMS](https://www.youtube.com/watch?v=quvJ_SEIi2c) | 2023-03-30
+* [Ask Me Anything with Salesforce Developers | The Future of Heroku](https://www.youtube.com/watch?v=1vUk-Jw1GZA) | 2023-03-29
+* [codeLive: Component Composition in LWC](https://www.youtube.com/watch?v=w_olpVC9l00) | 2023-03-23
 * [codeLive: External Services in Apex](https://www.youtube.com/watch?v=JreEjNhEd0c) | 2023-03-16
 * ⭐ [TDX23 - From Idea to Production - Building Scalable Apps on Heroku](https://www.salesforce.com/plus/experience/trailblazerdx_2023/series/Developers_for_TrailblazerDX_2023/episode/episode-s1e2) | 2023-03-08
 * ⭐ [TDX23 - Event Emcee on Salesforce+](https://www.salesforce.com/plus/experience/trailblazerdx_2023/series/TrailblazerDX_Highlights_from_TrailblazerDX_2023/episode/episode-s1e1) | 2023-03-07

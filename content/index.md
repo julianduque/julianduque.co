@@ -14,6 +14,7 @@ Developer Relations, Education, and Community
 
 ## 🎙 Interviews
 
+* [Salesforce Platform ft. Julian Duque & Mohith Shrivastava](https://www.youtube.com/watch?v=SSHpf6xvMaI) | Build IT Better - 2021
 * [Interview with Julián Duque from Heroku](https://www.youtube.com/watch?v=S1ZoWhkKjWo) | Developer Advocate Stories by EuropeClouds - 2020
 * [Entrevista a Julián Duque](https://www.youtube.com/watch?v=VHcsZgTNYg4) | Ciclo de Charlas Online de Chicas Programando - 2020
 * [Cómo ser Developer Advocate](https://www.youtube.com/watch?v=AH4zsKyrjpE) | LeonidasEsteban - 2020
@@ -28,6 +29,8 @@ Developer Relations, Education, and Community
 
 ## 🗣 Talks
 
+* [Life Beyond JSON](https://www.youtube.com/live/nReMDgz02qo?feature=share&t=3394) | JSConf Chile - 2023
+* [Building an extensible CLI tool with oclif](https://www.youtube.com/watch?v=x-IjPwEtx-s&t=24999s) | JavaScript Global Summit '22 - 2022
 * [Let it crash!](https://www.youtube.com/watch?v=Fguac8pIAtU) | NodeConfEU - 2019
 * [The Butterfly Effect with Juan Pablo Buritica](https://www.youtube.com/watch?v=3Ya3Cm7xmwY) | JSConf - 2018
 * [Node.js & Blockchain](https://www.youtube.com/watch?v=iq48GcfBqGE) | NodeConf Argentina - 2018
