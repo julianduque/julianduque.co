@@ -20,7 +20,7 @@ Developer Relations, Education, and Community
 * [Cómo ser Developer Advocate](https://www.youtube.com/watch?v=AH4zsKyrjpE) | LeonidasEsteban - 2020
 * [Entrevista a Julián Duque de Heroku](https://www.youtube.com/watch?v=pmNtWrhXaH8) | SoftwareGuru - 2020
 * [¿Por qué Node.js?](https://www.youtube.com/watch?v=Y6SH0QaJZO4) | MaestriaJS - 2019
-* [Interviews from JSConf - with Michael Chan, Juan Pablo Buriticá, Julián David Duque, and Tim Doherty](https://changelog.com/jsparty/43) | JSParty - 2018
+* [Interviews from JSConf - with Michael Chan, Juan Pablo Buriticá, Julián David Duque, and Tim Doherty](https://changelog.com/jsparty/43) | JS Party - 2018
 * [Cómo hacer rentable el código Open Source](https://www.youtube.com/watch?v=YYszZE99wOg) | Platzi - 2017
 * [IO.js, el futuro de Node.js](https://www.youtube.com/watch?v=UiZseBC8tRo) | Platzi - 2015
 * [NodersCast - Episodio 02](https://www.youtube.com/watch?v=i2qqa2ZDLyo) | NodersCast - 2015
