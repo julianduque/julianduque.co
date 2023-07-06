@@ -19,6 +19,5 @@ I believe that the best way to learn is by doing and teaching others. This appro
 
 ## Projects
 
-* [DevRel En Español - Twitter Space & Community](https://twitter.com/i/communities/1515390096446570497) con [@ALAColombia](https://twitter.com/ALAColombia)
-* MNTD - Node.js En Vivo - **Back on Twitch**
-* MNTD - El Atanor - **Coming soon in 2023**
+* [DevRel En Español - Twitter Space & Community](https://twitter.com/i/communities/1515390096446570497) with [@ALAColombia](https://twitter.com/ALAColombia)
+* [JSConf Colombia 2023](https://jsconf.co)

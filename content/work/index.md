@@ -13,6 +13,8 @@ Here you can find some of the content I've created professionally as a Developer
 
 #### 📝 Blog Posts
 
+* [Design a Swagger API with Code to Bring Data into Salesforce](https://developer.salesforce.com/blogs/2023/06/design-a-swagger-api-with-code-to-bring-data-into-salesforce) | 2023-06-06
+* [Platform Integration Updates for Developers | Learn Moar Summer ’23](https://developer.salesforce.com/blogs/2023/05/platform-integration-updates-for-developers-learn-moar-summer-23) | 2023-05-15
 * [Building a Salesforce CLI Plug-In](https://developer.salesforce.com/blogs/2023/01/building-a-salesforce-cli-plug-in) | 2023-01-10
 * [Recipes for Accessing Heroku Data from Salesforce Functions](https://developer.salesforce.com/blogs/2022/11/recipes-for-accessing-heroku-data-from-salesforce-functions) | 2022-11-22
 * [Building a CLI Application with oclif](https://developer.salesforce.com/blogs/2022/10/building-a-cli-application-with-oclif) | 2022-10-26
@@ -27,6 +29,12 @@ Here you can find some of the content I've created professionally as a Developer
 
 #### 📺 Videos
 
+* [codeLive: Reactive Screen Components in Flow](https://www.youtube.com/watch?v=-twwgjZbS4g) | 2023-07-06
+* [DevOps Essentials: Promoting Changes Between Environments](https://www.youtube.com/watch?v=madDyi_EjYY) | 2023-07-06
+* [codeLive: Load Data Programmatically with the Ingestion API](https://www.youtube.com/watch?v=usfUhzq5kl0) | 2023-06-22
+* [DevOps Essentials: Salesforce CLI and VS Code](https://www.youtube.com/watch?v=GMC7jSY72es) | 2023-06-21
+* [codeLive: Design an API with Code using Node.js and Swagger](https://www.youtube.com/watch?v=r7cjW_IlHHk) | 2023-06-08
+* [codeLive: Revamp & Power Up - Salesforce API Transformation to MuleSoft with Jeff Douglas - Part 3](https://www.youtube.com/watch?v=DUCXGJS8-A4) | 2023-05-18
 * [codeLive: Revamp & Power Up - Salesforce API Transformation to MuleSoft with Jeff Douglas - Part 2](https://www.youtube.com/watch?v=0durd-U827g) | 2023-04-27
 * [Revamp & Power Up - Salesforce API Transformation to MuleSoft with Jeff Douglas - Part 1](https://www.youtube.com/watch?v=9P0xWswm6Cc) | 2023-04-13
 * [codeLive: Communication Between Components with Events and LMS](https://www.youtube.com/watch?v=quvJ_SEIi2c) | 2023-03-30
