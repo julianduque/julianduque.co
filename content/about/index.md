@@ -11,7 +11,7 @@ Hello, my name is **Julián Duque** _(hoolyAAn dOOkeh)_ and my pronouns are he/h
 
 I'm a community leader, public speaker, JavaScript/Node.js developer, and an official Node.js collaborator (Emeritus).
 
-I work at [Salesforce](https://developer.salesforce.com) as a **Principal Developer Advocate**.
+I work at [Heroku](https://heroku.com) as a **Principal Developer Advocate**.
 
 I've organized community conferences like **JSConf** and **NodeConf** in Colombia; I've also helped organize Suncoast.js in St. Petersburg, FL, as well as [MedellinJS](https://www.meetup.com/medellinjs/), MedellinJS is currently the largest JavaScript user group in Colombia, with 7300+ registered members.
 
