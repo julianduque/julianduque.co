@@ -1,9 +1,10 @@
 ---
 title: Node.js En Vivo - Bases de Datos - SQLite [es]
 date: 2020-03-15
-tags: ['node-en-vivo']
-category: 'Node.js En Vivo - Temporada 2'
+tags: ["node-en-vivo"]
+category: "Node.js En Vivo - Temporada 2"
 ---
+
 En esta transmisión aprenderemos sobre bases de datos con Node.js, empezando con SQLite.
 
 ¡Estaremos construyendo un manejador de passwords para la terminal!

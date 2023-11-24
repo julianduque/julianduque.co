@@ -1,9 +1,10 @@
 ---
 title: Node.js En Vivo - Bonus - Fastify [es]
 date: 2020-05-20
-tags: ['node-en-vivo']
-category: 'Node.js En Vivo - Temporada 2'
+tags: ["node-en-vivo"]
+category: "Node.js En Vivo - Temporada 2"
 ---
+
 En esta edición aprendimos sobre Fastify!
 
 Nota: Hubo problemas con el video y la parte incial no salió, pero todo el contenido está ahí!

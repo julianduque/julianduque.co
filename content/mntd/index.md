@@ -3,6 +3,7 @@ layout: page.njk
 title: MNTD
 image: /assets/images/banner.jpg
 ---
+
 ## What is MNTD?
 
 **MNTD** (Mantid) is a collaborative learning project aimed at helping developers (including myself) learn web development technologies, with a focus on Node.js but not limited to it.
@@ -19,5 +20,5 @@ I believe that the best way to learn is by doing and teaching others. This appro
 
 ## Projects
 
-* [JSConf Colombia 2023](https://jsconf.co)
-* [DevRel En Español - Twitter Space & Community](https://twitter.com/i/communities/1515390096446570497) with [@ALAColombia](https://twitter.com/ALAColombia)
+-   [JSConf Colombia 2023](https://jsconf.co)
+-   [DevRel En Español - Twitter Space & Community](https://twitter.com/i/communities/1515390096446570497) with [@ALAColombia](https://twitter.com/ALAColombia)

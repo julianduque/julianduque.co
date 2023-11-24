@@ -129,7 +129,7 @@ module.exports = function (eleventyConfig) {
 
     // Create custom collection for getting the newest 5 updates
     eleventyConfig.addCollection("recents", function (collectionApi) {
-        return collectionApi.getFilteredByTag('posts').reverse().slice(0, 5);
+        return collectionApi.getFilteredByTag("posts").reverse().slice(0, 5);
     });
 
     // Plugin for setting _blank and rel=noopener on external links in markdown content
@@ -142,13 +142,13 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPlugin(require("./_11ty/html-minify.js"));
 
     // Remove <code>.*</code>, remove HTML, then with plain text, limit to 5k chars
-    eleventyConfig.addFilter('algExcerpt', function (text) {
+    eleventyConfig.addFilter("algExcerpt", function (text) {
         //first remove code
-        text = text.replace(/<code class="language-.*?">.*?<\/code>/sg, '');
+        text = text.replace(/<code class="language-.*?">.*?<\/code>/gs, "");
         //now remove html tags
-        text = text.replace(/<.*?>/g, '');
+        text = text.replace(/<.*?>/g, "");
         //now limit to 5k
-        return text.substring(0,5000);
+        return text.substring(0, 5000);
     });
 
     // Add md5 filter

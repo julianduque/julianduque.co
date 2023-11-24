@@ -4,4 +4,4 @@ Personal website made with [11ty](https://11ty.dev/) using René Winkelmeyer [Ch
 
 ## Credits
 
-- [René Winkelmeyer](https://twitter.com/muenzpraeger)
+-   [René Winkelmeyer](https://twitter.com/muenzpraeger)

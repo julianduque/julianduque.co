@@ -44,7 +44,7 @@ module.exports = {
         // You'll have to set this manually in your build settings.
         // The value comes from Algolia, and is either visible in the
         // UI for the Crawler Plugin or the Algolia Dashboard.
-        siteId: 'mntd',
+        siteId: "mntd",
         // Assuming that you deploy your "main" branch. Otherwise you
         // can either override or configure this (using process.env.HEAD)
         branch: "main"
