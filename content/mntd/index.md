@@ -17,8 +17,3 @@ The main idea is to utilize live streaming platforms to teach coding while learn
 ## Why?
 
 I believe that the best way to learn is by doing and teaching others. This approach allows me to both upskill myself and help others upskill as they learn with me.
-
-## Projects
-
--   [JSConf Colombia 2023](https://jsconf.co)
--   [DevRel En Español - Twitter Space & Community](https://twitter.com/i/communities/1515390096446570497) with [@ALAColombia](https://twitter.com/ALAColombia)
