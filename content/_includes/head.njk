@@ -103,7 +103,7 @@
 <meta property="og:image:url" content="{% if image %}{{ image | addHash  | absoluteUrl }}{% else %}{{ siteconfig.openGraphDefaultImage | addHash | absoluteUrl }}{% endif %}">
 <meta name="twitter:image" content="{% if image %}{{ image | addHash | absoluteUrl }}{% else %}{{ siteconfig.openGraphDefaultImage | addHash | absoluteUrl }} {% endif %}">
 <meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:site" content="{{ siteconfig.socialTwitter }}">
+<meta property="twitter:site" content="{{ siteconfig.socialX }}">
 <script src="{{ '/assets/js/min.js' | addHash }}" type="module"></script>
 <link rel="stylesheet" href="{{ '/assets/css/site-build.css' | addHash }}">
 <script src="{{ '/assets/js/prism.js' | addHash }}"></script>

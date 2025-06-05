@@ -4,7 +4,7 @@ const pluginToc = require("eleventy-plugin-toc");
 const { MD5 } = require("crypto-js");
 const { URL } = require("url");
 const { readFileSync } = require("fs");
-const siteconfig = require("./content/_data/siteconfig.js");
+const siteconfig = require("./content/_data/siteconfig.cjs");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 
@@ -133,13 +133,13 @@ module.exports = function (eleventyConfig) {
     });
 
     // Plugin for setting _blank and rel=noopener on external links in markdown content
-    eleventyConfig.addPlugin(require("./_11ty/external-links.js"));
+    eleventyConfig.addPlugin(require("./_11ty/external-links.cjs"));
 
     // Plugin for transforming images
-    eleventyConfig.addPlugin(require("./_11ty/srcset.js"));
+    eleventyConfig.addPlugin(require("./_11ty/srcset.cjs"));
 
     // Plugin for minifying HTML
-    eleventyConfig.addPlugin(require("./_11ty/html-minify.js"));
+    eleventyConfig.addPlugin(require("./_11ty/html-minify.cjs"));
 
     // Remove <code>.*</code>, remove HTML, then with plain text, limit to 5k chars
     eleventyConfig.addFilter("algExcerpt", function (text) {

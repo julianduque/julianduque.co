@@ -2,13 +2,13 @@ require("dotenv").config();
 
 module.exports = {
     // Website title, shown in left sidebar and in page title
-    title: "MNTD - Julián Duque",
+    title: "Julián Duque",
     // Site URL to generate absolute URLs. Used across the board.
     url: process.env.URL || "http://localhost:8080",
     // Profile image for left sidebar
     image: "/assets/images/mntd_hexagon.png",
     // Image alt text for left sidebar
-    imageAlt: "MNTD - Software Development and Education",
+    imageAlt: "Software Development and Education",
     // Author name, shown in left sidebar, and used in JSON-LD
     author: "Julián Duque",
     // Site description, shown below site image (optional)
@@ -21,14 +21,14 @@ module.exports = {
     socialGitHub: "julianduque",
     // LinkedIn ID  (optional, remove it not needed), used for link in the left sidebar
     socialLinkedIn: "juliandavidduque",
-    // Twitter ID  (optional, remove it not needed), used for link in the left sidebar, and for OpenGraph sharing information
-    socialTwitter: "julian_duque",
+    // X ID  (optional, remove it not needed), used for link in the left sidebar, and for OpenGraph sharing information
+    socialX: "julian_duque",
     // YouTube ID/Channel  (optional, remove it not needed), used for link in the left sidebar
     socialYouTube: "JulianDavidDuque",
     // Google Analytics ID  (optional, remove it not needed), used for... well, Google Analytics
     googleAnalytics: "G-ZESQYNPRR9",
-    // Mastodon
-    socialMastodon: "https://hachyderm.io/@julianduque",
+    // Bluesky
+    socialBluesky: "https://bsky.app/profile/julianduque.co",
     // Algolia-powered search  (optional, remove it not needed),
     algoliaSearch: {
         // When enabled shows the search bar in the UI
@@ -44,7 +44,7 @@ module.exports = {
         // You'll have to set this manually in your build settings.
         // The value comes from Algolia, and is either visible in the
         // UI for the Crawler Plugin or the Algolia Dashboard.
-        siteId: "mntd",
+        siteId: "julianduque",
         // Assuming that you deploy your "main" branch. Otherwise you
         // can either override or configure this (using process.env.HEAD)
         branch: "main"

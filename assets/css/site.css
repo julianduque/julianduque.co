@@ -2,6 +2,91 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Modern Typography Foundation */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
+
+:root {
+    --font-primary:
+        "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui,
+        sans-serif;
+    --font-mono:
+        "SF Mono", Monaco, "Cascadia Code", "Roboto Mono", Consolas,
+        "Courier New", monospace;
+}
+
+html {
+    font-family: var(--font-primary);
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    font-variant-numeric: oldstyle-nums;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Improved base typography */
+body {
+    @apply text-gray-900 dark:text-gray-100;
+    font-size: 1.125rem;
+    line-height: 1.75;
+    letter-spacing: -0.025em;
+}
+
+/* Enhanced headings hierarchy */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-primary);
+    font-weight: 700;
+    letter-spacing: -0.05em;
+    line-height: 1.2;
+    @apply text-gray-900 dark:text-white;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 1.1;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.15;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.25;
+}
+
+/* Better text hierarchy */
+strong,
+b {
+    font-weight: 700;
+    @apply text-gray-900 dark:text-white;
+}
+
+em,
+i {
+    font-style: italic;
+    font-weight: 500;
+}
+
+/* Code typography */
+code,
+pre {
+    font-family: var(--font-mono);
+    font-feature-settings: "liga" 0;
+}
+
+code {
+    @apply bg-gray-100 dark:bg-gray-800 px-1.5 py-0.5 rounded text-sm;
+    font-weight: 500;
+}
+
 img {
     @apply rounded-lg shadow-lg block mx-auto h-auto;
 }
@@ -10,10 +95,14 @@ img {
 
 .sidebar .navitem {
     @apply text-gray-400 hover:text-white px-1;
+    font-weight: 500;
+    letter-spacing: -0.025em;
+    transition: all 0.2s ease;
 }
 
 .sidebar .navitem.active {
     @apply text-white;
+    font-weight: 600;
 }
 
 div.menu li {
@@ -144,59 +233,134 @@ html:not(.dark) svg.lighttoggle {
 
 .content,
 .postlist {
-    @apply mt-8 mx-8 lg:mr-32 lg:ml-32 leading-relaxed tracking-wider;
+    @apply mt-8 mx-8 lg:mr-32 lg:ml-32;
+    font-size: 1.125rem;
+    line-height: 1.75;
+    letter-spacing: -0.025em;
+    max-width: 75ch;
 }
 
 .content a {
-    @apply text-indigo-900 dark:text-indigo-300 underline;
+    @apply text-indigo-600 dark:text-indigo-400;
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
+    transition: all 0.2s ease;
+    font-weight: 500;
+}
+
+.content a:hover {
+    @apply text-indigo-700 dark:text-indigo-300;
+    border-bottom-width: 2px;
 }
 
 .content p {
-    @apply pb-4 pt-2 font-light dark:font-extralight;
+    @apply mb-6;
+    font-weight: 400;
+    line-height: 1.8;
+    color: inherit;
 }
 
 .content blockquote {
-    @apply border-l-2 border-gray-300 dark:border-gray-600 my-4;
+    @apply border-l-4 border-indigo-500 dark:border-indigo-400 my-8 pl-6;
+    background: rgba(99, 102, 241, 0.05);
+    border-radius: 0 0.5rem 0.5rem 0;
+    padding: 1.5rem 1.5rem 1.5rem 2rem;
 }
 
 .content blockquote > p {
-    @apply ml-4 py-2;
+    @apply mb-0;
+    font-style: italic;
+    font-weight: 500;
+    color: inherit;
 }
 
 .content h1 {
-    @apply text-2xl dark:font-light py-6 mt-4;
+    @apply mt-12 mb-8;
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: -0.05em;
 }
 
 .content h2 {
-    @apply text-xl mt-6;
+    @apply mt-10 mb-6;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -0.04em;
 }
 
 .content h3 {
-    @apply text-lg mt-6;
+    @apply mt-8 mb-4;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.25;
+    letter-spacing: -0.03em;
 }
 
 .content ol {
-    @apply list-decimal pl-10 leading-8;
+    @apply list-decimal pl-8 mb-6;
+    line-height: 1.8;
+    counter-reset: list-counter;
+}
+
+.content ol li {
+    @apply mb-3;
+    padding-left: 0.5rem;
+    font-weight: 400;
 }
 
 .content ul {
-    @apply list-disc pl-10 leading-8;
+    @apply list-none pl-8 mb-6;
+    line-height: 1.8;
+}
+
+.content ul li {
+    @apply mb-3 relative;
+    padding-left: 1.5rem;
+    font-weight: 400;
+}
+
+.content ul li::before {
+    content: "•";
+    @apply absolute left-0 text-indigo-500 dark:text-indigo-400;
+    font-weight: 700;
+    font-size: 1.2em;
 }
 
 .content table {
-    @apply table-auto w-full;
+    @apply table-auto w-full my-8 rounded-lg overflow-hidden shadow-sm;
+    border-collapse: separate;
+    border-spacing: 0;
 }
 
-.content table thead tr {
-    @apply leading-12;
+.content table thead {
+    @apply bg-gray-50 dark:bg-gray-800;
+}
+
+.content table thead th {
+    @apply px-6 py-4 text-left font-semibold text-gray-900 dark:text-gray-100;
+    font-size: 0.875rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.content table tbody td {
+    @apply px-6 py-4 border-t border-gray-200 dark:border-gray-700;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.content table tbody tr:hover {
+    @apply bg-gray-50 dark:bg-gray-800;
 }
 
 .content table tbody tr:nth-child(even) {
-    @apply dark:bg-dark-heading;
+    @apply bg-gray-25 dark:bg-gray-900;
 }
 
 .content table tbody tr:nth-child(odd) {
-    @apply bg-gray-100 dark:bg-sidebar-dark;
+    @apply bg-white dark:bg-gray-950;
 }
 
 .content img {
@@ -293,11 +457,51 @@ a.postlistheading:hover,
 .postlist a:hover,
 #recents a:hover,
 #top-bar a:hover {
-    @apply text-purple-500 underline;
+    @apply text-indigo-600 dark:text-indigo-400;
+    font-weight: 600;
+    transition: all 0.2s ease;
 }
 
 input[type="search"]::-webkit-search-cancel-button {
     display: none;
+}
+
+/* Modern typography utilities */
+.text-balance {
+    text-wrap: balance;
+}
+
+.content h1,
+.content h2 {
+    text-wrap: balance;
+}
+
+/* Better reading flow */
+.content p + h2,
+.content p + h3 {
+    margin-top: 3rem;
+}
+
+.content h2 + p,
+.content h3 + p {
+    margin-top: 1rem;
+}
+
+/* Enhanced focus states */
+.content a:focus,
+.sidebar .navitem:focus {
+    outline: 2px solid rgba(99, 102, 241, 0.5);
+    outline-offset: 2px;
+    border-radius: 2px;
+}
+
+/* Better reading width on larger screens */
+@media (min-width: 1024px) {
+    .content {
+        max-width: 70ch;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 /* Right sidebar */

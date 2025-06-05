@@ -18,9 +18,6 @@
             <li class="navitem text-center uppercase {{ page.url | isActiveLink('/about') }}">
                 <a href="/about/" class="block no-underline">About</a>
             </li>
-            <li class="navitem text-center uppercase {{ page.url | isActiveLink('/mntd') }}">
-                <a href="/mntd/" class="block no-underline">MNTD</a>
-            </li>
             <li class="navitem text-center uppercase {{ page.url | isActiveLink('/work') }}">
                 <a href="/work/" class="block no-underline">Work</a>
             </li>
@@ -93,19 +90,19 @@
                 </svg>
             </a>
         {% endif %}
-        {% if siteconfig.socialTwitter %}
-            <a href="https://twitter.com/{{ siteconfig.socialTwitter }}" aria-label="Open Twitter profile"  target="_blank" class="w-5 h-5" rel="noopener">
+        {% if siteconfig.socialX %}
+            <a href="https://x.com/{{ siteconfig.socialX }}" aria-label="Open X profile"  target="_blank" class="w-5 h-5" rel="noopener">
                 <svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <title>Twitter icon</title>
-                    <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                    <title>X icon</title>
+                    <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/>
                 </svg>
             </a>
         {% endif %}
-        {% if siteconfig.socialMastodon %}
-            <a href="{{ siteconfig.socialMastodon }}" aria-label="Open Mastodon profile"  target="_blank" class="w-5 h-5" rel="me">
-                <svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <title>Mastodon icon</title>
-                    <path xmlns="http://www.w3.org/2000/svg" d="M11.19 12.195c2.016-.24 3.77-1.475 3.99-2.603.348-1.778.32-4.339.32-4.339 0-3.47-2.286-4.488-2.286-4.488C12.062.238 10.083.017 8.027 0h-.05C5.92.017 3.942.238 2.79.765c0 0-2.285 1.017-2.285 4.488l-.002.662c-.004.64-.007 1.35.011 2.091.083 3.394.626 6.74 3.78 7.57 1.454.383 2.703.463 3.709.408 1.823-.1 2.847-.647 2.847-.647l-.06-1.317s-1.303.41-2.767.36c-1.45-.05-2.98-.156-3.215-1.928a3.614 3.614 0 0 1-.033-.496s1.424.346 3.228.428c1.103.05 2.137-.064 3.188-.189zm1.613-2.47H11.13v-4.08c0-.859-.364-1.295-1.091-1.295-.804 0-1.207.517-1.207 1.541v2.233H7.168V5.89c0-1.024-.403-1.541-1.207-1.541-.727 0-1.091.436-1.091 1.296v4.079H3.197V5.522c0-.859.22-1.541.66-2.046.456-.505 1.052-.764 1.793-.764.856 0 1.504.328 1.933.983L8 4.39l.417-.695c.429-.655 1.077-.983 1.934-.983.74 0 1.336.259 1.791.764.442.505.661 1.187.661 2.046v4.203z"/>
+        {% if siteconfig.socialBluesky %}
+            <a href="{{ siteconfig.socialBluesky }}" aria-label="Open Bluesky profile"  target="_blank" class="w-5 h-5" rel="me">
+                <svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 530">
+                    <title>Bluesky icon</title>
+                    <path d="M135.72 44.03c66.496 49.921 138.02 151.14 164.28 205.46 26.26-54.32 97.782-155.54 164.28-205.46C491.1 28.52 568 13.07 568 74.21c0 15.19-11.584 139.28-17.358 158.99-23.264 79.32-96.507 97.99-161.334 87.38C496.325 339.61 568 399.36 568 457.56c0 26.02-23.616 42.44-59.342 42.44-87.526 0-135.65-42.44-198.284-99.48C247.74 457.56 199.618 500 112.092 500c-35.726 0-59.342-16.42-59.342-42.44 0-58.2 71.675-117.95 178.692-136.98C166.615 331.98 93.372 313.31 70.108 234.2 64.336 214.49 52.75 90.4 52.75 75.21 52.75 14.07 129.648 28.52 156.467 44.03H135.72z"/>
                 </svg>
             </a>
         {% endif %}

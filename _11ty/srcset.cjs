@@ -57,13 +57,11 @@ async function resize(filename, width, hash, format, metadataWidth) {
 
     const resizeWidth = metadataWidth < width ? metadataWidth : width;
 
-    await sharp(file)
-        .resize({ width: resizeWidth })
-        [format]({
-            quality: 80,
-            reductionEffort: 6
-        })
-        .toFile("_site/" + out);
+    const sharpInstance = sharp(file).resize({ width: resizeWidth });
+    await sharpInstance[format]({
+        quality: 80,
+        reductionEffort: 6
+    }).toFile("_site/" + out);
 
     return out;
 }

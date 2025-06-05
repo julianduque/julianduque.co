@@ -9,7 +9,7 @@ permalink: /blog.rss
   <subtitle>{{ siteconfig.description }}</subtitle>
   <link href="{{ '/blog.rss' | absoluteUrl }}" rel="self"/>
   <link href="{{ siteconfig.url }}"/>
-  <updated>{{ collections.posts | rssLastUpdatedDate }}</updated>
+  <updated>{{ collections.posts | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
   <id>{{ siteconfig.url }}</id>
   <author>
     <name>{{ siteconfig.author }}</name>
@@ -19,7 +19,7 @@ permalink: /blog.rss
   <entry>
     <title>{{ post.data.title }}</title>
     <link href="{{ absolutePostUrl }}"/>
-    <updated>{{ post.date | rssDate }}</updated>
+    <updated>{{ post.date | dateToRfc3339 }}</updated>
     <id>{{ absolutePostUrl }}</id>
     <content type="html">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) | truncate(400) }}</content>
   </entry>

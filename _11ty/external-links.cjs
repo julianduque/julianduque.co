@@ -2,7 +2,7 @@
 // and have for SEO reasons `rel="noopener"` set.
 
 const { JSDOM } = require("jsdom");
-const siteconfig = require("../content/_data/siteconfig");
+const siteconfig = require("../content/_data/siteconfig.cjs");
 
 const processHrefs = async (el) => {
     if (
