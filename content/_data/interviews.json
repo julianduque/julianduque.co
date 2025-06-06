@@ -1,5 +1,19 @@
 [
     {
+        "title": "On Stream: Run AI Inference and MCP tools on Heroku",
+        "url": "https://www.youtube.com/watch?v=kWYghAv_sJ8",
+        "source": "Bret Fisher",
+        "badgeColor": "purple",
+        "year": "2025"
+    },
+    {
+        "title": "What’s New About Heroku in 2025? AI Platform as a Service + What are MCPs?",
+        "url": "https://www.youtube.com/watch?v=xAE9xL_sHqw",
+        "source": "Modern Web Podcast - This Dot Media",
+        "badgeColor": "red",
+        "year": "2025"
+    },
+    {
         "title": "Salesforce Platform ft. Julian Duque & Mohith Shrivastava",
         "url": "https://www.youtube.com/watch?v=SSHpf6xvMaI",
         "source": "Build IT Better",

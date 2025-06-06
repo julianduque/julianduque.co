@@ -41,6 +41,23 @@ title: Home
     <summary
         class="cursor-pointer text-lg font-semibold hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
     >
+        {% tablerIcon "presentation" %}
+        <h4>Talks</h4>
+    </summary>
+
+    <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">
+        Talks I've given in multiple tech conferences
+    </p>
+
+    <div class="space-y-3">
+        {% for talk in talks %} {{ contentCard(talk, "talk") }} {% endfor %}
+    </div>
+</details>
+
+<details class="mb-6">
+    <summary
+        class="cursor-pointer text-lg font-semibold hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
+    >
         {% tablerIcon "microphone" %}
         <h4>Interviews</h4>
     </summary>
@@ -52,23 +69,6 @@ title: Home
     <div class="space-y-3">
         {% for interview in interviews %} {{ contentCard(interview, "interview")
         }} {% endfor %}
-    </div>
-</details>
-
-<details class="mb-6">
-    <summary
-        class="cursor-pointer text-lg font-semibold hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
-    >
-        {% tablerIcon "presentation" %}
-        <h4>Talks</h4>
-    </summary>
-
-    <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">
-        Talks I've given in multiple tech conferences
-    </p>
-
-    <div class="space-y-3">
-        {% for talk in talks %} {{ contentCard(talk, "talk") }} {% endfor %}
     </div>
 </details>
 

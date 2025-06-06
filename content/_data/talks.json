@@ -1,5 +1,26 @@
 [
     {
+        "title": "Build Agentic AI Applications with LangChain and Node.js",
+        "url": "https://www.youtube.com/watch?v=aB1oGQQAA_E",
+        "conference": "Node.js Global Summit '25",
+        "badgeColor": "purple",
+        "year": "2025"
+    },
+    {
+        "title": "The Hitchiker's Guide to Event Driven Architectures",
+        "url": "https://www.youtube.com/live/bKVfFN7QX8Y?si=TlBBsR882FimTnYl&t=25507",
+        "conference": "JSConf Mexico",
+        "badgeColor": "blue",
+        "year": "2024"
+    },
+    {
+        "title": "Life Beyond JSON",
+        "url": "https://www.youtube.com/watch?v=1nz6pw4hcDA",
+        "conference": "RenderATL",
+        "badgeColor": "red",
+        "year": "2023"
+    },
+    {
         "title": "Life Beyond JSON",
         "url": "https://www.youtube.com/live/nReMDgz02qo?feature=share&t=3394",
         "conference": "JSConf Chile",
@@ -35,7 +56,7 @@
         "year": "2018"
     },
     {
-        "title": "Node.js for frontend developers",
+        "title": "Node.js for Frontend Developers",
         "url": "https://www.youtube.com/watch?v=wVeBNQF_Tno",
         "conference": "Google I/O extended Guatemala",
         "badgeColor": "red",
