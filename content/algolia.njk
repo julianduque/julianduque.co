@@ -2,14 +2,8 @@
 eleventyExcludeFromCollections: true
 permalink: /algolia.json
 ---
-[
-{%- for post in collections.all -%}
-	{
-		"objectID": "{{ post.url | md5 }}",
-		"title": {{post.data.title | dump | safe }},
-		"date":"{{ page.date }}",
-		"url":"{{ post.url }}",
-		"content":{{ post.templateContent | algExcerpt | dump | safe }}
-	}{%- if not loop.last -%},{%- endif -%}
-{%- endfor -%}
-]
+
+[ {%- for post in collections.all -%} { "objectID": "{{ post.url | md5 }}",
+"title": {{post.data.title | dump | safe }}, "date":"{{ page.date }}", "url":"{{
+post.url }}", "content":{{ post.templateContent | algExcerpt | dump | safe }}
+}{%- if not loop.last -%},{%- endif -%} {%- endfor -%} ]

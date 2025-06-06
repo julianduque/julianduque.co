@@ -7,3 +7,6 @@ _site/
 .vscode/
 assets/css/*-build.css
 assets/js/*.js
+
+# Complex Nunjucks templates with conditional HTML structure
+content/archive.njk

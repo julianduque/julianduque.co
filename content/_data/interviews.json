@@ -1,0 +1,93 @@
+[
+    {
+        "title": "Salesforce Platform ft. Julian Duque & Mohith Shrivastava",
+        "url": "https://www.youtube.com/watch?v=SSHpf6xvMaI",
+        "source": "Build IT Better",
+        "badgeColor": "blue",
+        "year": "2021"
+    },
+    {
+        "title": "Interview with Julián Duque from Heroku",
+        "url": "https://www.youtube.com/watch?v=S1ZoWhkKjWo",
+        "source": "Developer Advocate Stories by EuropeClouds",
+        "badgeColor": "green",
+        "year": "2020"
+    },
+    {
+        "title": "Entrevista a Julián Duque",
+        "url": "https://www.youtube.com/watch?v=VHcsZgTNYg4",
+        "source": "Ciclo de Charlas Online de Chicas Programando",
+        "badgeColor": "pink",
+        "year": "2020"
+    },
+    {
+        "title": "Cómo ser Developer Advocate",
+        "url": "https://www.youtube.com/watch?v=AH4zsKyrjpE",
+        "source": "LeonidasEsteban",
+        "badgeColor": "orange",
+        "year": "2020"
+    },
+    {
+        "title": "Entrevista a Julián Duque de Heroku",
+        "url": "https://www.youtube.com/watch?v=pmNtWrhXaH8",
+        "source": "SoftwareGuru",
+        "badgeColor": "purple",
+        "year": "2020"
+    },
+    {
+        "title": "¿Por qué Node.js?",
+        "url": "https://www.youtube.com/watch?v=Y6SH0QaJZO4",
+        "source": "MaestriaJS",
+        "badgeColor": "teal",
+        "year": "2019"
+    },
+    {
+        "title": "Interviews from JSConf - with Michael Chan, Juan Pablo Buriticá, Julián David Duque, and Tim Doherty",
+        "url": "https://changelog.com/jsparty/43",
+        "source": "JS Party",
+        "badgeColor": "yellow",
+        "year": "2018"
+    },
+    {
+        "title": "Cómo hacer rentable el código Open Source",
+        "url": "https://www.youtube.com/watch?v=YYszZE99wOg",
+        "source": "Platzi",
+        "badgeColor": "indigo",
+        "year": "2017"
+    },
+    {
+        "title": "IO.js, el futuro de Node.js",
+        "url": "https://www.youtube.com/watch?v=UiZseBC8tRo",
+        "source": "Platzi",
+        "badgeColor": "indigo",
+        "year": "2015"
+    },
+    {
+        "title": "NodersCast - Episodio 02",
+        "url": "https://www.youtube.com/watch?v=i2qqa2ZDLyo",
+        "source": "NodersCast",
+        "badgeColor": "green",
+        "year": "2015"
+    },
+    {
+        "title": "JavaScript Robotics, A NodeBots show",
+        "url": "https://www.youtube.com/watch?v=Pjb002vSvVc",
+        "source": "JSConf.ar",
+        "badgeColor": "blue",
+        "year": "2014"
+    },
+    {
+        "title": "Entrevista a Julián Duque de Nodejitsu",
+        "url": "https://www.youtube.com/watch?v=af7ceV0TQlM",
+        "source": "mejorando.la",
+        "badgeColor": "red",
+        "year": "2013"
+    },
+    {
+        "title": "JavaScript, el lenguaje de programación",
+        "url": "https://www.youtube.com/watch?v=dqgVxZgaEKM",
+        "source": "Versión Beta",
+        "badgeColor": "gray",
+        "year": "2013"
+    }
+]

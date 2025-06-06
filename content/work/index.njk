@@ -1,0 +1,88 @@
+---
+layout: page.njk
+title: Work
+image: /assets/images/work/presenting.png
+imageAlt: Julián Duque presenting at TDX23
+---
+
+{% from "workCard.njk" import workCard %}
+
+<h2>Work</h2>
+
+<p>
+    Here you can find some of the content I've created professionally as a
+    Developer Advocate during my career.
+</p>
+
+<h3>Salesforce / Heroku</h3>
+
+<details class="mb-6">
+    <summary
+        class="cursor-pointer text-lg font-semibold hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
+    >
+        {% tablerIcon "file-text" %}
+        <h4 class="inline">Blog Posts</h4>
+    </summary>
+
+    <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">
+        Blog posts and technical articles I've written at Salesforce and Heroku
+    </p>
+
+    <div class="space-y-3">
+        {% for post in workPosts.salesforce %} {{ workCard(post) }} {% endfor %}
+    </div>
+</details>
+
+<details class="mb-6">
+    <summary
+        class="cursor-pointer text-lg font-semibold hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
+    >
+        {% tablerIcon "video" %}
+        <h4 class="inline">Videos</h4>
+    </summary>
+
+    <p class="text-sm text-gray-600 dark:text-gray-400 mb-0 pb-0">
+        Videos and technical presentations I've created at Salesforce and Heroku
+    </p>
+
+    <div class="space-y-3">
+        {% for video in workVideos %} {{ workCard(video) }} {% endfor %}
+    </div>
+</details>
+
+<details class="mb-6">
+    <summary
+        class="cursor-pointer text-lg font-semibold hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
+    >
+        {% tablerIcon "microphone" %}
+        <h4 class="inline">Podcasts</h4>
+    </summary>
+
+    <p class="text-sm text-gray-600 dark:text-gray-400 mb-0 pb-0">
+        Podcast episodes where I've been a guest or host at Salesforce and
+        Heroku
+    </p>
+
+    <div class="space-y-3">
+        {% for podcast in workPodcasts %} {{ workCard(podcast) }} {% endfor %}
+    </div>
+</details>
+
+<h3>NodeSource</h3>
+
+<details class="mb-6">
+    <summary
+        class="cursor-pointer text-lg font-semibold hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
+    >
+        {% tablerIcon "file-text" %}
+        <h4 class="inline">Blog Posts</h4>
+    </summary>
+
+    <p class="text-sm text-gray-600 dark:text-gray-400 mb-0 pb-0">
+        Blog posts written during my time at NodeSource
+    </p>
+
+    <div class="space-y-3">
+        {% for post in workPosts.nodesource %} {{ workCard(post) }} {% endfor %}
+    </div>
+</details>

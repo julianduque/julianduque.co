@@ -1,0 +1,111 @@
+{
+    "salesforce": [
+        {
+            "title": "Design a Swagger API with Code to Bring Data into Salesforce",
+            "url": "https://developer.salesforce.com/blogs/2023/06/design-a-swagger-api-with-code-to-bring-data-into-salesforce",
+            "platform": "Salesforce Developer Blog",
+            "date": "2023-06-06",
+            "color": "blue"
+        },
+        {
+            "title": "Platform Integration Updates for Developers | Learn Moar Summer '23",
+            "url": "https://developer.salesforce.com/blogs/2023/05/platform-integration-updates-for-developers-learn-moar-summer-23",
+            "platform": "Salesforce Developer Blog",
+            "date": "2023-05-15",
+            "color": "blue"
+        },
+        {
+            "title": "Building a Salesforce CLI Plug-In",
+            "url": "https://developer.salesforce.com/blogs/2023/01/building-a-salesforce-cli-plug-in",
+            "platform": "Salesforce Developer Blog",
+            "date": "2023-01-10",
+            "color": "blue"
+        },
+        {
+            "title": "Recipes for Accessing Heroku Data from Salesforce Functions",
+            "url": "https://developer.salesforce.com/blogs/2022/11/recipes-for-accessing-heroku-data-from-salesforce-functions",
+            "platform": "Salesforce Developer Blog",
+            "date": "2022-11-22",
+            "color": "blue"
+        },
+        {
+            "title": "Building a CLI Application with oclif",
+            "url": "https://developer.salesforce.com/blogs/2022/10/building-a-cli-application-with-oclif",
+            "platform": "Salesforce Developer Blog",
+            "date": "2022-10-26",
+            "color": "blue"
+        },
+        {
+            "title": "Exploring the Salesforce GraphQL API – Part Two",
+            "url": "https://developer.salesforce.com/blogs/2022/05/exploring-the-salesforce-graphql-api-part-two",
+            "platform": "Salesforce Developer Blog",
+            "date": "2022-05-10",
+            "color": "blue"
+        },
+        {
+            "title": "Develop Functions Faster with Containerless Local Development",
+            "url": "https://developer.salesforce.com/blogs/2022/02/develop-functions-faster-with-containerless-local-development",
+            "platform": "Salesforce Developer Blog",
+            "date": "2022-02-28",
+            "color": "blue"
+        },
+        {
+            "title": "Getting Started with Salesforce Functions Locally. No license required!",
+            "url": "https://developer.salesforce.com/blogs/2021/11/getting-started-with-salesforce-functions-locally-no-license-required",
+            "platform": "Salesforce Developer Blog",
+            "date": "2021-11-23",
+            "color": "blue"
+        },
+        {
+            "title": "Accessing a PostgreSQL Database from Node.js",
+            "url": "https://developer.salesforce.com/blogs/2021/11/accessing-a-postgresql-database-from-node-js",
+            "platform": "Salesforce Developer Blog",
+            "date": "2021-11-16",
+            "color": "blue"
+        },
+        {
+            "title": "Building Your First Web Application Using Node.js",
+            "url": "https://developer.salesforce.com/blogs/2021/07/building-your-first-web-application-using-node-js",
+            "platform": "Salesforce Developer Blog",
+            "date": "2021-07-21",
+            "color": "blue"
+        },
+        {
+            "title": "Deliver Scalable Experiences Without Limits Using Functions",
+            "url": "https://developer.salesforce.com/blogs/2021/06/functions-announcement",
+            "platform": "Salesforce Developer Blog",
+            "date": "2021-06-23",
+            "color": "blue"
+        },
+        {
+            "title": "Let's Debug a Node.js Application",
+            "url": "https://blog.heroku.com/debug-node-applications",
+            "platform": "Heroku Blog",
+            "date": "2020-08-03",
+            "color": "purple"
+        },
+        {
+            "title": "Let It Crash: Best Practices for Handling Node.js Errors on Shutdown",
+            "url": "https://blog.heroku.com/best-practices-nodejs-errors",
+            "platform": "Heroku Blog",
+            "date": "2019-12-17",
+            "color": "purple"
+        }
+    ],
+    "nodesource": [
+        {
+            "title": "Deploying Node.js microservices to ZEIT ▲ Now",
+            "url": "https://nodesource.com/blog/deploying-nodejs-microservices-to-ZEIT",
+            "platform": "NodeSource Blog",
+            "date": "2019-04-05",
+            "color": "green"
+        },
+        {
+            "title": "Tutorial: Getting Started on N|Solid for AWS Lambda with CloudFormation and Serverless",
+            "url": "https://nodesource.com/blog/tutorial-getting-started-monitoring-aws-lambda-serverless",
+            "platform": "NodeSource Blog",
+            "date": "2018-12-14",
+            "color": "green"
+        }
+    ]
+}

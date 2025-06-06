@@ -1,0 +1,23 @@
+[
+    {
+        "name": "JSConf Colombia",
+        "url": "https://jsconf.co/",
+        "role": "Organizer",
+        "badgeColor": "indigo",
+        "dateRange": "2013 - 2023"
+    },
+    {
+        "name": "NodeConf Colombia",
+        "url": "https://colombia.nodeconf.com/",
+        "role": "Organizer",
+        "badgeColor": "green",
+        "dateRange": "2019 - 2020"
+    },
+    {
+        "name": "MedellinJS",
+        "url": "https://meetup.com/MedellinJS",
+        "role": "Organizer",
+        "badgeColor": "purple",
+        "dateRange": "2011 - 2019"
+    }
+]

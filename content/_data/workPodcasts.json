@@ -1,0 +1,93 @@
+[
+    {
+        "title": "Episode 109: Salesforce Functions with Jonathan Jenkins",
+        "url": "https://developer.salesforce.com/podcast/2021/11/episode-109-salesforce-functions-with-jonathan-jenkins",
+        "platform": "Salesforce Podcast",
+        "date": "2021-11-21",
+        "color": "blue"
+    },
+    {
+        "title": "108. Building Community with the Wicked CoolKit",
+        "url": "https://www.heroku.com/podcasts/codeish/108-building-community-with-the-wicked-coolkit",
+        "platform": "Code[ish]",
+        "date": "2021-01-26",
+        "color": "purple"
+    },
+    {
+        "title": "99. The Technical Side of Deep Fakes",
+        "url": "https://www.heroku.com/podcasts/codeish/99-the-technical-side-of-deep-fakes",
+        "platform": "Code[ish]",
+        "date": "2020-12-01",
+        "color": "purple"
+    },
+    {
+        "title": "98. The Ethical Side of Deep Fakes",
+        "url": "https://www.heroku.com/podcasts/codeish/98-the-ethical-side-of-deep-fakes",
+        "platform": "Code[ish]",
+        "date": "2020-11-24",
+        "color": "purple"
+    },
+    {
+        "title": "93. Conferences in a Virtual World",
+        "url": "https://www.heroku.com/podcasts/codeish/93-conferences-in-a-virtual-world",
+        "platform": "Code[ish]",
+        "date": "2020-10-20",
+        "color": "purple"
+    },
+    {
+        "title": "Special Episode: Giving Back in Today's World",
+        "url": "https://www.heroku.com/podcasts/codeish/special-episode-giving-back-in-todays-world",
+        "platform": "Code[ish]",
+        "date": "2020-07-09",
+        "color": "purple"
+    },
+    {
+        "title": "74. How Dev.to Built a Community",
+        "url": "https://www.heroku.com/podcasts/codeish/74-how-devto-built-a-community",
+        "platform": "Code[ish]",
+        "date": "2020-06-30",
+        "color": "purple"
+    },
+    {
+        "title": "63. Streaming Music to Livestreamers",
+        "url": "https://www.heroku.com/podcasts/codeish/63-streaming-music-to-livestreamers",
+        "platform": "Code[ish]",
+        "date": "2020-03-31",
+        "color": "purple"
+    },
+    {
+        "title": "62. Crowdsourcing Code Translation",
+        "url": "https://www.heroku.com/podcasts/codeish/62-crowdsourcing-code-translation",
+        "platform": "Code[ish]",
+        "date": "2020-03-24",
+        "color": "purple"
+    },
+    {
+        "title": "53. Scaling Telecommunications Data with a Service Mesh",
+        "url": "https://www.heroku.com/podcasts/codeish/53-scaling-telecommunications-data-with-a-service-mesh",
+        "platform": "Code[ish]",
+        "date": "2020-01-21",
+        "color": "purple"
+    },
+    {
+        "title": "51. Best Practices in Error Handling",
+        "url": "https://www.heroku.com/podcasts/codeish/51-best-practices-in-error-handling",
+        "platform": "Code[ish]",
+        "date": "2020-01-07",
+        "color": "purple"
+    },
+    {
+        "title": "48. From NodeConf EU 2019",
+        "url": "https://www.heroku.com/podcasts/codeish/48-from-nodeconf-eu-2019",
+        "platform": "Code[ish]",
+        "date": "2019-12-17",
+        "color": "purple"
+    },
+    {
+        "title": "42. How to Prepare for Coding Interviews",
+        "url": "https://www.heroku.com/podcasts/codeish/42-how-to-prepare-for-coding-interviews",
+        "platform": "Code[ish]",
+        "date": "2019-11-05",
+        "color": "purple"
+    }
+]

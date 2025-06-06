@@ -6,13 +6,13 @@ module.exports = {
     // Site URL to generate absolute URLs. Used across the board.
     url: process.env.URL || "http://localhost:8080",
     // Profile image for left sidebar
-    image: "/assets/images/mntd_hexagon.png",
+    image: "/assets/images/headshot.jpg",
     // Image alt text for left sidebar
     imageAlt: "Software Development and Education",
     // Author name, shown in left sidebar, and used in JSON-LD
     author: "Julián Duque",
     // Site description, shown below site image (optional)
-    description: "Developer and Educator",
+    description: "Developer Relations, Education, and Community",
     // OpenGraph default image, in case you don't have an `image`
     // set in your Markdown frontmatter; relevant for social
     // sharing.

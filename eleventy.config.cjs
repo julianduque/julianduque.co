@@ -47,6 +47,22 @@ module.exports = function (eleventyConfig) {
         extractExcerpt(article)
     );
 
+    // Add Tabler icon shortcode
+    eleventyConfig.addShortcode("tablerIcon", function(iconName, className = "inline-block h-5 w-5 mr-2") {
+        const fs = require('fs');
+        const path = require('path');
+        try {
+            const iconPath = path.join(process.cwd(), 'assets', 'icons', 'tabler', `${iconName}.svg`);
+            let iconContent = fs.readFileSync(iconPath, 'utf8');
+            // Add custom classes
+            iconContent = iconContent.replace('class="icon icon-tabler', `class="${className} icon icon-tabler`);
+            return iconContent;
+        } catch (error) {
+            console.warn(`Icon ${iconName} not found`);
+            return `<!-- Icon ${iconName} not found -->`;
+        }
+    });
+
     // Set absolute url
     eleventyConfig.addNunjucksFilter("absoluteUrl", (path) => {
         return new URL(path, siteconfig.url).toString();

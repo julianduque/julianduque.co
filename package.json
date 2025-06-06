@@ -19,8 +19,10 @@
         "lint:js": "eslint \"**/*.js\"",
         "postinstall": "husky install",
         "precommit": "pnpm run prettier && pnpm run lint",
-        "prettier": "prettier --write \"**/*.{css,html,js,json,md,yaml,yml}\"",
-        "prettier:verify": "prettier --list-different \"**/*.{css,html,js,json,md,yaml,yml}\""
+        "prettier": "prettier --write \"**/*.{css,html,js,json,md,njk,yaml,yml}\"",
+        "prettier:verify": "prettier --list-different \"**/*.{css,html,js,json,md,njk,yaml,yml}\"",
+        "prettier:markdown": "prettier --write \"content/**/*.md\"",
+        "prettier:njk": "prettier --write \"**/*.njk\""
     },
     "dependencies": {
         "@11ty/eleventy": "^3.1.1",
@@ -45,6 +47,7 @@
     },
     "devDependencies": {
         "@eslint/js": "^9.17.0",
+        "@prettier/plugin-xml": "^3.4.1",
         "@rollup/plugin-terser": "^0.4.4",
         "concurrently": "^9.1.0",
         "eslint": "^9.17.0",
@@ -54,6 +57,7 @@
         "markdownlint": "^0.38.0",
         "markdownlint-cli2": "^0.18.1",
         "prettier": "^3.4.2",
+        "prettier-plugin-embed": "^0.5.0",
         "tailwindcss": "^3.4.17"
     },
     "volta": {

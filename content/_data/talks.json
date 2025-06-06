@@ -1,0 +1,65 @@
+[
+    {
+        "title": "Life Beyond JSON",
+        "url": "https://www.youtube.com/live/nReMDgz02qo?feature=share&t=3394",
+        "conference": "JSConf Chile",
+        "badgeColor": "blue",
+        "year": "2023"
+    },
+    {
+        "title": "Building an extensible CLI tool with oclif",
+        "url": "https://www.youtube.com/watch?v=x-IjPwEtx-s&t=24999s",
+        "conference": "JavaScript Global Summit '22",
+        "badgeColor": "purple",
+        "year": "2022"
+    },
+    {
+        "title": "Let it crash!",
+        "url": "https://www.youtube.com/watch?v=Fguac8pIAtU",
+        "conference": "NodeConfEU",
+        "badgeColor": "green",
+        "year": "2019"
+    },
+    {
+        "title": "The Butterfly Effect with Juan Pablo Buritica",
+        "url": "https://www.youtube.com/watch?v=3Ya3Cm7xmwY",
+        "conference": "JSConf",
+        "badgeColor": "yellow",
+        "year": "2018"
+    },
+    {
+        "title": "Node.js & Blockchain",
+        "url": "https://www.youtube.com/watch?v=iq48GcfBqGE",
+        "conference": "NodeConf Argentina",
+        "badgeColor": "teal",
+        "year": "2018"
+    },
+    {
+        "title": "Node.js for frontend developers",
+        "url": "https://www.youtube.com/watch?v=wVeBNQF_Tno",
+        "conference": "Google I/O extended Guatemala",
+        "badgeColor": "red",
+        "year": "2018"
+    },
+    {
+        "title": "Cómo construir comunidades impulsadas por la pasión",
+        "url": "https://www.youtube.com/watch?v=1eavCX-mB3E",
+        "conference": "PlatziConf",
+        "badgeColor": "indigo",
+        "year": "2017"
+    },
+    {
+        "title": "JavaScript Robotics: A NodeBots show",
+        "url": "https://www.youtube.com/watch?v=8wtT6fUdOhc",
+        "conference": "BrazilJS",
+        "badgeColor": "orange",
+        "year": "2015"
+    },
+    {
+        "title": "JavaScript Robotics: A NodeBots show",
+        "url": "https://www.youtube.com/watch?v=N3t2t_WM_go",
+        "conference": "JSConf.ar",
+        "badgeColor": "blue",
+        "year": "2014"
+    }
+]

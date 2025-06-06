@@ -1,4 +1,19 @@
 {
     "trailingComma": "none",
-    "tabWidth": 4
+    "tabWidth": 4,
+    "embeddedLanguageFormatting": "auto",
+    "htmlWhitespaceSensitivity": "css",
+    "proseWrap": "preserve",
+    "plugins": ["prettier-plugin-embed", "@prettier/plugin-xml"],
+    "overrides": [
+        {
+            "files": "*.njk",
+            "options": {
+                "parser": "html",
+                "htmlWhitespaceSensitivity": "ignore",
+                "bracketSameLine": false,
+                "singleAttributePerLine": false
+            }
+        }
+    ]
 }

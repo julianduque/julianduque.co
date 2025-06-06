@@ -68,6 +68,9 @@ importers:
             "@eslint/js":
                 specifier: ^9.17.0
                 version: 9.28.0
+            "@prettier/plugin-xml":
+                specifier: ^3.4.1
+                version: 3.4.1(prettier@3.5.3)
             "@rollup/plugin-terser":
                 specifier: ^0.4.4
                 version: 0.4.4(rollup@4.41.1)
@@ -95,6 +98,9 @@ importers:
             prettier:
                 specifier: ^3.4.2
                 version: 3.5.3
+            prettier-plugin-embed:
+                specifier: ^0.5.0
+                version: 0.5.0
             tailwindcss:
                 specifier: ^3.4.17
                 version: 3.4.17
@@ -584,6 +590,14 @@ packages:
             }
         engines: { node: ">=14" }
 
+    "@prettier/plugin-xml@3.4.1":
+        resolution:
+            {
+                integrity: sha512-Uf/6/+9ez6z/IvZErgobZ2G9n1ybxF5BhCd7eMcKqfoWuOzzNUxBipNo3QAP8kRC1VD18TIo84no7LhqtyDcTg==
+            }
+        peerDependencies:
+            prettier: ^3.0.0
+
     "@rollup/plugin-replace@6.0.2":
         resolution:
             {
@@ -860,6 +874,12 @@ packages:
         resolution:
             {
                 integrity: sha512-CmBKiL6NNo/OqgmMn95Fk9Whlp2mtvIv+KNpQKN2F4SjvrEesubTRWGYSg+BnWZOnlCaSTU1sMpsBOzgbYhnsA==
+            }
+
+    "@xml-tools/parser@1.0.11":
+        resolution:
+            {
+                integrity: sha512-aKqQ077XnR+oQtHJlrAflaZaL7qZsulWc/i/ZEooar5JiWj1eLt0+Wg28cpa+XLney107wXqneC+oG1IZvxkTA==
             }
 
     a-sync-waterfall@1.0.1:
@@ -1146,6 +1166,12 @@ packages:
                 integrity: sha512-quS9HgjQpdaXOvsZz82Oz7uxtXiy6UIsIQcpBj7HRw2M63Skasm9qlDocAM7jNuaxdhpPU7c4kJN+gA5MCu4ww==
             }
         engines: { node: ">=18.17" }
+
+    chevrotain@7.1.1:
+        resolution:
+            {
+                integrity: sha512-wy3mC1x4ye+O+QkEinVJkPf5u2vsrDIYW9G7ZuwFl6v/Yu0LwUuT2POsb+NUWApebyxfkQq6+yDfRExbnI5rcw==
+            }
 
     chokidar@3.6.0:
         resolution:
@@ -1464,6 +1490,17 @@ packages:
             {
                 integrity: sha512-Wy+JTSbFThEOXQIR2L6mxJvEs+veIzpmqD7ynWxMXGpnk3smkHQOp6forLdHsKpAMW9iJpaBBIxz285t1n1C3w==
             }
+
+    dedent@1.6.0:
+        resolution:
+            {
+                integrity: sha512-F1Z+5UCFpmQUzJa11agbyPVMbpgT/qA3/SKyJ1jyBgm7dUcUEa8v9JwDkerSQXfakBwFljIxhOJqGkjUwZ9FSA==
+            }
+        peerDependencies:
+            babel-plugin-macros: ^3.1.0
+        peerDependenciesMeta:
+            babel-plugin-macros:
+                optional: true
 
     deep-is@0.1.4:
         resolution:
@@ -1891,6 +1928,13 @@ packages:
                 integrity: sha512-6BN9trH7bp3qvnrRyzsBz+g3lZxTNZTbVO2EV1CS0WIcDbawYVdYvGflME/9QP0h0pYlCDBCTjYa9nZzMDpyxQ==
             }
         engines: { node: ">= 0.8" }
+
+    find-up-simple@1.0.1:
+        resolution:
+            {
+                integrity: sha512-afd4O7zpqHeRyg4PfDQsXmlDe2PfdHtJt6Akt8jOWaApLOZk5JXs6VMR29lz03pRe9mpykrRCYIYxaJYcfpncQ==
+            }
+        engines: { node: ">=18" }
 
     find-up@5.0.0:
         resolution:
@@ -2608,6 +2652,12 @@ packages:
             }
         engines: { node: ">= 8" }
 
+    micro-memoize@4.1.3:
+        resolution:
+            {
+                integrity: sha512-DzRMi8smUZXT7rCGikRwldEh6eO6qzKiPPopcr1+2EY3AYKpy5fu159PKWwIS9A6IWnrvPKDMcuFtyrroZa8Bw==
+            }
+
     micromark-core-commonmark@2.0.3:
         resolution:
             {
@@ -3010,6 +3060,13 @@ packages:
             {
                 integrity: sha512-UEZIS3/by4OC8vL3P2dTXRETpebLI2NiI5vIrjaD/5UtrkFX/tNbwjTSRAGC/+7CAo2pIcBaRgWmcBBHcsaCIw==
             }
+
+    package-up@5.0.0:
+        resolution:
+            {
+                integrity: sha512-MQEgDUvXCa3sGvqHg3pzHO8e9gqTCMPVrWUko3vPQGntwegmFo52mZb2abIVTjFnUcW0BcPz0D93jV5Cas1DWA==
+            }
+        engines: { node: ">=18" }
 
     param-case@2.1.1:
         resolution:
@@ -3829,6 +3886,12 @@ packages:
             }
         engines: { node: ">= 0.8.0" }
 
+    prettier-plugin-embed@0.5.0:
+        resolution:
+            {
+                integrity: sha512-A5nzX8U9x+FJdpOKrDrH9eq86xHZNiGguWpphS6chTME0OK1bDgH1X+WLtZq7qV3kUEMkL/dHkr6C1NLdUA7RQ==
+            }
+
     prettier@3.5.3:
         resolution:
             {
@@ -3902,6 +3965,12 @@ packages:
                 integrity: sha512-hOS089on8RduqdbhvQ5Z37A0ESjsqz6qnRcffsMU3495FuTdqSm+7bhJ29JvIOsBDEEnan5DPu9t3To9VRlMzA==
             }
         engines: { node: ">=8.10.0" }
+
+    regexp-to-ast@0.5.0:
+        resolution:
+            {
+                integrity: sha512-tlbJqcMHnPKI9zSrystikWKwHkBqu2a/Sgw01h3zFjvYrMxEDYHzzoMZnUrbIfpTFEsoRnnviOXNCzFiSc54Qw==
+            }
 
     relateurl@0.2.7:
         resolution:
@@ -4345,6 +4414,12 @@ packages:
                 integrity: sha512-RVZSIV5IG10Hk3enotrhvz0T9em6cyHBLkH/YAZuKqd8hRkKhSfCGIcP2KUY0EPxndzANBmNllzWPwak+bheSw==
             }
 
+    tiny-jsonc@1.0.2:
+        resolution:
+            {
+                integrity: sha512-f5QDAfLq6zIVSyCZQZhhyl0QS6MvAyTxgz4X4x3+EoCktNWEYJ6PeoEA97fyb98njpBNNi88ybpD7m+BDFXaCw==
+            }
+
     tinyglobby@0.2.14:
         resolution:
             {
@@ -4418,6 +4493,13 @@ packages:
                 integrity: sha512-XleUoc9uwGXqjWwXaUTZAmzMcFZ5858QA2vvx1Ur5xIcixXIP+8LnFDgRplU30us6teqdlskFfu+ae4K79Ooew==
             }
         engines: { node: ">= 0.8.0" }
+
+    type-fest@4.41.0:
+        resolution:
+            {
+                integrity: sha512-TeTSQ6H5YHvpqVwBRcnLDCBnDOHWYu7IvGbHT6N8AOymcr9PJGjc1GTtiWZTYg0NCgYwvnYWEkVChQAr9bjfwA==
+            }
+        engines: { node: ">=16" }
 
     uc.micro@2.1.0:
         resolution:
@@ -4955,6 +5037,11 @@ snapshots:
     "@pkgjs/parseargs@0.11.0":
         optional: true
 
+    "@prettier/plugin-xml@3.4.1(prettier@3.5.3)":
+        dependencies:
+            "@xml-tools/parser": 1.0.11
+            prettier: 3.5.3
+
     "@rollup/plugin-replace@6.0.2(rollup@4.41.1)":
         dependencies:
             "@rollup/pluginutils": 5.1.4(rollup@4.41.1)
@@ -5073,6 +5160,10 @@ snapshots:
     "@types/ms@2.1.0": {}
 
     "@types/unist@2.0.11": {}
+
+    "@xml-tools/parser@1.0.11":
+        dependencies:
+            chevrotain: 7.1.1
 
     a-sync-waterfall@1.0.1: {}
 
@@ -5234,6 +5325,10 @@ snapshots:
             parse5-parser-stream: 7.1.2
             undici: 6.21.3
             whatwg-mimetype: 4.0.0
+
+    chevrotain@7.1.1:
+        dependencies:
+            regexp-to-ast: 0.5.0
 
     chokidar@3.6.0:
         dependencies:
@@ -5475,6 +5570,8 @@ snapshots:
     decode-named-character-reference@1.1.0:
         dependencies:
             character-entities: 2.0.2
+
+    dedent@1.6.0: {}
 
     deep-is@0.1.4: {}
 
@@ -5723,6 +5820,8 @@ snapshots:
             unpipe: 1.0.0
         transitivePeerDependencies:
             - supports-color
+
+    find-up-simple@1.0.1: {}
 
     find-up@5.0.0:
         dependencies:
@@ -6125,6 +6224,8 @@ snapshots:
 
     merge2@1.4.1: {}
 
+    micro-memoize@4.1.3: {}
+
     micromark-core-commonmark@2.0.3:
         dependencies:
             decode-named-character-reference: 1.1.0
@@ -6419,6 +6520,10 @@ snapshots:
             p-finally: 1.0.0
 
     package-json-from-dist@1.0.1: {}
+
+    package-up@5.0.0:
+        dependencies:
+            find-up-simple: 1.0.1
 
     param-case@2.1.1:
         dependencies:
@@ -6914,6 +7019,17 @@ snapshots:
 
     prelude-ls@1.2.1: {}
 
+    prettier-plugin-embed@0.5.0:
+        dependencies:
+            "@types/estree": 1.0.7
+            dedent: 1.6.0
+            micro-memoize: 4.1.3
+            package-up: 5.0.0
+            tiny-jsonc: 1.0.2
+            type-fest: 4.41.0
+        transitivePeerDependencies:
+            - babel-plugin-macros
+
     prettier@3.5.3: {}
 
     pretty-hrtime@1.0.3: {}
@@ -6941,6 +7057,8 @@ snapshots:
     readdirp@3.6.0:
         dependencies:
             picomatch: 2.3.1
+
+    regexp-to-ast@0.5.0: {}
 
     relateurl@0.2.7: {}
 
@@ -7262,6 +7380,8 @@ snapshots:
         dependencies:
             any-promise: 1.3.0
 
+    tiny-jsonc@1.0.2: {}
+
     tinyglobby@0.2.14:
         dependencies:
             fdir: 6.4.5(picomatch@4.0.2)
@@ -7296,6 +7416,8 @@ snapshots:
     type-check@0.4.0:
         dependencies:
             prelude-ls: 1.2.1
+
+    type-fest@4.41.0: {}
 
     uc.micro@2.1.0: {}
 
