@@ -19,33 +19,54 @@ dark:text-gray-200" } -%}
             href="{{ item.url }}"
             class="text-indigo-600 dark:text-indigo-400 hover:underline font-medium"
         >
-            {%- if type == "book" -%} {{ item.title }} {%- else -%} {{
-            item.title or item.name }} {%- endif -%}
+            {%- if type == "book" -%} {{ item.title }} {%- elif type ==
+            "opensource" -%} {{ item.name }} {%- else -%} {{ item.title or
+            item.name }} {%- endif -%}
         </a>
 
         {%- if type == "book" and item.subtitle -%}
         <div class="text-sm text-gray-600 dark:text-gray-400 mt-1">
             {{ item.subtitle }}
         </div>
+        {%- endif -%} {%- if type == "opensource" and item.description -%}
+        <div class="text-sm text-gray-600 dark:text-gray-400 mt-1">
+            {{ item.description }}
+        </div>
         {%- endif -%}
 
-        <div class="mt-1">
+        <div class="mt-2">
+            {%- if type == "opensource" -%} {%- if item.language -%}
             <span
-                class="px-2 py-1 {{ colorClasses[item.badgeColor] or colorClasses.gray }} rounded-md text-sm"
+                class="px-2 py-1 {{ colorClasses[item.badgeColor] or colorClasses.blue }} rounded-md text-sm mr-2"
+            >
+                {{ item.language }}
+            </span>
+            {%- endif -%} {%- if item.tags -%} {%- for tag in item.tags -%}
+            <span
+                class="px-2 py-1 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-md text-sm mr-1 mb-1 inline-block"
+            >
+                {{ tag }}
+            </span>
+            {%- endfor -%} {%- endif -%} {%- else -%}
+            <span
+                class="px-2 py-1 {{ colorClasses[item.badgeColor] or colorClasses.blue }} rounded-md text-sm"
             >
                 {%- if type == "community" -%} {{ item.role }} {%- elif type ==
                 "interview" -%} {{ item.source }} {%- elif type == "talk" -%} {{
                 item.conference }} {%- elif type == "book" -%} {{ item.publisher
                 }} {%- else -%} {{ item.category or item.type }} {%- endif -%}
             </span>
+            {%- endif -%}
         </div>
     </div>
 
+    {%- if item.year or item.dateRange -%}
     <div
         class="mt-2 sm:mt-0 text-sm text-gray-600 dark:text-gray-400 flex items-center"
     >
         {% tablerIcon "calendar" %} {%- if type == "community" -%} {{
         item.dateRange }} {%- else -%} {{ item.year }} {%- endif -%}
     </div>
+    {%- endif -%}
 </div>
 {% endmacro %}

@@ -1,0 +1,18 @@
+[
+    {
+        "name": "Heroku LangChain.js",
+        "url": "https://github.com/julianduque/heroku-langchain",
+        "description": "Integrate LangChainJS with Heroku's Managed Inference and Agents (Mia) services",
+        "language": "JavaScript/TypeScript",
+        "tags": ["langchain", "langgraph", "heroku", "ai", "agents"],
+        "badgeColor": "yellow"
+    },
+    {
+        "name": "Erlang Color",
+        "url": "https://github.com/julianduque/erlang-color",
+        "description": "ANSI colors for your Erlang",
+        "language": "Erlang",
+        "tags": ["erlang", "terminal", "color"],
+        "badgeColor": "red"
+    }
+]

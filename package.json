@@ -17,7 +17,7 @@
         "lint": "pnpm run lint:markdown && pnpm run lint:js",
         "lint:markdown": "pnpm dlx markdownlint-cli2 \"./content/**/*.md\"",
         "lint:js": "eslint \"**/*.js\"",
-        "postinstall": "husky install",
+        "postinstall": "husky",
         "precommit": "pnpm run prettier && pnpm run lint",
         "prettier": "prettier --write \"**/*.{css,html,js,json,md,njk,yaml,yml}\"",
         "prettier:verify": "prettier --list-different \"**/*.{css,html,js,json,md,njk,yaml,yml}\"",
@@ -40,7 +40,7 @@
         "markdown-it-anchor": "^9.2.0",
         "postcss": "^8.5.1",
         "postcss-cli": "^11.0.0",
-        "rollup": "^4.28.1",
+        "rollup": "^4.42.0",
         "rollup-plugin-postcss": "^4.0.2",
         "sharp": "^0.34.2",
         "shelljs": "^0.10.0"
@@ -61,8 +61,8 @@
         "tailwindcss": "^3.4.17"
     },
     "volta": {
-        "node": "18.20.0",
+        "node": "22.16.0",
         "pnpm": "9.15.0"
     },
-    "packageManager": "pnpm@10.11.1+sha512.e519b9f7639869dc8d5c3c5dfef73b3f091094b0a006d7317353c72b124e80e1afd429732e28705ad6bfa1ee879c1fce46c128ccebd3192101f43dd67c667912"
+    "packageManager": "pnpm@10.12.1+sha512.f0dda8580f0ee9481c5c79a1d927b9164f2c478e90992ad268bbb2465a736984391d6333d2c327913578b2804af33474ca554ba29c04a8b13060a717675ae3ac"
 }

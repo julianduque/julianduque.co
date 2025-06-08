@@ -1,6 +1,69 @@
 {
     "salesforce": [
         {
+            "title": "Optimizing Enterprise Operations with Heroku's Advanced Logging Features",
+            "url": "https://blog.heroku.com/optimizing-enterprise-operations-herokus-advanced-logging-features",
+            "platform": "Heroku Blog",
+            "date": "2025-05-13",
+            "color": "purple"
+        },
+        {
+            "title": "How I Improved My Productivity with Cursor and the Heroku MCP Server",
+            "url": "https://blog.heroku.com/improved-my-productivity-cursor-and-heroku-mcp-server",
+            "platform": "Heroku Blog",
+            "date": "2025-05-05",
+            "color": "purple"
+        },
+        {
+            "title": "Testing a React App in Chrome with Heroku CI",
+            "url": "https://blog.heroku.com/testing-react-app-chrome-heroku-ci",
+            "platform": "Heroku Blog",
+            "date": "2024-11-06",
+            "color": "purple"
+        },
+        {
+            "title": "Best Practices for Optimizing Your Enterprise Cloud Applications with New Relic",
+            "url": "https://blog.heroku.com/best-practices-optimizing-enterprise-cloud-applications-new-relic",
+            "platform": "Heroku Blog",
+            "date": "2024-10-09",
+            "color": "purple"
+        },
+        {
+            "title": "Mastering API Integration: Salesforce, Heroku, and MuleSoft Anypoint Flex Gateway",
+            "url": "https://blog.heroku.com/mastering-api-integration-salesforce-heroku-mulesoft-anypoint-flex-gateway",
+            "platform": "Heroku Blog",
+            "date": "2024-07-29",
+            "color": "purple"
+        },
+        {
+            "title": "Build Well-Documented and Authenticated APIs in Node.js with Fastify",
+            "url": "https://blog.heroku.com/build-well-documented-authenticated-apis-nodejs-fastify",
+            "platform": "Heroku Blog",
+            "date": "2024-04-29",
+            "color": "purple"
+        },
+        {
+            "title": "Building a GPT Backed by a Heroku-Deployed API",
+            "url": "https://blog.heroku.com/building-gpt-backed-heroku-deployed-api",
+            "platform": "Heroku Blog",
+            "date": "2024-03-28",
+            "color": "purple"
+        },
+        {
+            "title": "Working with ChatGPT Functions on Heroku",
+            "url": "https://blog.heroku.com/working-chatgpt-functions-heroku",
+            "platform": "Heroku Blog",
+            "date": "2024-01-30",
+            "color": "purple"
+        },
+        {
+            "title": "Load Data Programmatically with the Ingestion API",
+            "url": "https://developer.salesforce.com/blogs/2023/07/load-data-programmatically-with-the-ingestion-api",
+            "platform": "Salesforce Developer Blog",
+            "date": "2023-07-01",
+            "color": "blue"
+        },
+        {
             "title": "Design a Swagger API with Code to Bring Data into Salesforce",
             "url": "https://developer.salesforce.com/blogs/2023/06/design-a-swagger-api-with-code-to-bring-data-into-salesforce",
             "platform": "Salesforce Developer Blog",

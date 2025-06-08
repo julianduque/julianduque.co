@@ -16,15 +16,25 @@ imageAlt: Julián Duque presenting at TDX23
 
 <h3>Salesforce / Heroku</h3>
 
-<details class="mb-6">
+<details class="mb-6" open>
     <summary
-        class="cursor-pointer text-lg font-semibold hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
+        class="cursor-pointer text-lg font-semibold hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors flex items-center justify-between"
     >
-        {% tablerIcon "file-text" %}
-        <h4 class="inline">Blog Posts</h4>
+        <div class="flex items-center">
+            {% tablerIcon "file-text" %}
+            <h4 class="inline ml-2">Blog Posts</h4>
+        </div>
+        <span
+            class="inline-flex items-center px-2 py-1 text-xs font-medium bg-indigo-100 text-indigo-800 rounded-full dark:bg-indigo-900 dark:text-indigo-200 mr-6"
+        >
+            {{ workPosts.salesforce | length }}
+        </span>
     </summary>
 
-    <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">
+    <p
+        class="text-sm text-gray-600 dark:text-gray-400 mb-4"
+        style="margin-bottom: -1rem"
+    >
         Blog posts and technical articles I've written at Salesforce and Heroku
     </p>
 
@@ -35,13 +45,23 @@ imageAlt: Julián Duque presenting at TDX23
 
 <details class="mb-6">
     <summary
-        class="cursor-pointer text-lg font-semibold hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
+        class="cursor-pointer text-lg font-semibold hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors flex items-center justify-between"
     >
-        {% tablerIcon "video" %}
-        <h4 class="inline">Videos</h4>
+        <div class="flex items-center">
+            {% tablerIcon "video" %}
+            <h4 class="inline ml-2">Videos</h4>
+        </div>
+        <span
+            class="inline-flex items-center px-2 py-1 text-xs font-medium bg-indigo-100 text-indigo-800 rounded-full dark:bg-indigo-900 dark:text-indigo-200 mr-6"
+        >
+            {{ workVideos | length }}
+        </span>
     </summary>
 
-    <p class="text-sm text-gray-600 dark:text-gray-400 mb-0 pb-0">
+    <p
+        class="text-sm text-gray-600 dark:text-gray-400 mb-0 pb-0"
+        style="margin-bottom: -1rem"
+    >
         Videos and technical presentations I've created at Salesforce and Heroku
     </p>
 
@@ -52,13 +72,23 @@ imageAlt: Julián Duque presenting at TDX23
 
 <details class="mb-6">
     <summary
-        class="cursor-pointer text-lg font-semibold hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
+        class="cursor-pointer text-lg font-semibold hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors flex items-center justify-between"
     >
-        {% tablerIcon "microphone" %}
-        <h4 class="inline">Podcasts</h4>
+        <div class="flex items-center">
+            {% tablerIcon "microphone" %}
+            <h4 class="inline ml-2">Podcasts</h4>
+        </div>
+        <span
+            class="inline-flex items-center px-2 py-1 text-xs font-medium bg-indigo-100 text-indigo-800 rounded-full dark:bg-indigo-900 dark:text-indigo-200 mr-6"
+        >
+            {{ workPodcasts | length }}
+        </span>
     </summary>
 
-    <p class="text-sm text-gray-600 dark:text-gray-400 mb-0 pb-0">
+    <p
+        class="text-sm text-gray-600 dark:text-gray-400 mb-0 pb-0"
+        style="margin-bottom: -1rem"
+    >
         Podcast episodes where I've been a guest or host at Salesforce and
         Heroku
     </p>
@@ -72,13 +102,23 @@ imageAlt: Julián Duque presenting at TDX23
 
 <details class="mb-6">
     <summary
-        class="cursor-pointer text-lg font-semibold hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
+        class="cursor-pointer text-lg font-semibold hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors flex items-center justify-between"
     >
-        {% tablerIcon "file-text" %}
-        <h4 class="inline">Blog Posts</h4>
+        <div class="flex items-center">
+            {% tablerIcon "file-text" %}
+            <h4 class="inline ml-2">Blog Posts</h4>
+        </div>
+        <span
+            class="inline-flex items-center px-2 py-1 text-xs font-medium bg-indigo-100 text-indigo-800 rounded-full dark:bg-indigo-900 dark:text-indigo-200 mr-6"
+        >
+            {{ workPosts.nodesource | length }}
+        </span>
     </summary>
 
-    <p class="text-sm text-gray-600 dark:text-gray-400 mb-0 pb-0">
+    <p
+        class="text-sm text-gray-600 dark:text-gray-400 mb-0 pb-0"
+        style="margin-bottom: -1rem"
+    >
         Blog posts written during my time at NodeSource
     </p>
 

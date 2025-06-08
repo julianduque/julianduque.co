@@ -1,5 +1,33 @@
 [
     {
+        "title": "Episode 209: Screen Flow Latest Features with Adam White",
+        "url": "https://developer.salesforce.com/podcast/2024/01/episode-209-screen-flow-latest-features-with-adam-white",
+        "platform": "Salesforce Developer Podcast",
+        "date": "2024-01-01",
+        "color": "blue"
+    },
+    {
+        "title": "Episode 208: The Global Salesforce Community with Christie Fidura",
+        "url": "https://developer.salesforce.com/podcast/2024/01/episode-208-the-global-salesforce-community-with-christie-fidura",
+        "platform": "Salesforce Developer Podcast",
+        "date": "2024-01-01",
+        "color": "blue"
+    },
+    {
+        "title": "Episode 206: Building Chatbots with Apex",
+        "url": "https://developer.salesforce.com/podcast/2023/12/episode-206-building-chatbots-with-apex",
+        "platform": "Salesforce Developer Podcast",
+        "date": "2023-12-01",
+        "color": "blue"
+    },
+    {
+        "title": "Episode 189: Practical DevOps with Rob Cowell",
+        "url": "https://developer.salesforce.com/podcast/2023/08/episode-189-practical-devops-with-rob-cowell",
+        "platform": "Salesforce Developer Podcast",
+        "date": "2023-08-01",
+        "color": "blue"
+    },
+    {
         "title": "Episode 109: Salesforce Functions with Jonathan Jenkins",
         "url": "https://developer.salesforce.com/podcast/2021/11/episode-109-salesforce-functions-with-jonathan-jenkins",
         "platform": "Salesforce Podcast",

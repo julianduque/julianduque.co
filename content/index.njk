@@ -19,16 +19,53 @@ title: Home
     <span class="tag">Community</span>
 </div>
 
-<details class="mb-6">
+<details class="mb-6" open>
     <summary
-        class="cursor-pointer text-lg font-semibold hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
+        class="cursor-pointer text-lg font-semibold hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors flex items-center justify-between"
     >
-        {% tablerIcon "users" %}
-        <h4>Communities & Events</h4>
+        <div class="flex items-center">
+            {% tablerIcon "presentation" %}
+            <h4 class="ml-2">Talks</h4>
+        </div>
+        <span
+            class="inline-flex items-center px-2 py-1 text-xs font-medium bg-indigo-100 text-indigo-800 rounded-full dark:bg-indigo-900 dark:text-indigo-200 mr-6"
+        >
+            {{ talks | length }}
+        </span>
     </summary>
 
-    <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">
-        The following are some of the communities and events I've organized
+    <p
+        class="text-sm text-gray-600 dark:text-gray-400"
+        style="margin-bottom: -1rem"
+    >
+        Talks I've given in multiple tech conferences all around the world
+    </p>
+
+    <div class="space-y-3">
+        {% for talk in talks %} {{ contentCard(talk, "talk") }} {% endfor %}
+    </div>
+</details>
+
+<details class="mb-6">
+    <summary
+        class="cursor-pointer text-lg font-semibold hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors flex items-center justify-between"
+    >
+        <div class="flex items-center">
+            {% tablerIcon "users" %}
+            <h4 class="ml-2">Communities & Events</h4>
+        </div>
+        <span
+            class="inline-flex items-center px-2 py-1 text-xs font-medium bg-indigo-100 text-indigo-800 rounded-full dark:bg-indigo-900 dark:text-indigo-200 mr-6"
+        >
+            {{ communities | length }}
+        </span>
+    </summary>
+
+    <p
+        class="text-sm text-gray-600 dark:text-gray-400"
+        style="margin-bottom: -1rem"
+    >
+        Communities and tech conferences I've organized
     </p>
 
     <div class="space-y-3">
@@ -39,31 +76,53 @@ title: Home
 
 <details class="mb-6">
     <summary
-        class="cursor-pointer text-lg font-semibold hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
+        class="cursor-pointer text-lg font-semibold hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors flex items-center justify-between"
     >
-        {% tablerIcon "presentation" %}
-        <h4>Talks</h4>
+        <div class="flex items-center">
+            {% tablerIcon "brand-github" %}
+            <h4 class="ml-2">Open Source</h4>
+        </div>
+        <span
+            class="inline-flex items-center px-2 py-1 text-xs font-medium bg-indigo-100 text-indigo-800 rounded-full dark:bg-indigo-900 dark:text-indigo-200 mr-6"
+        >
+            {{ opensource | length }}
+        </span>
     </summary>
 
-    <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">
-        Talks I've given in multiple tech conferences
+    <p
+        class="text-sm text-gray-600 dark:text-gray-400"
+        style="margin-bottom: -1rem"
+    >
+        Open source projects and contributions I've created
     </p>
 
     <div class="space-y-3">
-        {% for talk in talks %} {{ contentCard(talk, "talk") }} {% endfor %}
+        {% for project in opensource %} {{ contentCard(project, "opensource") }}
+        {% endfor %}
     </div>
 </details>
 
 <details class="mb-6">
     <summary
-        class="cursor-pointer text-lg font-semibold hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
+        class="cursor-pointer text-lg font-semibold hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors flex items-center justify-between"
     >
-        {% tablerIcon "microphone" %}
-        <h4>Interviews</h4>
+        <div class="flex items-center">
+            {% tablerIcon "microphone" %}
+            <h4 class="ml-2">Interviews</h4>
+        </div>
+        <span
+            class="inline-flex items-center px-2 py-1 text-xs font-medium bg-indigo-100 text-indigo-800 rounded-full dark:bg-indigo-900 dark:text-indigo-200 mr-6"
+        >
+            {{ interviews | length }}
+        </span>
     </summary>
 
-    <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">
-        Interviews I've been part of in both English and Spanish
+    <p
+        class="text-sm text-gray-600 dark:text-gray-400"
+        style="margin-bottom: -1rem"
+    >
+        Interviews I've been part of in both English and Spanish on podcasts and
+        other media
     </p>
 
     <div class="space-y-3">
@@ -74,13 +133,23 @@ title: Home
 
 <details class="mb-6">
     <summary
-        class="cursor-pointer text-lg font-semibold hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
+        class="cursor-pointer text-lg font-semibold hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors flex items-center justify-between"
     >
-        {% tablerIcon "book" %}
-        <h4>Books</h4>
+        <div class="flex items-center">
+            {% tablerIcon "book" %}
+            <h4 class="ml-2">Books</h4>
+        </div>
+        <span
+            class="inline-flex items-center px-2 py-1 text-xs font-medium bg-indigo-100 text-indigo-800 rounded-full dark:bg-indigo-900 dark:text-indigo-200 mr-6"
+        >
+            {{ books | length }}
+        </span>
     </summary>
 
-    <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">
+    <p
+        class="text-sm text-gray-600 dark:text-gray-400"
+        style="margin-bottom: -1rem"
+    >
         Books I've written or contributed to
     </p>
 

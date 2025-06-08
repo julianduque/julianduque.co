@@ -1,5 +1,33 @@
 [
     {
+        "title": "TDX25: Build Scalable APIs for Agentforce with MuleSoft and Heroku",
+        "url": "https://www.salesforce.com/plus/experience/tdx_2025/series/developers_at_tdx_2025/episode/episode-s1e16",
+        "platform": "Salesforce+",
+        "date": "2025-03-06",
+        "color": "blue"
+    },
+    {
+        "title": "TDX24: Build AI Applications on Heroku",
+        "url": "https://www.salesforce.com/plus/experience/trailblazerdx_2024/series/developers_at_trailblazerdx_2024/episode/episode-s1e3",
+        "platform": "Salesforce+",
+        "date": "2024-03-06",
+        "color": "blue"
+    },
+    {
+        "title": "codeLive: Integrating GPT into Salesforce - Part 2",
+        "url": "https://www.youtube.com/watch?v=OnKDIsZCdlg",
+        "platform": "YouTube",
+        "date": "2023-08-17",
+        "color": "red"
+    },
+    {
+        "title": "codeLive: Integrating GPT into Salesforce",
+        "url": "https://www.youtube.com/watch?v=hl-RCb7HYvo",
+        "platform": "YouTube",
+        "date": "2023-08-10",
+        "color": "red"
+    },
+    {
         "title": "codeLive: Reactive Screen Components in Flow",
         "url": "https://www.youtube.com/watch?v=-twwgjZbS4g",
         "platform": "YouTube",
@@ -133,6 +161,13 @@
         "color": "red"
     },
     {
+        "title": "Mejora tu experiencia de usuario con Lightning Web Components Parte 1 con Julian Duque",
+        "url": "https://www.youtube.com/watch?v=H9RI8HOG0l8",
+        "platform": "YouTube",
+        "date": "2023-01-21",
+        "color": "red"
+    },
+    {
         "title": "codeLive: How to Implement a GraphQL API from Scratch",
         "url": "https://www.youtube.com/watch?v=i4Jy67wN8R0",
         "platform": "YouTube",
@@ -259,10 +294,24 @@
         "color": "red"
     },
     {
+        "title": "Elastic Computing with Salesforce Functions with Julián Duque",
+        "url": "https://www.youtube.com/watch?v=B4TLM7J38q0",
+        "platform": "YouTube",
+        "date": "2021-12-17",
+        "color": "red"
+    },
+    {
         "title": "Ask Me Anything with Salesforce Developer Advocates | Salesforce Functions",
         "url": "https://www.youtube.com/watch?v=JCF1qQHNzng",
         "platform": "YouTube",
         "date": "2021-11-24",
+        "color": "red"
+    },
+    {
+        "title": "Computación elástica sin límites con Salesforce Functions",
+        "url": "https://www.youtube.com/watch?v=I94PPld7gws",
+        "platform": "YouTube",
+        "date": "2021-09-13",
         "color": "red"
     },
     {
@@ -277,6 +326,20 @@
         "url": "https://www.youtube.com/watch?v=JZxM7CZFqCE",
         "platform": "YouTube",
         "date": "2021-05-06",
+        "color": "red"
+    },
+    {
+        "title": "Integrando una aplicación Node.js con Salesforce",
+        "url": "https://www.youtube.com/watch?v=0ihvAJx6a38",
+        "platform": "YouTube",
+        "date": "2021-04-28",
+        "color": "red"
+    },
+    {
+        "title": "Introduccion a Node js para Desarrolladores Salesforce",
+        "url": "https://www.youtube.com/watch?v=ewBsz-UaGfI",
+        "platform": "YouTube",
+        "date": "2021-04-28",
         "color": "red"
     },
     {
