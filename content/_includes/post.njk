@@ -64,7 +64,19 @@ layout: base.njk
         getPreviousCollectionItem(page) %} {% set nextPost = collections.posts |
         getNextCollectionItem(page) %} {% if previousPost.url %}
         <a href="{{ previousPost.url }}" class="card card-compact flex-1 group">
-            <div class="flex items-center justify-between">
+            <div class="flex items-center gap-4">
+                <div class="flex-shrink-0 rounded-full bg-gray-100 dark:bg-gray-800 p-2 text-indigo-500 dark:text-indigo-300 group-hover:bg-indigo-50 dark:group-hover:bg-indigo-900/40 transition-colors">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        class="h-5 w-5"
+                    >
+                        <polyline points="15,18 9,12 15,6" />
+                    </svg>
+                </div>
                 <div>
                     <div
                         class="text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wide mb-1"
@@ -77,16 +89,6 @@ layout: base.njk
                         {{ previousPost.data.title | truncate(40) }}
                     </div>
                 </div>
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    class="h-5 w-5 text-gray-400 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors"
-                >
-                    <polyline points="15,18 9,12 15,6" />
-                </svg>
             </div>
         </a>
         {% else %}
@@ -104,7 +106,7 @@ layout: base.njk
         </div>
         {% endif %} {% if nextPost.url %}
         <a href="{{ nextPost.url }}" class="card card-compact flex-1 group">
-            <div class="flex items-center justify-between">
+            <div class="flex items-center gap-4 justify-end">
                 <div class="text-right">
                     <div
                         class="text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wide mb-1"
@@ -117,16 +119,18 @@ layout: base.njk
                         {{ nextPost.data.title | truncate(40) }}
                     </div>
                 </div>
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    class="h-5 w-5 text-gray-400 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors"
-                >
-                    <polyline points="9,18 15,12 9,6" />
-                </svg>
+                <div class="flex-shrink-0 rounded-full bg-gray-100 dark:bg-gray-800 p-2 text-indigo-500 dark:text-indigo-300 group-hover:bg-indigo-50 dark:group-hover:bg-indigo-900/40 transition-colors">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        class="h-5 w-5"
+                    >
+                        <polyline points="9,18 15,12 9,6" />
+                    </svg>
+                </div>
             </div>
         </a>
         {% else %}

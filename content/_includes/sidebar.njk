@@ -19,33 +19,33 @@
         </div>
     </div>
     <div class="menu">
-        <ul class="list-none pl-0 space-y-2">
-            <li class="nav-item text-center {{ page.url | isHomeLink('/') }}">
-                <a href="/" class="block no-underline font-medium">Home</a>
+        <ul class="list-none pl-0 space-y-1">
+            <li class="nav-item {{ page.url | isHomeLink('/') }}">
+                <a href="/" class="no-underline font-medium">Home</a>
             </li>
             <li
-                class="nav-item text-center {{ page.url | isActiveLink('/about') }}"
+                class="nav-item {{ page.url | isActiveLink('/about') }}"
             >
-                <a href="/about/" class="block no-underline font-medium">
+                <a href="/about/" class="no-underline font-medium">
                     About
                 </a>
             </li>
             <li
-                class="nav-item text-center {{ page.url | isActiveLink('/work') }}"
+                class="nav-item {{ page.url | isActiveLink('/work') }}"
             >
-                <a href="/work/" class="block no-underline font-medium">Work</a>
+                <a href="/work/" class="no-underline font-medium">Work</a>
             </li>
             <li
-                class="nav-item text-center {{ page.url | isActiveLink('/content') }}"
+                class="nav-item {{ page.url | isActiveLink('/content') }}"
             >
-                <a href="/content/" class="block no-underline font-medium">
+                <a href="/content/" class="no-underline font-medium">
                     Content
                 </a>
             </li>
             <li
-                class="nav-item text-center {{ page.url | isActiveLink('/archive') }}"
+                class="nav-item {{ page.url | isActiveLink('/archive') }}"
             >
-                <a href="/archive/" class="block no-underline font-medium">
+                <a href="/archive/" class="no-underline font-medium">
                     Archive
                 </a>
             </li>
