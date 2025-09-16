@@ -1,5 +1,12 @@
 [
     {
+        "title": "How to Build an AI-Powered MCP Server with Heroku & Amazon Q Developer",
+        "url": "https://www.youtube.com/watch?v=q-pzNAu9mb8",
+        "platform": "YouTube",
+        "date": "2025-09-16",
+        "color": "red"
+    },
+    {
         "title": "TDX25: Build Scalable APIs for Agentforce with MuleSoft and Heroku",
         "url": "https://www.salesforce.com/plus/experience/tdx_2025/series/developers_at_tdx_2025/episode/episode-s1e16",
         "platform": "Salesforce+",

@@ -1,5 +1,40 @@
 [
     {
+        "title": "S02E06 - Agentforce for Developers",
+        "url": "https://www.heroku.com/podcasts/codeish/agentforce-for-developers/",
+        "platform": "Code[ish]",
+        "date": "2025-09-10",
+        "color": "purple"
+    },
+    {
+        "title": "S02E05 - Looking into the Future of Agentic AI with Kit Merker",
+        "url": "https://www.heroku.com/podcasts/codeish/future-of-agentic-ai-kit-merker/",
+        "platform": "Code[ish]",
+        "date": "2025-08-27",
+        "color": "purple"
+    },
+    {
+        "title": "S02E04 - Heroku in the Wild: reinteractive on AI and Rapid POCs",
+        "url": "https://www.heroku.com/podcasts/codeish/reinteractive-on-ai-and-rapid-pocs/",
+        "platform": "Code[ish]",
+        "date": "2025-08-13",
+        "color": "purple"
+    },
+    {
+        "title": "S02E03 - Spring Boot with Guest Josh Long",
+        "url": "https://www.heroku.com/podcasts/codeish/spring-boot-with-guest-josh-long/",
+        "platform": "Code[ish]",
+        "date": "2025-07-30",
+        "color": "purple"
+    },
+    {
+        "title": "S02E02 - Getting Started with Slack Apps and Slack AI",
+        "url": "https://www.heroku.com/podcasts/codeish/getting-started-with-slack-apps-and-slack-ai/",
+        "platform": "Code[ish]",
+        "date": "2025-07-16",
+        "color": "purple"
+    },
+    {
         "title": "Episode 209: Screen Flow Latest Features with Adam White",
         "url": "https://developer.salesforce.com/podcast/2024/01/episode-209-screen-flow-latest-features-with-adam-white",
         "platform": "Salesforce Developer Podcast",
