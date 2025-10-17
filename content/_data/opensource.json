@@ -1,11 +1,35 @@
 [
     {
+        "name": "NodeBooks - Interactive Node.js Notebooks",
+        "url": "https://github.com/julianduque/nodebooks",
+        "description": "Interactive Node.js Notebooks for learning and teaching",
+        "language": "JavaScript/TypeScript",
+        "tags": ["nodejs", "notebooks", "learning", "teaching"],
+        "badgeColor": "yellow"
+    },
+    {
         "name": "Heroku LangChain.js",
         "url": "https://github.com/julianduque/heroku-langchain",
-        "description": "Integrate LangChainJS with Heroku's Managed Inference and Agents (Mia) services",
+        "description": "Integrate LangChainJS with Heroku's Managed Inference and Agents services",
         "language": "JavaScript/TypeScript",
         "tags": ["langchain", "langgraph", "heroku", "ai", "agents"],
-        "badgeColor": "yellow"
+        "badgeColor": "green"
+    },
+    {
+        "name": "Heroku AI SDK Provider",
+        "url": "https://github.com/julianduque/heroku-ai-provider",
+        "description": "A provider for the AI SDK that allows you to use Heroku's Managed Inference and Agents services",
+        "language": "JavaScript/TypeScript",
+        "tags": ["ai", "heroku", "sdk", "provider"],
+        "badgeColor": "purple"
+    },
+    {
+        "name": "n8n node for Heroku AI",
+        "url": "https://github.com/julianduque/n8n-nodes-heroku-ai",
+        "description": "A node for n8n that allows you to use Heroku's Managed Inference and Agents services",
+        "language": "JavaScript/TypeScript",
+        "tags": ["n8n", "heroku", "ai", "agents"],
+        "badgeColor": "blue"
     },
     {
         "name": "Erlang Color",

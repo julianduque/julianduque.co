@@ -8,11 +8,11 @@ module.exports = {
     // Profile image for left sidebar
     image: "/assets/images/headshot.jpg",
     // Image alt text for left sidebar
-    imageAlt: "Software Development and Education",
+    imageAlt: "AI, Developer Relations, Education, and Community",
     // Author name, shown in left sidebar, and used in JSON-LD
     author: "Julián Duque",
     // Site description, shown below site image (optional)
-    description: "Developer Relations, Education, and Community",
+    description: "AI, Developer Relations, Education, and Community",
     // OpenGraph default image, in case you don't have an `image`
     // set in your Markdown frontmatter; relevant for social
     // sharing.

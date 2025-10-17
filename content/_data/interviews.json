@@ -14,20 +14,6 @@
         "year": "2025"
     },
     {
-        "title": "Salesforce Platform ft. Julian Duque & Mohith Shrivastava",
-        "url": "https://www.youtube.com/watch?v=SSHpf6xvMaI",
-        "source": "Build IT Better",
-        "badgeColor": "blue",
-        "year": "2021"
-    },
-    {
-        "title": "Interview with Julián Duque from Heroku",
-        "url": "https://www.youtube.com/watch?v=S1ZoWhkKjWo",
-        "source": "Developer Advocate Stories by EuropeClouds",
-        "badgeColor": "green",
-        "year": "2020"
-    },
-    {
         "title": "Entrevista a Julián Duque",
         "url": "https://www.youtube.com/watch?v=VHcsZgTNYg4",
         "source": "Ciclo de Charlas Online de Chicas Programando",
@@ -47,13 +33,6 @@
         "source": "SoftwareGuru",
         "badgeColor": "purple",
         "year": "2020"
-    },
-    {
-        "title": "¿Por qué Node.js?",
-        "url": "https://www.youtube.com/watch?v=Y6SH0QaJZO4",
-        "source": "MaestriaJS",
-        "badgeColor": "teal",
-        "year": "2019"
     },
     {
         "title": "Interviews from JSConf - with Michael Chan, Juan Pablo Buriticá, Julián David Duque, and Tim Doherty",

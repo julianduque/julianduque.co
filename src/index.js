@@ -26,6 +26,57 @@ window.copyUrlToClipboard = function () {
 };
 
 document.addEventListener("DOMContentLoaded", function () {
+    const tocContainer = document.getElementById("toc");
+    const tocNav = tocContainer ? tocContainer.querySelector("nav") : null;
+
+    if (tocNav) {
+        tocNav.classList.add("sidebar-links");
+        tocNav.dataset.sidebarNav = "";
+    }
+
+    const sidebarNavContainer =
+        tocNav || document.querySelector("[data-sidebar-nav]");
+    const sidebarLinks = sidebarNavContainer
+        ? sidebarNavContainer.querySelectorAll("a[href^='#']")
+        : [];
+
+    const openDetailsForHash = (hash) => {
+        if (!hash || hash === "#") {
+            return;
+        }
+
+        let targetElement = null;
+        try {
+            targetElement = document.querySelector(hash);
+        } catch {
+            targetElement = null;
+        }
+
+        if (!targetElement) {
+            return;
+        }
+
+        const detailsElement = targetElement.closest("details");
+        if (detailsElement && !detailsElement.open) {
+            detailsElement.open = true;
+        }
+    };
+
+    sidebarLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+            const hash = link.getAttribute("href");
+            openDetailsForHash(hash);
+        });
+    });
+
+    if (window.location.hash) {
+        openDetailsForHash(window.location.hash);
+    }
+
+    window.addEventListener("hashchange", () => {
+        openDetailsForHash(window.location.hash);
+    });
+
     const sections = document.querySelectorAll(".content h2,.content h3");
     const menu = document.querySelectorAll("nav.toc a");
 

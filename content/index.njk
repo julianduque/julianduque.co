@@ -6,24 +6,28 @@ title: Home
 {% from "contentCard.njk" import contentCard %}
 
 <div class="profile-hero" aria-label="Profile overview">
-    <div class="profile-hero__heading">
-        <h2 class="profile-hero__name">Julián Duque</h2>
-        <p class="profile-hero__tagline">
-            Developer Relations, Education, and Community
-        </p>
-    </div>
-    <div class="profile-hero__focus" aria-label="Focus and expertise">
-        <span class="profile-hero__label">Focus & Expertise</span>
-        <div class="profile-hero__keywords">
-            <span class="profile-hero__keyword">Developer Advocacy</span>
-            <span class="profile-hero__keyword">Node.js</span>
-            <span class="profile-hero__keyword">JavaScript</span>
-            <span class="profile-hero__keyword">Artificial Intelligence</span>
-            <span class="profile-hero__keyword">
-                Event Driven Architectures
-            </span>
-            <span class="profile-hero__keyword">Open Source</span>
-            <span class="profile-hero__keyword">Community</span>
+    <div class="profile-hero__grid">
+        <div class="profile-hero__intro">
+            <div class="profile-hero__heading">
+                <h2 class="profile-hero__name">Julián Duque</h2>
+                <p class="profile-hero__tagline">
+                    Developer Relations, Education, and Community
+                </p>
+            </div>
+        </div>
+        <div class="profile-hero__focus" aria-label="Focus and expertise">
+            <span class="profile-hero__label">Focus & Expertise</span>
+            <div class="profile-hero__keywords">
+                <span class="profile-hero__keyword">Developer Advocacy</span>
+                <span class="profile-hero__keyword">Node.js</span>
+                <span class="profile-hero__keyword">JavaScript</span>
+                <span class="profile-hero__keyword">Artificial Intelligence</span>
+                <span class="profile-hero__keyword">
+                    Event Driven Architectures
+                </span>
+                <span class="profile-hero__keyword">Open Source</span>
+                <span class="profile-hero__keyword">Community</span>
+            </div>
         </div>
     </div>
 </div>
@@ -34,11 +38,9 @@ title: Home
     >
         <div class="flex items-center">
             {% tablerIcon "presentation" %}
-            <h4 class="ml-2">Talks</h4>
+            <h4 id="talks" class="ml-2">Talks</h4>
         </div>
-        <span
-            class="inline-flex items-center px-2 py-1 text-xs font-medium bg-indigo-100 text-indigo-800 rounded-full dark:bg-indigo-900 dark:text-indigo-200 mr-6"
-        >
+        <span class="summary-count">
             {{ talks | length }}
         </span>
     </summary>
@@ -61,11 +63,9 @@ title: Home
     >
         <div class="flex items-center">
             {% tablerIcon "users" %}
-            <h4 class="ml-2">Communities & Events</h4>
+            <h4 id="communities-events" class="ml-2">Communities & Events</h4>
         </div>
-        <span
-            class="inline-flex items-center px-2 py-1 text-xs font-medium bg-indigo-100 text-indigo-800 rounded-full dark:bg-indigo-900 dark:text-indigo-200 mr-6"
-        >
+        <span class="summary-count">
             {{ communities | length }}
         </span>
     </summary>
@@ -89,11 +89,9 @@ title: Home
     >
         <div class="flex items-center">
             {% tablerIcon "brand-github" %}
-            <h4 class="ml-2">Open Source</h4>
+            <h4 id="open-source" class="ml-2">Open Source</h4>
         </div>
-        <span
-            class="inline-flex items-center px-2 py-1 text-xs font-medium bg-indigo-100 text-indigo-800 rounded-full dark:bg-indigo-900 dark:text-indigo-200 mr-6"
-        >
+        <span class="summary-count">
             {{ opensource | length }}
         </span>
     </summary>
@@ -117,11 +115,9 @@ title: Home
     >
         <div class="flex items-center">
             {% tablerIcon "microphone" %}
-            <h4 class="ml-2">Interviews</h4>
+            <h4 id="interviews" class="ml-2">Interviews</h4>
         </div>
-        <span
-            class="inline-flex items-center px-2 py-1 text-xs font-medium bg-indigo-100 text-indigo-800 rounded-full dark:bg-indigo-900 dark:text-indigo-200 mr-6"
-        >
+        <span class="summary-count">
             {{ interviews | length }}
         </span>
     </summary>
@@ -146,11 +142,9 @@ title: Home
     >
         <div class="flex items-center">
             {% tablerIcon "book" %}
-            <h4 class="ml-2">Books</h4>
+            <h4 id="books" class="ml-2">Books</h4>
         </div>
-        <span
-            class="inline-flex items-center px-2 py-1 text-xs font-medium bg-indigo-100 text-indigo-800 rounded-full dark:bg-indigo-900 dark:text-indigo-200 mr-6"
-        >
+        <span class="summary-count">
             {{ books | length }}
         </span>
     </summary>

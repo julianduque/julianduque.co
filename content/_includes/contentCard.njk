@@ -1,69 +1,81 @@
-{% macro contentCard(item, type = "default") %} {%- set colorClasses = { "blue":
-"bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200", "purple":
-"bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200",
+{% macro contentCard(item, type = "default") %} {%- set colorClasses = {
+"blue": "bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200",
+"purple": "bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200",
 "green": "bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200",
-"red": "bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200", "yellow":
-"bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200",
-"indigo": "bg-indigo-100 dark:bg-indigo-900 text-indigo-800
-dark:text-indigo-200", "pink": "bg-pink-100 dark:bg-pink-900 text-pink-800
-dark:text-pink-200", "orange": "bg-orange-100 dark:bg-orange-900 text-orange-800
-dark:text-orange-200", "teal": "bg-teal-100 dark:bg-teal-900 text-teal-800
-dark:text-teal-200", "gray": "bg-gray-100 dark:bg-gray-900 text-gray-800
-dark:text-gray-200" } -%}
+"red": "bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200",
+"yellow": "bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200",
+"indigo": "bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-200",
+"pink": "bg-pink-100 dark:bg-pink-900 text-pink-800 dark:text-pink-200",
+"orange": "bg-orange-100 dark:bg-orange-900 text-orange-800 dark:text-orange-200",
+"teal": "bg-teal-100 dark:bg-teal-900 text-teal-800 dark:text-teal-200",
+"gray": "bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200"
+} -%} {%- set thumbnail = item.url | youtubeThumbnail -%}
 
 <div
-    class="flex flex-col sm:flex-row sm:items-center sm:justify-between p-4 bg-gray-50 dark:bg-gray-900 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+    class="content-card flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4"
 >
-    <div class="flex-1">
+    <div class="flex flex-col sm:flex-row sm:items-start gap-4 sm:gap-6 flex-1">
+        {%- if thumbnail -%}
         <a
             href="{{ item.url }}"
-            class="text-indigo-600 dark:text-indigo-400 hover:underline font-medium"
+            class="content-card__thumb block overflow-hidden rounded-md flex-shrink-0 sm:w-36"
+            aria-label="Watch {{ item.title or item.name }}"
         >
-            {%- if type == "book" -%} {{ item.title }} {%- elif type ==
-            "opensource" -%} {{ item.name }} {%- else -%} {{ item.title or
-            item.name }} {%- endif -%}
+            <img
+                src="{{ thumbnail }}"
+                alt="Video preview for {{ item.title or item.name }}"
+                loading="lazy"
+                decoding="async"
+                class="w-full h-32 sm:h-24 object-cover transition-transform duration-200 hover:scale-[1.02]"
+            />
         </a>
-
-        {%- if type == "book" and item.subtitle -%}
-        <div class="text-sm text-gray-600 dark:text-gray-400 mt-1">
-            {{ item.subtitle }}
-        </div>
-        {%- endif -%} {%- if type == "opensource" and item.description -%}
-        <div class="text-sm text-gray-600 dark:text-gray-400 mt-1">
-            {{ item.description }}
-        </div>
         {%- endif -%}
 
-        <div class="mt-2">
-            {%- if type == "opensource" -%} {%- if item.language -%}
-            <span
-                class="px-2 py-1 {{ colorClasses[item.badgeColor] or colorClasses.blue }} rounded-md text-sm mr-2"
-            >
-                {{ item.language }}
-            </span>
-            {%- endif -%} {%- if item.tags -%} {%- for tag in item.tags -%}
-            <span
-                class="px-2 py-1 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-md text-sm mr-1 mb-1 inline-block"
-            >
-                {{ tag }}
-            </span>
-            {%- endfor -%} {%- endif -%} {%- else -%}
-            <span
-                class="px-2 py-1 {{ colorClasses[item.badgeColor] or colorClasses.blue }} rounded-md text-sm"
-            >
-                {%- if type == "community" -%} {{ item.role }} {%- elif type ==
-                "interview" -%} {{ item.source }} {%- elif type == "talk" -%} {{
-                item.conference }} {%- elif type == "book" -%} {{ item.publisher
-                }} {%- else -%} {{ item.category or item.type }} {%- endif -%}
-            </span>
+        <div class="flex-1 content-card__body">
+            <a href="{{ item.url }}" class="content-card__title">
+                {%- if type == "book" -%} {{ item.title }} {%- elif type ==
+                "opensource" -%} {{ item.name }} {%- else -%} {{ item.title or
+                item.name }} {%- endif -%}
+            </a>
+
+            {%- if type == "book" and item.subtitle -%}
+            <div class="content-card__subtitle">
+                {{ item.subtitle }}
+            </div>
+            {%- endif -%} {%- if type == "opensource" and item.description -%}
+            <div class="content-card__subtitle">
+                {{ item.description }}
+            </div>
             {%- endif -%}
+
+            <div class="content-card__badgeRow">
+                {%- if type == "opensource" -%} {%- if item.language -%}
+                <span
+                    class="content-card__badge px-2 py-1 text-sm font-medium {{ colorClasses[item.badgeColor] or colorClasses.blue }}"
+                >
+                    {{ item.language }}
+                </span>
+                {%- endif -%} {%- if item.tags -%} {%- for tag in item.tags -%}
+                <span class="content-card__chip">
+                    {{ tag }}
+                </span>
+                {%- endfor -%} {%- endif -%} {%- else -%}
+                <span
+                    class="content-card__badge px-2 py-1 text-sm font-medium {{ colorClasses[item.badgeColor] or colorClasses.blue }}"
+                >
+                    {%- if type == "community" -%} {{ item.role }} {%- elif type
+                    == "interview" -%} {{ item.source }} {%- elif type == "talk"
+                    -%} {{ item.conference }} {%- elif type == "book" -%} {{
+                    item.publisher }} {%- else -%} {{ item.category or item.type
+                    }} {%- endif -%}
+                </span>
+                {%- endif -%}
+            </div>
         </div>
     </div>
 
     {%- if item.year or item.dateRange -%}
-    <div
-        class="mt-2 sm:mt-0 text-sm text-gray-600 dark:text-gray-400 flex items-center"
-    >
+    <div class="content-card__meta">
         {% tablerIcon "calendar" %} {%- if type == "community" -%} {{
         item.dateRange }} {%- else -%} {{ item.year }} {%- endif -%}
     </div>

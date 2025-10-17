@@ -68,6 +68,49 @@ module.exports = function (eleventyConfig) {
         return new URL(path, siteconfig.url).toString();
     });
 
+    eleventyConfig.addNunjucksFilter("youtubeThumbnail", function (videoUrl) {
+        if (!videoUrl) {
+            return null;
+        }
+
+        try {
+            const parsedUrl = new URL(videoUrl);
+            const host = parsedUrl.hostname.replace(/^www\./, "");
+            let videoId = null;
+
+            if (host === "youtu.be") {
+                const segments = parsedUrl.pathname.split("/").filter(Boolean);
+                if (segments.length > 0) {
+                    [videoId] = segments;
+                }
+            } else if (host.endsWith("youtube.com")) {
+                if (parsedUrl.searchParams.has("v")) {
+                    videoId = parsedUrl.searchParams.get("v");
+                } else {
+                    const segments = parsedUrl.pathname.split("/").filter(Boolean);
+                    if (segments.length >= 2 && ["embed", "shorts", "live"].includes(segments[0])) {
+                        videoId = segments[1];
+                    } else if (segments.length === 1 && segments[0] !== "watch") {
+                        [videoId] = segments;
+                    }
+                }
+            }
+
+            if (!videoId) {
+                return null;
+            }
+
+            const sanitizedId = videoId.replace(/[^a-zA-Z0-9_-]/g, "");
+            if (!sanitizedId) {
+                return null;
+            }
+
+            return `https://i.ytimg.com/vi/${sanitizedId}/hqdefault.jpg`;
+        } catch (_error) {
+            return null;
+        }
+    });
+
     // Extract reading time
     eleventyConfig.addNunjucksFilter("readingTime", (wordcount) => {
         let readingTime = Math.ceil(wordcount / 220);
