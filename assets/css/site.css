@@ -14,8 +14,8 @@
         "SF Mono", Monaco, "Cascadia Code", "Roboto Mono", Consolas,
         "Courier New", monospace;
     --font-display:
-        "Space Grotesk", "Inter", -apple-system, BlinkMacSystemFont,
-        "Segoe UI", system-ui, sans-serif;
+        "Space Grotesk", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+        system-ui, sans-serif;
 
     /* Modern Design System */
     --color-primary: 109 40 217; /* violet-700 */
@@ -1592,12 +1592,11 @@ summary .icon-tabler {
 details {
     border: 1px solid rgba(var(--border-subtle), 0.55);
     border-radius: calc(var(--radius-lg) * 1.05);
-    background:
-        linear-gradient(
-            135deg,
-            rgba(var(--color-surface), 0.9) 0%,
-            rgba(var(--color-surface-alt), 0.88) 100%
-        );
+    background: linear-gradient(
+        135deg,
+        rgba(var(--color-surface), 0.9) 0%,
+        rgba(var(--color-surface-alt), 0.88) 100%
+    );
     transition:
         border-color 0.28s ease,
         box-shadow 0.28s ease,
@@ -1616,16 +1615,16 @@ details:hover {
 details[open] {
     border-color: rgba(var(--color-primary), 0.5);
     box-shadow: var(--shadow-md);
-    background:
-        linear-gradient(
-            135deg,
-            rgba(var(--color-surface), 0.96) 0%,
-            rgba(var(--color-surface-alt), 0.94) 100%
-        );
+    background: linear-gradient(
+        135deg,
+        rgba(var(--color-surface), 0.96) 0%,
+        rgba(var(--color-surface-alt), 0.94) 100%
+    );
 }
 
 details summary {
-    padding: clamp(1.1rem, 1rem + 0.4vw, 1.4rem) clamp(1.4rem, 1.2rem + 0.6vw, 1.9rem);
+    padding: clamp(1.1rem, 1rem + 0.4vw, 1.4rem)
+        clamp(1.4rem, 1.2rem + 0.6vw, 1.9rem);
     font-weight: 600 !important;
     border-radius: 0;
     transition: color 0.2s ease;
@@ -1697,7 +1696,8 @@ details[open] summary::before {
 }
 
 details[open] > *:not(summary) {
-    padding: 0 clamp(1.4rem, 1.2rem + 0.6vw, 1.9rem) clamp(1.4rem, 1.2rem + 0.6vw, 1.9rem);
+    padding: 0 clamp(1.4rem, 1.2rem + 0.6vw, 1.9rem)
+        clamp(1.4rem, 1.2rem + 0.6vw, 1.9rem);
 }
 
 .summary-count {
@@ -1716,12 +1716,11 @@ details[open] > *:not(summary) {
 }
 
 html[class="dark"] details {
-    background:
-        linear-gradient(
-            135deg,
-            rgba(var(--color-surface-dark), 0.72) 0%,
-            rgba(var(--color-surface-dark-alt), 0.7) 100%
-        );
+    background: linear-gradient(
+        135deg,
+        rgba(var(--color-surface-dark), 0.72) 0%,
+        rgba(var(--color-surface-dark-alt), 0.7) 100%
+    );
     border-color: rgba(var(--border-subtle-dark), 0.62);
     box-shadow: var(--shadow-sm);
 }
