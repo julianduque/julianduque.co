@@ -73,25 +73,37 @@ body {
     letter-spacing: -0.01em;
     color: rgb(var(--color-text));
     background-color: rgb(250 250 252);
-    background-image: 
-        radial-gradient(circle at 20% 50%, rgba(99, 102, 241, 0.015) 0%, transparent 50%),
-        radial-gradient(circle at 80% 80%, rgba(34, 197, 94, 0.01) 0%, transparent 50%),
-        url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M50 0 L93.3 25 L93.3 75 L50 100 L6.7 75 L6.7 25 Z' fill='none' stroke='rgba(99, 102, 241, 0.02)' stroke-width='0.3'/%3E%3Cpath d='M50 0 L93.3 25 L93.3 75 L50 100 L6.7 75 L6.7 25 Z' fill='none' stroke='rgba(34, 197, 94, 0.015)' stroke-width='0.2' transform='translate(50, 50)'/%3E%3C/svg%3E");
-    background-size: 200px 200px, 300px 300px, 100px 100px;
-    background-position: 0 0, 100px 100px, 0 0;
     min-height: 100vh;
     transition: color 0.2s ease;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70vh;
+    background-image: url("data:image/svg+xml,%3Csvg width='100' height='86.6' viewBox='0 0 100 86.6' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3Cpattern id='hex' x='0' y='0' width='100' height='86.6' patternUnits='userSpaceOnUse'%3E%3Cpath d='M50 0 L100 25 L100 75 L50 100 L0 75 L0 25 Z' fill='none' stroke='rgba(0, 0, 0, 0.06)' stroke-width='0.4'/%3E%3Cpath d='M50 43.3 L100 68.3 L100 118.3 L50 143.3 L0 118.3 L0 68.3 Z' fill='none' stroke='rgba(0, 0, 0, 0.06)' stroke-width='0.4' transform='translate(50, 0)'/%3E%3C/pattern%3E%3C/defs%3E%3Crect width='100' height='86.6' fill='url(%23hex)'/%3E%3C/svg%3E");
+    background-size: 100px 86.6px;
+    background-position: 0 100%;
+    background-repeat: repeat;
+    mask-image: linear-gradient(to top, transparent 0%, rgba(0, 0, 0, 0.2) 25%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.8) 75%, rgba(0, 0, 0, 1) 100%);
+    -webkit-mask-image: linear-gradient(to top, transparent 0%, rgba(0, 0, 0, 0.2) 25%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.8) 75%, rgba(0, 0, 0, 1) 100%);
+    pointer-events: none;
+    z-index: 0;
 }
 
 html[class="dark"] body {
     color: rgb(var(--color-text-dark));
     background-color: rgb(15 23 42);
-    background-image: 
-        radial-gradient(circle at 20% 50%, rgba(99, 102, 241, 0.04) 0%, transparent 50%),
-        radial-gradient(circle at 80% 80%, rgba(34, 197, 94, 0.03) 0%, transparent 50%),
-        url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M50 0 L93.3 25 L93.3 75 L50 100 L6.7 75 L6.7 25 Z' fill='none' stroke='rgba(99, 102, 241, 0.04)' stroke-width='0.3'/%3E%3Cpath d='M50 0 L93.3 25 L93.3 75 L50 100 L6.7 75 L6.7 25 Z' fill='none' stroke='rgba(34, 197, 94, 0.03)' stroke-width='0.2' transform='translate(50, 50)'/%3E%3C/svg%3E");
-    background-size: 200px 200px, 300px 300px, 100px 100px;
-    background-position: 0 0, 100px 100px, 0 0;
+}
+
+html[class="dark"] body::before {
+    background-image: url("data:image/svg+xml,%3Csvg width='100' height='86.6' viewBox='0 0 100 86.6' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3Cpattern id='hex' x='0' y='0' width='100' height='86.6' patternUnits='userSpaceOnUse'%3E%3Cpath d='M50 0 L100 25 L100 75 L50 100 L0 75 L0 25 Z' fill='none' stroke='rgba(255, 255, 255, 0.06)' stroke-width='0.4'/%3E%3Cpath d='M50 43.3 L100 68.3 L100 118.3 L50 143.3 L0 118.3 L0 68.3 Z' fill='none' stroke='rgba(255, 255, 255, 0.06)' stroke-width='0.4' transform='translate(50, 0)'/%3E%3C/pattern%3E%3C/defs%3E%3Crect width='100' height='86.6' fill='url(%23hex)'/%3E%3C/svg%3E");
+    mask-image: linear-gradient(to top, transparent 0%, rgba(0, 0, 0, 0.2) 25%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.8) 75%, rgba(0, 0, 0, 1) 100%);
+    -webkit-mask-image: linear-gradient(to top, transparent 0%, rgba(0, 0, 0, 0.2) 25%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.8) 75%, rgba(0, 0, 0, 1) 100%);
 }
 
 /* Enhanced headings hierarchy */
