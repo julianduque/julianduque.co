@@ -41,10 +41,8 @@ module.exports = {
                 "dark-heading": "#27282B"
             }),
             backgroundImage: () => ({
-                "sidebar-dark":
-                    "radial-gradient(circle, #242424 0%, #1d1f27 100%)",
-                "sidebar-light":
-                    "radial-gradient(circle,rgba(42, 30, 107, 1) 0%,rgba(36, 11, 61, 1) 100%)"
+                "sidebar-dark": "#1f2937",
+                "sidebar-light": "#1f2937"
             }),
             borderWidth: (theme) => ({
                 ...theme("width"),
