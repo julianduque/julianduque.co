@@ -1,7 +1,0 @@
-{% set outline = content | toc %} {% if outline %} {% set toc_nav = outline |
-replace('class=\"toc\"', 'class=\"toc sidebar-links\" data-sidebar-nav') %}
-<div id="toc" class="ml-1 mt-2 p-2 text-gray-800 dark:text-gray-400 mb-2">
-    <span class="ml-1 block text-sm font-semibold">Content</span>
-    <div class="text-xs pt-2 pr-4">{{ toc_nav | safe }}</div>
-</div>
-{% endif %}
