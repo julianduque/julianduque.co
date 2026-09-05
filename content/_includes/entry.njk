@@ -1,0 +1,72 @@
+{# entry(item, type): one ruled row of an index list. type: talk | community |
+opensource | interview | book | work #} {% macro entry(item, type = "work") %}
+{%- set thumbnail = item.url | youtubeThumbnail -%} {%- set heading = item.title
+or item.name -%}
+<li class="entry{% if thumbnail %} entry--thumb{% endif %}">
+    {%- if thumbnail -%}
+    <a
+        href="{{ item.url }}"
+        class="entry-thumb"
+        tabindex="-1"
+        aria-hidden="true"
+    >
+        <img
+            src="{{ thumbnail }}"
+            alt=""
+            width="96"
+            height="54"
+            loading="lazy"
+            decoding="async"
+        />
+    </a>
+    {%- endif -%}
+    <div class="entry-body">
+        <h3 class="entry-title">
+            <a href="{{ item.url }}">{{ heading }}</a>
+        </h3>
+        {%- if item.subtitle -%}
+        <p class="entry-sub">{{ item.subtitle }}</p>
+        {%- elif item.description -%}
+        <p class="entry-sub">{{ item.description }}</p>
+        {%- endif -%}
+        <div class="entry-meta">
+            {%- if type == "talk" -%}
+            <span>{{ item.conference }}</span>
+            {%- elif type == "community" -%}
+            <span>{{ item.role }}</span>
+            {%- elif type == "interview" -%}
+            <span>{{ item.source }}</span>
+            {%- elif type == "book" -%}
+            <span>{{ item.publisher }}</span>
+            {%- elif type == "opensource" -%}
+            <span>{{ item.language }}</span>
+            {%- for tag in item.tags -%}
+            <span>{{ tag }}</span>
+            {%- endfor -%} {%- else -%}
+            <span>{{ item.platform }}</span>
+            {%- endif -%}
+        </div>
+    </div>
+    {%- if item.dateRange or item.year or item.date -%}
+    <span class="entry-when">
+        {{- item.dateRange or item.year or item.date -}}
+    </span>
+    {%- endif -%}
+</li>
+{% endmacro %} {# section(id, label, lede, items, type, open): a collapsible
+ruled section. #} {% macro section(id, label, lede, items, type, open = false)
+%}
+<details class="index-section" id="{{ id }}" {% if open %}open{% endif %}>
+    <summary class="index-summary">
+        <h2 class="index-title">{{ label }}</h2>
+        <span class="index-count tabular">{{ items | length }}</span>
+        <svg class="index-chevron" viewBox="0 0 14 14" aria-hidden="true">
+            <path d="M2 5l5 5 5-5" />
+        </svg>
+    </summary>
+    <p class="index-lede">{{ lede }}</p>
+    <ul class="entry-list">
+        {% for item in items %}{{ entry(item, type) }}{% endfor %}
+    </ul>
+</details>
+{% endmacro %}

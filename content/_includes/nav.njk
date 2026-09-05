@@ -1,0 +1,52 @@
+<nav class="site-nav" aria-label="Primary">
+    <a href="/" class="site-brand">{{ siteconfig.title }}</a>
+    <ul class="site-nav-links">
+        {% set links = [ { "href": "/", "label": "Home" }, { "href": "/about/",
+        "label": "About" }, { "href": "/work/", "label": "Work" }, { "href":
+        "/content/", "label": "Content" }, { "href": "/archive/", "label":
+        "Archive" } ] %} {% for link in links %} {% set current = page.url |
+        navCurrent(link.href) %}
+        <li>
+            <a
+                href="{{ link.href }}"
+                class="site-nav-link"
+                {%
+                if
+                current
+                %}aria-current="page"
+                {%
+                endif
+                %}
+            >
+                {{ link.label }}
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+    <div class="site-nav-actions">
+        <button
+            type="button"
+            class="theme-toggle"
+            data-theme-toggle
+            aria-label="Switch color theme"
+        >
+            <svg
+                class="theme-icon theme-icon-sun"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+            >
+                <circle cx="12" cy="12" r="4" />
+                <path
+                    d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1 7 17M17 7l2.1-2.1"
+                />
+            </svg>
+            <svg
+                class="theme-icon theme-icon-moon"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+            >
+                <path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z" />
+            </svg>
+        </button>
+    </div>
+</nav>

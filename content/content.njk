@@ -12,182 +12,77 @@ meta:
         value: noindex
 ---
 
-<div class="section">
-    <div class="container">
-        <header class="mb-8">
-            <h1 class="text-3xl font-bold mb-4">Content & Articles</h1>
-            <p class="text-gray-600 dark:text-gray-400">
-                Developer advocacy content, tutorials, and technical articles
-            </p>
-        </header>
+<section class="page">
+    <header class="page-header">
+        <h1 class="display">Content</h1>
+        <p class="page-lede">
+            Streams, tutorials, and articles. Mostly Node.js, mostly in Spanish.
+        </p>
+    </header>
 
-        <div class="portfolio-grid">
-            {% for post in posts %}
-            <article class="portfolio-item">
-                <header class="mb-4">
-                    <h2 class="text-lg font-semibold mb-2">
-                        <a
-                            href="{{ post.url | url }}"
-                            class="group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors"
-                        >
-                            {{ post.data.title }}
-                        </a>
-                    </h2>
-                    {% if post.data.category %}
-                    <div class="tag-container mb-3">
-                        <span class="tag">{{ post.data.category }}</span>
-                    </div>
-                    {% endif %}
-                </header>
-
-                <div class="text-gray-600 dark:text-gray-400 mb-4 line-clamp-3">
-                    {% excerpt post %}
+    <ul class="post-list">
+        {% for post in posts %}
+        <li class="post-row">
+            <time datetime="{{ post.date | sitemapdate }}">
+                {{ post.date | readableDate }}
+            </time>
+            <div>
+                <h2 class="entry-title">
+                    <a href="{{ post.url }}">{{ post.data.title }}</a>
+                </h2>
+                {% if post.data.category %}
+                <div class="entry-meta">
+                    <span>{{ post.data.category }}</span>
                 </div>
-
-                <footer
-                    class="flex items-center justify-between text-sm text-gray-500 dark:text-gray-400"
-                >
-                    <div class="flex items-center gap-2">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            class="h-4 w-4 opacity-70"
-                        >
-                            <rect
-                                x="3"
-                                y="4"
-                                width="18"
-                                height="18"
-                                rx="2"
-                                ry="2"
-                            />
-                            <line x1="16" y1="2" x2="16" y2="6" />
-                            <line x1="8" y1="2" x2="8" y2="6" />
-                            <line x1="3" y1="10" x2="21" y2="10" />
-                        </svg>
-                        <time datetime="{{ post.date | sitemapdate }}">
-                            {{ post.date | readableDate }}
-                        </time>
-                    </div>
-
-                    <div class="flex items-center gap-2">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            class="h-4 w-4 opacity-70"
-                        >
-                            <circle cx="12" cy="12" r="10" />
-                            <polyline points="12,6 12,12 16,14" />
-                        </svg>
-                        <span>
-                            {{ post.templateContent | striptags | wordcount |
-                            readingTime }}
-                        </span>
-                    </div>
-                </footer>
-            </article>
-            {% endfor %}
-        </div>
-        <nav class="flex justify-center mt-12" aria-label="Pagination">
-            <div class="flex items-center gap-2">
-                {% if pagination.pageNumber > 0 %} {% if pagination.href.first
-                %}
-                <a
-                    href="{{ pagination.href.first }}"
-                    class="btn btn-secondary"
-                    aria-label="First page"
-                >
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        class="h-4 w-4"
-                    >
-                        <polyline points="11,17 6,12 11,7" />
-                        <polyline points="18,17 13,12 18,7" />
-                    </svg>
-                </a>
-                {% endif %} {% if pagination.href.previous %}
-                <a
-                    href="{{ pagination.href.previous }}"
-                    class="btn btn-secondary"
-                    aria-label="Previous page"
-                >
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        class="h-4 w-4"
-                    >
-                        <polyline points="15,18 9,12 15,6" />
-                    </svg>
-                </a>
-                {% endif %} {% endif %} {% for pageEntry in pagination.pages %}
-                {% if loop.index0 < 6 and pagination.hrefs[loop.index0 +
-                pagination.pageNumber] %} {% set isCurrentPage =
-                pagination.hrefs[loop.index0 + pagination.pageNumber] ===
-                page.url %}
-                <a
-                    href="{{ pagination.hrefs[loop.index0 + pagination.pageNumber] }}"
-                    class="btn {% if isCurrentPage %}btn-primary{% else %}btn-secondary{% endif %}"
-                    {%
-                    if
-                    isCurrentPage
-                    %}aria-current="page"
-                    {%
-                    endif
-                    %}
-                >
-                    {{ loop.index + pagination.pageNumber }}
-                </a>
-                {% endif %} {% endfor %} {% if (pagination.pageNumber + 5) <
-                pagination.pages.length %}
-                <a
-                    href="{{ pagination.href.next }}"
-                    class="btn btn-secondary"
-                    aria-label="Next page"
-                >
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        class="h-4 w-4"
-                    >
-                        <polyline points="9,18 15,12 9,6" />
-                    </svg>
-                </a>
-
-                <a
-                    href="{{ pagination.href.last }}"
-                    class="btn btn-secondary"
-                    aria-label="Last page"
-                >
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        class="h-4 w-4"
-                    >
-                        <polyline points="13,17 18,12 13,7" />
-                        <polyline points="6,17 11,12 6,7" />
-                    </svg>
-                </a>
                 {% endif %}
             </div>
-        </nav>
-    </div>
-</div>
+            <span class="post-row-reading">
+                {{ post.templateContent | striptags | wordcount | readingTime }}
+            </span>
+        </li>
+        {% endfor %}
+    </ul>
+
+    {% if pagination.pages.length > 1 %}
+    <nav class="pagination" aria-label="Pagination">
+        {% if pagination.href.previous %}
+        <a
+            href="{{ pagination.href.previous }}"
+            class="button button-quiet button-small"
+        >
+            Previous
+        </a>
+        {% else %}
+        <span class="button button-quiet button-small" aria-disabled="true">
+            Previous
+        </span>
+        {% endif %} {% for href in pagination.hrefs %} {% set isCurrent = href
+        == page.url %}
+        <a
+            href="{{ href }}"
+            class="button button-quiet button-small tabular"
+            {%
+            if
+            isCurrent
+            %}aria-current="page"
+            {%
+            endif
+            %}
+        >
+            {{ loop.index }}
+        </a>
+        {% endfor %} {% if pagination.href.next %}
+        <a
+            href="{{ pagination.href.next }}"
+            class="button button-quiet button-small"
+        >
+            Next
+        </a>
+        {% else %}
+        <span class="button button-quiet button-small" aria-disabled="true">
+            Next
+        </span>
+        {% endif %}
+    </nav>
+    {% endif %}
+</section>

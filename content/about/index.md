@@ -7,9 +7,9 @@ imageAlt: Julián Duque speaking at NodeConfEU 2019
 
 ## Who am I?
 
-Hello, my name is **Julián Duque** _(pronounced hoolyAAn dOOkeh)_ and my pronouns are he/him. I’m originally from Medellín, Colombia 🇨🇴 and I currently live in St. Petersburg, FL 🇺🇸.
+Hello, my name is **Julián Duque** _(pronounced hoolyAAn dOOkeh)_ and my pronouns are he/him. I'm originally from Medellín, Colombia 🇨🇴 and I currently live in St. Petersburg, FL 🇺🇸.
 
-I’m a community leader, public speaker, and JavaScript/Node.js developer. I’m also an official Node.js collaborator (Emeritus).
+I'm a community leader, public speaker, and JavaScript/Node.js developer. I'm also an official Node.js collaborator (Emeritus).
 
 I work at [Heroku](https://heroku.com) as a **Principal Developer Advocate**, where I create content and help developers build and scale their applications on the platform. My main areas of focus are:
 
@@ -17,13 +17,13 @@ I work at [Heroku](https://heroku.com) as a **Principal Developer Advocate**, wh
 - **Generative AI (GenAI) and Agentic Apps**
 - **Event-Driven Architectures**
 
-Over the years, I’ve organized and supported several community events:
+Over the years, I've organized and supported several community events:
 
 - **JSConf** and **NodeConf** in Colombia
 - **Suncoast.js** in St. Petersburg, FL
 - [MedellinJS](https://www.meetup.com/medellinjs/), which is now the largest JavaScript user group in Colombia with 8,500+ members
 
-I’m also passionate about education. I’ve taught software development fundamentals, Generative AI and Agentic Applications, JavaScript, and Node.js through:
+I'm also passionate about education. I've taught software development fundamentals, Generative AI and Agentic Applications, JavaScript, and Node.js through:
 
 - Community workshops
 - Professional training sessions

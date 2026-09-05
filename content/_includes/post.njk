@@ -2,194 +2,86 @@
 layout: base.njk
 ---
 
-<article
-    class="content post border-solid border-b-1 border-gray-700 pb-6 animate-fade-in-up"
->
-    <header class="mb-8">
-        <h1 class="text-balance">{{ title }}</h1>
-        {% if category %}
-        <div class="tag-container">
-            <span class="tag">{{ category }}</span>
-        </div>
-        {% endif %}
-        <div
-            class="flex items-center gap-6 text-sm text-gray-600 dark:text-gray-400 font-medium"
-        >
-            <div class="flex items-center gap-2">
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    class="h-4 w-4 opacity-70"
-                >
-                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
-                    <line x1="16" y1="2" x2="16" y2="6" />
-                    <line x1="8" y1="2" x2="8" y2="6" />
-                    <line x1="3" y1="10" x2="21" y2="10" />
-                </svg>
+<article class="page post">
+    <header class="post-header">
+        <h1 class="display">{{ title }}</h1>
+        <div class="post-meta">
+            <span>
                 <time datetime="{{ date | sitemapdate }}">
                     {{ date | readableDate }}
                 </time>
-            </div>
-            <div
-                class="flex items-center gap-2 readingtime"
-                data-words="{{ content | striptags | wordcount | formatWords }} words"
-            >
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    class="h-4 w-4 opacity-70"
-                >
-                    <circle cx="12" cy="12" r="10" />
-                    <polyline points="12,6 12,12 16,14" />
-                </svg>
-                <span>{{ content | striptags | wordcount | readingTime }}</span>
-            </div>
+            </span>
+            <span>{{ content | striptags | wordcount | readingTime }}</span>
+            {% if category %}
+            <span>{{ category }}</span>
+            {% endif %}
         </div>
     </header>
     {% if image %}
-    <img src="{{ image }}" alt="{{ imageAlt }}" />
-    {% endif %} {{ content | safe }} {% include "social.njk" %}
-    <div class="block w-full h-1 border-solid border-b-1 border-gray-700"></div>
-    <nav
-        class="flex flex-col sm:flex-row gap-4 mt-8"
-        aria-label="Post navigation"
-    >
-        {% set previousPost = collections.posts |
-        getPreviousCollectionItem(page) %} {% set nextPost = collections.posts |
-        getNextCollectionItem(page) %} {% if previousPost.url %}
-        <a href="{{ previousPost.url }}" class="card card-compact flex-1 group">
-            <div class="flex items-center gap-4">
-                <div
-                    class="flex-shrink-0 rounded-full bg-gray-100 dark:bg-gray-800 p-2 text-indigo-500 dark:text-indigo-300 group-hover:bg-indigo-50 dark:group-hover:bg-indigo-900/40 transition-colors"
-                >
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        class="h-5 w-5"
-                    >
-                        <polyline points="15,18 9,12 15,6" />
-                    </svg>
-                </div>
-                <div>
-                    <div
-                        class="text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wide mb-1"
-                    >
-                        Previous
-                    </div>
-                    <div
-                        class="font-semibold group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors"
-                    >
-                        {{ previousPost.data.title | truncate(40) }}
-                    </div>
-                </div>
-            </div>
+    <img class="page-image" src="{{ image }}" alt="{{ imageAlt }}" />
+    {% endif %}
+    <div class="prose">{{ content | safe }}</div>
+
+    <div class="post-share">
+        <span class="label">Share</span>
+        <button
+            type="button"
+            class="button button-quiet button-small"
+            data-copy-link
+        >
+            <svg class="button-icon" viewBox="0 0 14 14" aria-hidden="true">
+                <path
+                    d="M6 8.5 8.5 6M4.5 9.5l-1 1a2.1 2.1 0 0 1-3-3l2-2a2.1 2.1 0 0 1 3 0M9.5 4.5l1-1a2.1 2.1 0 0 1 3 3l-2 2a2.1 2.1 0 0 1-3 0"
+                />
+            </svg>
+            <span data-copy-label>Copy link</span>
+        </button>
+        <a
+            class="button button-quiet button-small"
+            href="https://www.linkedin.com/sharing/share-offsite/?url={{ page.url | absoluteUrl | urlencode }}"
+            rel="noopener"
+        >
+            LinkedIn
+        </a>
+        <a
+            class="button button-quiet button-small"
+            href="https://bsky.app/intent/compose?text={{ (title + ' ' + (page.url | absoluteUrl)) | urlencode }}"
+            rel="noopener"
+        >
+            Bluesky
+        </a>
+        <a
+            class="button button-quiet button-small"
+            href="https://x.com/intent/post?text={{ title | urlencode }}&url={{ page.url | absoluteUrl | urlencode }}&via={{ siteconfig.socialX }}"
+            rel="noopener"
+        >
+            X
+        </a>
+    </div>
+
+    {% set previousPost = collections.posts | getPreviousCollectionItem(page) %}
+    {% set nextPost = collections.posts | getNextCollectionItem(page) %}
+    <nav class="post-nav" aria-label="Post navigation">
+        {% if previousPost.url %}
+        <a href="{{ previousPost.url }}" class="post-nav-cell">
+            <span class="label">Previous</span>
+            <span class="post-nav-title">{{ previousPost.data.title }}</span>
         </a>
         {% else %}
-        <div class="card card-compact flex-1 opacity-50 cursor-not-allowed">
-            <div class="flex items-center justify-between">
-                <div>
-                    <div
-                        class="text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wide mb-1"
-                    >
-                        Previous
-                    </div>
-                    <div class="font-semibold">No previous post</div>
-                </div>
-            </div>
+        <div class="post-nav-cell" aria-disabled="true">
+            <span class="label">Previous</span>
+            <span class="post-nav-title">This is the first post</span>
         </div>
         {% endif %} {% if nextPost.url %}
-        <a href="{{ nextPost.url }}" class="card card-compact flex-1 group">
-            <div class="flex items-center gap-4 justify-end">
-                <div class="text-right">
-                    <div
-                        class="text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wide mb-1"
-                    >
-                        Next
-                    </div>
-                    <div
-                        class="font-semibold group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors"
-                    >
-                        {{ nextPost.data.title | truncate(40) }}
-                    </div>
-                </div>
-                <div
-                    class="flex-shrink-0 rounded-full bg-gray-100 dark:bg-gray-800 p-2 text-indigo-500 dark:text-indigo-300 group-hover:bg-indigo-50 dark:group-hover:bg-indigo-900/40 transition-colors"
-                >
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        class="h-5 w-5"
-                    >
-                        <polyline points="9,18 15,12 9,6" />
-                    </svg>
-                </div>
-            </div>
+        <a href="{{ nextPost.url }}" class="post-nav-cell">
+            <span class="label">Next</span>
+            <span class="post-nav-title">{{ nextPost.data.title }}</span>
         </a>
         {% else %}
-        <div class="card card-compact flex-1 opacity-50 cursor-not-allowed">
-            <div class="flex items-center justify-between">
-                <div class="text-right">
-                    <div
-                        class="text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wide mb-1"
-                    >
-                        Next
-                    </div>
-                    <div class="font-semibold">No next post</div>
-                </div>
-            </div>
+        <div class="post-nav-cell" aria-disabled="true">
+            <span class="label">Next</span>
+            <span class="post-nav-title">This is the latest post</span>
         </div>
         {% endif %}
     </nav>
-    {% set relatedPosts = related %} {% if relatedPosts %}
-    <section class="mt-12">
-        <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-6">
-            Related Content
-        </h3>
-        <div
-            class="grid grid-cols-1 md:grid-cols-{{ relatedPosts.length | min(3) }} gap-4"
-        >
-            {% for post in relatedPosts %}
-            <a
-                href="{{ post.url }}"
-                class="portfolio-item animate-fade-in-up animate-delay-{{ loop.index }}00"
-            >
-                <div class="flex items-center gap-3">
-                    <span class="status-badge status-live">Article</span>
-                </div>
-                <h4
-                    class="font-semibold mt-3 mb-2 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors"
-                >
-                    {{ post.title }}
-                </h4>
-                {% if post.excerpt %}
-                <p
-                    class="text-sm text-gray-600 dark:text-gray-400 line-clamp-2"
-                >
-                    {{ post.excerpt }}
-                </p>
-                {% endif %}
-                <div
-                    class="mt-4 flex items-center text-xs text-gray-500 dark:text-gray-400"
-                >
-                    <time datetime="{{ post.date | sitemapdate }}">
-                        {{ post.date | readableDate }}
-                    </time>
-                </div>
-            </a>
-            {% endfor %}
-        </div>
-    </section>
-    {% endif %}
 </article>

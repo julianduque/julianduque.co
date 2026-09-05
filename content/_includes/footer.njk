@@ -1,0 +1,46 @@
+<footer class="site-footer">
+    <ul class="footer-links">
+        {% if siteconfig.socialGitHub %}
+        <li>
+            <a
+                href="https://github.com/{{ siteconfig.socialGitHub }}"
+                rel="me noopener"
+            >
+                GitHub
+            </a>
+        </li>
+        {% endif %} {% if siteconfig.socialLinkedIn %}
+        <li>
+            <a
+                href="https://linkedin.com/in/{{ siteconfig.socialLinkedIn }}"
+                rel="me noopener"
+            >
+                LinkedIn
+            </a>
+        </li>
+        {% endif %} {% if siteconfig.socialX %}
+        <li>
+            <a href="https://x.com/{{ siteconfig.socialX }}" rel="me noopener">
+                X
+            </a>
+        </li>
+        {% endif %} {% if siteconfig.socialBluesky %}
+        <li>
+            <a href="{{ siteconfig.socialBluesky }}" rel="me noopener">
+                Bluesky
+            </a>
+        </li>
+        {% endif %} {% if siteconfig.socialYouTube %}
+        <li>
+            <a
+                href="https://www.youtube.com/c/{{ siteconfig.socialYouTube }}"
+                rel="me noopener"
+            >
+                YouTube
+            </a>
+        </li>
+        {% endif %}
+        <li><a href="{{ '/blog.rss' | absoluteUrl }}">RSS</a></li>
+    </ul>
+    <span class="footer-note">© {{ buildYear }} {{ siteconfig.author }}</span>
+</footer>

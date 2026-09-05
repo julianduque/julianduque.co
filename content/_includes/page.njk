@@ -2,8 +2,9 @@
 layout: base.njk
 ---
 
-<div class="page-shell content">
+<article class="page">
     {% if image %}
-    <img src="{{ image }}" alt="{{ imageAlt }}" />
-    {% endif %} {{ content | safe }}
-</div>
+    <img class="page-image" src="{{ image }}" alt="{{ imageAlt }}" />
+    {% endif %}
+    <div class="prose">{{ content | safe }}</div>
+</article>

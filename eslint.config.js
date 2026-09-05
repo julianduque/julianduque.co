@@ -18,6 +18,7 @@ export default [
                 fetch: "readonly",
                 setTimeout: "readonly",
                 clearTimeout: "readonly",
+                localStorage: "readonly",
 
                 // Node.js globals
                 process: "readonly",

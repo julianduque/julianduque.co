@@ -1,154 +1,44 @@
 ---
-layout: page.njk
+layout: base.njk
 title: Home
 ---
 
-{% from "contentCard.njk" import contentCard %}
+{% from "entry.njk" import section %}
 
-<div class="profile-hero" aria-label="Profile overview">
-    <div class="profile-hero__grid">
-        <div class="profile-hero__intro">
-            <div class="profile-hero__heading">
-                <h2 class="profile-hero__name">Julián Duque</h2>
-                <p class="profile-hero__tagline">
-                    AI, Developer Relations, Education, and Community
-                </p>
-            </div>
-        </div>
-        <div class="profile-hero__focus" aria-label="Focus and expertise">
-            <span class="profile-hero__label">Focus & Expertise</span>
-            <div class="profile-hero__keywords">
-                <span class="profile-hero__keyword">Developer Advocacy</span>
-                <span class="profile-hero__keyword">Node.js</span>
-                <span class="profile-hero__keyword">JavaScript</span>
-                <span class="profile-hero__keyword">
-                    Artificial Intelligence
-                </span>
-                <span class="profile-hero__keyword">
-                    Event Driven Architectures
-                </span>
-                <span class="profile-hero__keyword">Open Source</span>
-                <span class="profile-hero__keyword">Community</span>
-            </div>
-        </div>
+<section class="hero" aria-label="Profile">
+    <div class="hero-copy">
+        <h1 class="display hero-name">Julián Duque</h1>
+        <p class="hero-role">{{ siteconfig.description }}</p>
+        <!-- prettier-ignore -->
+        <p class="hero-intro">Principal Developer Advocate at <a href="https://heroku.com">Heroku</a>, Node.js collaborator (emeritus), and long-time community organizer from Medellín, Colombia. I build and teach around Node.js, agentic AI applications, and event-driven architectures.</p>
+        <ul class="hero-focus" aria-label="Focus areas">
+            <li>Developer Advocacy</li>
+            <li>Node.js</li>
+            <li>JavaScript</li>
+            <li>Artificial Intelligence</li>
+            <li>Event-Driven Architectures</li>
+            <li>Open Source</li>
+            <li>Community</li>
+        </ul>
     </div>
+    <figure class="hero-portrait">
+        <img
+            src="{{ siteconfig.image }}"
+            alt="{{ siteconfig.imageAlt }}"
+            width="224"
+            height="224"
+            fetchpriority="high"
+        />
+    </figure>
+</section>
+
+<div class="index">
+    {{ section("talks", "Talks", "Talks I've given at tech conferences around
+    the world.", talks, "talk", true) }} {{ section("communities", "Communities
+    & Events", "Communities and tech conferences I've organized.", communities,
+    "community") }} {{ section("open-source", "Open Source", "Open source
+    projects and contributions I've created.", opensource, "opensource") }} {{
+    section("interviews", "Interviews", "Interviews on podcasts and other media,
+    in English and Spanish.", interviews, "interview") }} {{ section("books",
+    "Books", "Books I've written or contributed to.", books, "book") }}
 </div>
-
-<details class="mb-6" open>
-    <summary
-        class="cursor-pointer text-lg font-semibold hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors flex items-center justify-between"
-    >
-        <div class="flex items-center">
-            {% tablerIcon "presentation" %}
-            <h4 id="talks" class="ml-2">Talks</h4>
-        </div>
-        <span class="summary-count">{{ talks | length }}</span>
-    </summary>
-
-    <p
-        class="text-sm text-gray-600 dark:text-gray-400"
-        style="margin-bottom: -1rem"
-    >
-        Talks I've given in multiple tech conferences all around the world
-    </p>
-
-    <div class="space-y-3">
-        {% for talk in talks %} {{ contentCard(talk, "talk") }} {% endfor %}
-    </div>
-</details>
-
-<details class="mb-6">
-    <summary
-        class="cursor-pointer text-lg font-semibold hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors flex items-center justify-between"
-    >
-        <div class="flex items-center">
-            {% tablerIcon "users" %}
-            <h4 id="communities-events" class="ml-2">Communities & Events</h4>
-        </div>
-        <span class="summary-count">{{ communities | length }}</span>
-    </summary>
-
-    <p
-        class="text-sm text-gray-600 dark:text-gray-400"
-        style="margin-bottom: -1rem"
-    >
-        Communities and tech conferences I've organized
-    </p>
-
-    <div class="space-y-3">
-        {% for community in communities %} {{ contentCard(community,
-        "community") }} {% endfor %}
-    </div>
-</details>
-
-<details class="mb-6">
-    <summary
-        class="cursor-pointer text-lg font-semibold hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors flex items-center justify-between"
-    >
-        <div class="flex items-center">
-            {% tablerIcon "brand-github" %}
-            <h4 id="open-source" class="ml-2">Open Source</h4>
-        </div>
-        <span class="summary-count">{{ opensource | length }}</span>
-    </summary>
-
-    <p
-        class="text-sm text-gray-600 dark:text-gray-400"
-        style="margin-bottom: -1rem"
-    >
-        Open source projects and contributions I've created
-    </p>
-
-    <div class="space-y-3">
-        {% for project in opensource %} {{ contentCard(project, "opensource") }}
-        {% endfor %}
-    </div>
-</details>
-
-<details class="mb-6">
-    <summary
-        class="cursor-pointer text-lg font-semibold hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors flex items-center justify-between"
-    >
-        <div class="flex items-center">
-            {% tablerIcon "microphone" %}
-            <h4 id="interviews" class="ml-2">Interviews</h4>
-        </div>
-        <span class="summary-count">{{ interviews | length }}</span>
-    </summary>
-
-    <p
-        class="text-sm text-gray-600 dark:text-gray-400"
-        style="margin-bottom: -1rem"
-    >
-        Interviews I've been part of in both English and Spanish on podcasts and
-        other media
-    </p>
-
-    <div class="space-y-3">
-        {% for interview in interviews %} {{ contentCard(interview, "interview")
-        }} {% endfor %}
-    </div>
-</details>
-
-<details class="mb-6">
-    <summary
-        class="cursor-pointer text-lg font-semibold hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors flex items-center justify-between"
-    >
-        <div class="flex items-center">
-            {% tablerIcon "book" %}
-            <h4 id="books" class="ml-2">Books</h4>
-        </div>
-        <span class="summary-count">{{ books | length }}</span>
-    </summary>
-
-    <p
-        class="text-sm text-gray-600 dark:text-gray-400"
-        style="margin-bottom: -1rem"
-    >
-        Books I've written or contributed to
-    </p>
-
-    <div class="space-y-3">
-        {% for book in books %} {{ contentCard(book, "book") }} {% endfor %}
-    </div>
-</details>

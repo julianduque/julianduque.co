@@ -1,7 +1,6 @@
 const { format, formatISO, getYear } = require("date-fns");
-const pluginRss = require("@11ty/eleventy-plugin-rss");
-const pluginToc = require("eleventy-plugin-toc");
-const { MD5 } = require("crypto-js");
+const { rssPlugin } = require("@11ty/eleventy-plugin-rss");
+const { createHash } = require("crypto");
 const { URL } = require("url");
 const { readFileSync } = require("fs");
 const siteconfig = require("./content/_data/siteconfig.cjs");
@@ -20,17 +19,27 @@ module.exports = function (eleventyConfig) {
         }).use(markdownItAnchor)
     );
 
-    // Define passthrough for assets
+    // Define passthrough for assets and self-hosted fonts
     eleventyConfig.addPassthroughCopy("assets");
+    eleventyConfig.addPassthroughCopy({
+        "node_modules/@fontsource/ibm-plex-mono/files/ibm-plex-mono-latin-400-normal.woff2":
+            "assets/fonts/ibm-plex-mono-latin-400-normal.woff2",
+        "node_modules/@fontsource/ibm-plex-mono/files/ibm-plex-mono-latin-400-italic.woff2":
+            "assets/fonts/ibm-plex-mono-latin-400-italic.woff2",
+        "node_modules/@fontsource/ibm-plex-mono/files/ibm-plex-mono-latin-500-normal.woff2":
+            "assets/fonts/ibm-plex-mono-latin-500-normal.woff2"
+    });
 
     // Add watch target for JS files (needed for JS bundling in dev mode)
     eleventyConfig.addWatchTarget("./assets/js/");
     // And to make this work we've to disable the .gitignore usage of eleventy.
     eleventyConfig.setUseGitIgnore(false);
 
+    // Build year for the footer
+    eleventyConfig.addGlobalData("buildYear", () => getYear(new Date()));
+
     // Add 3rd party plugins
-    eleventyConfig.addPlugin(pluginRss);
-    eleventyConfig.addPlugin(pluginToc);
+    eleventyConfig.addPlugin(rssPlugin);
 
     // Define 11ty template formats
     eleventyConfig.setTemplateFormats([
@@ -46,22 +55,6 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addShortcode("excerpt", (article) =>
         extractExcerpt(article)
     );
-
-    // Add Tabler icon shortcode
-    eleventyConfig.addShortcode("tablerIcon", function(iconName, className = "inline-block h-5 w-5 mr-2") {
-        const fs = require('fs');
-        const path = require('path');
-        try {
-            const iconPath = path.join(process.cwd(), 'assets', 'icons', 'tabler', `${iconName}.svg`);
-            let iconContent = fs.readFileSync(iconPath, 'utf8');
-            // Add custom classes
-            iconContent = iconContent.replace('class="icon icon-tabler', `class="${className} icon icon-tabler`);
-            return iconContent;
-        } catch (error) {
-            console.warn(`Icon ${iconName} not found`);
-            return `<!-- Icon ${iconName} not found -->`;
-        }
-    });
 
     // Set absolute url
     eleventyConfig.addNunjucksFilter("absoluteUrl", (path) => {
@@ -125,17 +118,17 @@ module.exports = function (eleventyConfig) {
         return wordcount.toLocaleString("en");
     });
 
-    // Returns CSS class for home page link
-    eleventyConfig.addNunjucksFilter("isHomeLink", function (url, pattern) {
-        return (pattern === "/" && url === "/") ||
-            (pattern === "/" && url.startsWith("/home"))
-            ? "active"
-            : "";
+    // Returns "page" when the nav destination matches the current URL
+    eleventyConfig.addNunjucksFilter("navCurrent", function (url, pattern) {
+        if (pattern === "/") {
+            return url === "/" ? "page" : "";
+        }
+        return url.startsWith(pattern) ? "page" : "";
     });
 
-    // Returns CSS class for active page link
-    eleventyConfig.addNunjucksFilter("isActiveLink", function (url, pattern) {
-        return url.length > 1 && url.startsWith(pattern) ? "active" : "";
+    // Year of a date, for footers and archive groupings
+    eleventyConfig.addNunjucksFilter("yearOf", function (date) {
+        return getYear(date);
     });
 
     // Format dates for sitemap
@@ -181,14 +174,9 @@ module.exports = function (eleventyConfig) {
         const fileContent = readFileSync(`${process.cwd()}${absolutePath}`, {
             encoding: "utf-8"
         }).toString();
-        const hash = MD5(fileContent.toString());
+        const hash = createHash("md5").update(fileContent).digest("hex");
         hashes.set(absolutePath, hash);
         return `${absolutePath}?hash=${hash}`;
-    });
-
-    // Create custom collection for getting the newest 5 updates
-    eleventyConfig.addCollection("recents", function (collectionApi) {
-        return collectionApi.getFilteredByTag("posts").reverse().slice(0, 5);
     });
 
     // Plugin for setting _blank and rel=noopener on external links in markdown content
@@ -199,21 +187,6 @@ module.exports = function (eleventyConfig) {
 
     // Plugin for minifying HTML
     eleventyConfig.addPlugin(require("./_11ty/html-minify.cjs"));
-
-    // Remove <code>.*</code>, remove HTML, then with plain text, limit to 5k chars
-    eleventyConfig.addFilter("algExcerpt", function (text) {
-        //first remove code
-        text = text.replace(/<code class="language-.*?">.*?<\/code>/gs, "");
-        //now remove html tags
-        text = text.replace(/<.*?>/g, "");
-        //now limit to 5k
-        return text.substring(0, 5000);
-    });
-
-    // Add md5 filter
-    eleventyConfig.addFilter("md5", function (content) {
-        return MD5(content);
-    });
 
     return {
         dir: {

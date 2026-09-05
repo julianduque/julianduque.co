@@ -26,8 +26,9 @@
 const { JSDOM } = require("jsdom");
 const sharp = require("sharp");
 const { copyFileSync, existsSync, mkdirSync, readFileSync } = require("fs");
-const { MD5 } = require("crypto-js");
-const { extname, join } = require("path");
+const { createHash } = require("crypto");
+const MD5 = (content) => createHash("md5").update(content).digest("hex");
+const { dirname, extname, join } = require("path");
 
 const widths = [1024, 820, 640, 320];
 
@@ -54,6 +55,7 @@ async function resize(filename, width, hash, format, metadataWidth) {
     }
 
     const file = join(process.cwd(), filename);
+    mkdirSync(dirname("_site/" + out), { recursive: true });
 
     const resizeWidth = metadataWidth < width ? metadataWidth : width;
 
@@ -105,7 +107,9 @@ const processImage = async (el) => {
     const metadata = await sharp(file).metadata();
 
     el.setAttribute("decoding", "async");
-    el.setAttribute("loading", "lazy");
+    if (el.getAttribute("fetchpriority") !== "high") {
+        el.setAttribute("loading", "lazy");
+    }
     el.setAttribute("height", metadata.height);
     el.setAttribute("width", metadata.width);
 
@@ -124,10 +128,9 @@ const processImage = async (el) => {
     el.parentElement.replaceChild(picture, el);
     picture.appendChild(el);
 
-    copyFileSync(
-        join(process.cwd(), filename),
-        join("_site", hashedName(filename, hash))
-    );
+    const copyTarget = join("_site", hashedName(filename, hash));
+    mkdirSync(dirname(copyTarget), { recursive: true });
+    copyFileSync(join(process.cwd(), filename), copyTarget);
 };
 
 const convert = async (rawContent, outputPath) => {

@@ -1,112 +1,41 @@
 ---
-layout: page.njk
+layout: base.njk
 title: Work
 image: /assets/images/work/presenting.png
 imageAlt: Julián Duque presenting at TDX23
 ---
 
-{% from "workCard.njk" import workCard %}
+{% from "entry.njk" import section %}
 
-<h2>Work</h2>
+<article class="page">
+    <header class="page-header">
+        <h1 class="display">Work</h1>
+        <p class="page-lede">
+            Content I've created professionally as a Developer Advocate.
+        </p>
+    </header>
+    <img class="page-image" src="{{ image }}" alt="{{ imageAlt }}" />
 
-<p>
-    Here you can find some of the content I've created professionally as a
-    Developer Advocate during my career.
-</p>
-
-<h3>Salesforce / Heroku</h3>
-
-<details class="mb-6" open>
-    <summary
-        class="cursor-pointer text-lg font-semibold hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors flex items-center justify-between"
-    >
-        <div class="flex items-center">
-            {% tablerIcon "file-text" %}
-            <h4 id="salesforce-blog-posts" class="inline ml-2">Blog Posts</h4>
+    <section class="group" aria-labelledby="salesforce">
+        <h2 class="title group-title" id="salesforce">Salesforce / Heroku</h2>
+        <div class="index">
+            {{ section("salesforce-blog-posts", "Blog Posts", "Blog posts and
+            technical articles written at Salesforce and Heroku.",
+            workPosts.salesforce, "work", true) }} {{
+            section("salesforce-videos", "Videos", "Videos and technical
+            presentations created at Salesforce and Heroku.", workVideos,
+            "work") }} {{ section("salesforce-podcasts", "Podcasts", "Podcast
+            episodes where I've been a guest or host at Salesforce and Heroku.",
+            workPodcasts, "work") }}
         </div>
-        <span class="summary-count">{{ workPosts.salesforce | length }}</span>
-    </summary>
+    </section>
 
-    <p
-        class="text-sm text-gray-600 dark:text-gray-400 mb-4"
-        style="margin-bottom: -1rem"
-    >
-        Blog posts and technical articles I've written at Salesforce and Heroku
-    </p>
-
-    <div class="space-y-3">
-        {% for post in workPosts.salesforce %} {{ workCard(post) }} {% endfor %}
-    </div>
-</details>
-
-<details class="mb-6">
-    <summary
-        class="cursor-pointer text-lg font-semibold hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors flex items-center justify-between"
-    >
-        <div class="flex items-center">
-            {% tablerIcon "video" %}
-            <h4 id="salesforce-videos" class="inline ml-2">Videos</h4>
+    <section class="group" aria-labelledby="nodesource">
+        <h2 class="title group-title" id="nodesource">NodeSource</h2>
+        <div class="index">
+            {{ section("nodesource-blog-posts", "Blog Posts", "Blog posts
+            written during my time at NodeSource.", workPosts.nodesource,
+            "work") }}
         </div>
-        <span class="summary-count">{{ workVideos | length }}</span>
-    </summary>
-
-    <p
-        class="text-sm text-gray-600 dark:text-gray-400 mb-0 pb-0"
-        style="margin-bottom: -1rem"
-    >
-        Videos and technical presentations I've created at Salesforce and Heroku
-    </p>
-
-    <div class="space-y-3">
-        {% for video in workVideos %} {{ workCard(video) }} {% endfor %}
-    </div>
-</details>
-
-<details class="mb-6">
-    <summary
-        class="cursor-pointer text-lg font-semibold hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors flex items-center justify-between"
-    >
-        <div class="flex items-center">
-            {% tablerIcon "microphone" %}
-            <h4 id="salesforce-podcasts" class="inline ml-2">Podcasts</h4>
-        </div>
-        <span class="summary-count">{{ workPodcasts | length }}</span>
-    </summary>
-
-    <p
-        class="text-sm text-gray-600 dark:text-gray-400 mb-0 pb-0"
-        style="margin-bottom: -1rem"
-    >
-        Podcast episodes where I've been a guest or host at Salesforce and
-        Heroku
-    </p>
-
-    <div class="space-y-3">
-        {% for podcast in workPodcasts %} {{ workCard(podcast) }} {% endfor %}
-    </div>
-</details>
-
-<h3>NodeSource</h3>
-
-<details class="mb-6">
-    <summary
-        class="cursor-pointer text-lg font-semibold hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors flex items-center justify-between"
-    >
-        <div class="flex items-center">
-            {% tablerIcon "file-text" %}
-            <h4 id="nodesource-blog-posts" class="inline ml-2">Blog Posts</h4>
-        </div>
-        <span class="summary-count">{{ workPosts.nodesource | length }}</span>
-    </summary>
-
-    <p
-        class="text-sm text-gray-600 dark:text-gray-400 mb-0 pb-0"
-        style="margin-bottom: -1rem"
-    >
-        Blog posts written during my time at NodeSource
-    </p>
-
-    <div class="space-y-3">
-        {% for post in workPosts.nodesource %} {{ workCard(post) }} {% endfor %}
-    </div>
-</details>
+    </section>
+</article>
