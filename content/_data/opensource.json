@@ -1,5 +1,21 @@
 [
     {
+        "name": "Tarot Arcana",
+        "url": "https://github.com/julianduque/tarot-arcana",
+        "description": "A quiet tarot reading app with a browser-local journal and optional AI interpretations",
+        "language": "TypeScript/Next.js",
+        "tags": ["tarot", "nextjs", "ai", "mastra"],
+        "badgeColor": "purple"
+    },
+    {
+        "name": "Omarchy Tarot",
+        "url": "https://github.com/julianduque/omarchy-tarot",
+        "description": "Tarot reading plugin for Omarchy",
+        "language": "QML",
+        "tags": ["omarchy", "tarot", "plugin", "linux"],
+        "badgeColor": "purple"
+    },
+    {
         "name": "NodeBooks - Interactive Node.js Notebooks",
         "url": "https://github.com/julianduque/nodebooks",
         "description": "Interactive Node.js Notebooks for learning and teaching",
