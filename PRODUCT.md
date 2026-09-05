@@ -8,11 +8,11 @@ web
 
 ## Users
 
-People who meet Julián through a talk, a podcast, a community, or a Heroku article and want to know who he is, what he works on, and where to find his content: conference organizers, developers, community members, and colleagues. They arrive from a link, scan quickly, and leave with one or two follow-ups.
+People who meet Julián through a talk, a podcast, a community, or an article and want to know who he is, what he works on, and where to find his content: conference organizers, developers, community members, and colleagues. They arrive from a link, scan quickly, and leave with one or two follow-ups.
 
 ## Product Purpose
 
-julianduque.co is Julián Duque's personal site: a single reference for his profile, talks, communities, open source, interviews, books, professional Developer Advocate work, and the "Node.js En Vivo" post archive. Success means a visitor finds the thing they came for in seconds and understands what Julián does without reading a biography.
+julianduque.co is Julián Duque's personal site: a single reference for his profile, talks, communities, open source, interviews, books, past Developer Advocate work, and the "Node.js En Vivo" post archive. Success means a visitor finds the thing they came for in seconds and understands what Julián does without reading a biography.
 
 ## Positioning
 
@@ -35,7 +35,7 @@ A working index, not a portfolio pitch. The site links out to the real artifacts
 
 ## Brand Commitments
 
-- Name: Julián Duque. Tagline: "AI, Developer Relations, Education, and Community".
+- Name: Julián Duque. Role: Software Engineering Architect at MuleSoft (since 2026); previously Principal Developer Advocate at Heroku. Tagline: "AI, Software Architecture, Education, and Community".
 - Visual world is shared with the Tarot Arcana project (`../tarot-arcana/DESIGN.md`): IBM Plex Mono as the single voice, midnight ink and dawn paper palettes, muted violet as the only accent, hairlines instead of containers, no gradients or glass.
 - Social presence: GitHub, LinkedIn, X, Bluesky, YouTube, RSS.
 

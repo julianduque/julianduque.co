@@ -11,7 +11,7 @@ Hello, my name is **Julián Duque** _(pronounced hoolyAAn dOOkeh)_ and my pronou
 
 I'm a community leader, public speaker, and JavaScript/Node.js developer. I'm also an official Node.js collaborator (Emeritus).
 
-I work at [Heroku](https://heroku.com) as a **Principal Developer Advocate**, where I create content and help developers build and scale their applications on the platform. My main areas of focus are:
+I work at [MuleSoft](https://www.mulesoft.com) as a **Software Engineering Architect**. Before that I was a Principal Developer Advocate at [Heroku](https://heroku.com), creating content and helping developers build and scale their applications on the platform. My main areas of focus are:
 
 - **Node.js ecosystem**
 - **Generative AI (GenAI) and Agentic Apps**

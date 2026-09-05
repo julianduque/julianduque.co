@@ -8,11 +8,11 @@ module.exports = {
     // Profile image for the home page
     image: "/assets/images/headshot.jpg",
     // Image alt text for the profile image
-    imageAlt: "AI, Developer Relations, Education, and Community",
+    imageAlt: "Julián Duque",
     // Author name, used in JSON-LD and the footer
     author: "Julián Duque",
     // Site description (optional)
-    description: "AI, Developer Relations, Education, and Community",
+    description: "AI, Software Architecture, Education, and Community",
     // OpenGraph default image, in case you don't have an `image`
     // set in your Markdown frontmatter; relevant for social
     // sharing.
