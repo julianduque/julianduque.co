@@ -316,6 +316,7 @@ iframe {
 }
 
 .site-brand {
+    gap: 10px;
     color: var(--text);
     font-size: 16px;
     font-weight: 500;
@@ -323,6 +324,51 @@ iframe {
 
 .site-brand:hover {
     color: var(--text);
+}
+
+.site-sigil {
+    width: 24px;
+    height: 38px;
+    flex: none;
+    color: var(--accent);
+    stroke: currentColor;
+    stroke-width: 3.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.draw-sigil .site-sigil path {
+    stroke-dasharray: 100;
+    animation: sigil-draw 1.15s linear 0.25s both;
+}
+
+.draw-sigil .site-sigil path:nth-child(2) {
+    animation-duration: 0.65s;
+    animation-delay: 1.55s;
+}
+
+.draw-sigil .site-sigil path:nth-child(3) {
+    animation-duration: 0.7s;
+    animation-delay: 2.35s;
+}
+
+.draw-sigil .site-sigil path:nth-child(4) {
+    animation-duration: 0.5s;
+    animation-delay: 3.2s;
+}
+
+@keyframes sigil-draw {
+    0% {
+        stroke-dashoffset: 100;
+        opacity: 0;
+    }
+    0.01% {
+        opacity: 1;
+    }
+    100% {
+        stroke-dashoffset: 0;
+        opacity: 1;
+    }
 }
 
 .site-nav-links {
@@ -521,24 +567,6 @@ iframe {
     border: 1px solid var(--line-strong);
     border-radius: 6px;
     box-shadow: var(--portrait-shadow);
-}
-
-@keyframes portrait-reveal {
-    from {
-        opacity: 0;
-        filter: blur(6px);
-        transform: perspective(900px) rotateY(82deg);
-    }
-
-    to {
-        opacity: 1;
-        filter: blur(0);
-        transform: perspective(900px) rotateY(0deg);
-    }
-}
-
-.hero-portrait {
-    animation: portrait-reveal 620ms cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
 /* ---------- Index sections (details) ---------- */
@@ -1291,6 +1319,12 @@ iframe {
 }
 
 @media (prefers-reduced-motion: reduce) {
+    .draw-sigil .site-sigil path {
+        animation: none;
+        stroke-dashoffset: 0;
+        opacity: 1;
+    }
+
     html {
         scroll-behavior: auto;
     }

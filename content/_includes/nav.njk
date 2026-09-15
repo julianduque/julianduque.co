@@ -1,5 +1,19 @@
 <nav class="site-nav" aria-label="Primary">
-    <a href="/" class="site-brand">{{ siteconfig.title }}</a>
+    <a href="/" class="site-brand">
+        <svg
+            class="site-sigil"
+            viewBox="0 0 96 152"
+            fill="none"
+            aria-hidden="true"
+            focusable="false"
+        >
+            <path pathLength="100" d="M42 14L47 137L21 96" />
+            <path pathLength="100" d="M42 14L77 42L44 66" />
+            <path pathLength="100" d="M13 131L80 68" />
+            <path pathLength="100" d="M30 50L44 66L63 86" />
+        </svg>
+        {{ siteconfig.title }}
+    </a>
     <ul class="site-nav-links">
         {% set links = [ { "href": "/", "label": "Home" }, { "href": "/about/",
         "label": "About" }, { "href": "/work/", "label": "Work" }, { "href":

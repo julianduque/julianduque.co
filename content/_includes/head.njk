@@ -13,6 +13,21 @@
             /* storage unavailable */
         }
     })();
+    // Enable the drawing before paint, once per tab. Static is the fallback.
+    (function () {
+        try {
+            if (
+                !window.matchMedia("(prefers-reduced-motion: reduce)")
+                    .matches &&
+                !window.sessionStorage.getItem("sigil-drawn")
+            ) {
+                window.sessionStorage.setItem("sigil-drawn", "1");
+                document.documentElement.classList.add("draw-sigil");
+            }
+        } catch (_error) {
+            /* storage unavailable */
+        }
+    })();
 </script>
 {% if siteconfig.googleAnalytics %}
 <script
@@ -62,9 +77,9 @@
     href="{{ '/assets/favicons/favicon-16x16.png' | addHash }}"
 />
 <link
-    rel="manifest"
-    href="{{ '/assets/favicons/site.webmanifest' | addHash }}"
-    crossorigin="use-credentials"
+    rel="icon"
+    type="image/svg+xml"
+    href="{{ '/assets/favicons/favicon.svg' | addHash }}"
 />
 <link
     rel="mask-icon"

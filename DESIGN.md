@@ -129,7 +129,7 @@ The page is a set of ruled lists. Sections open and close in place, rows keep th
 - IBM Plex Mono for every role, self-hosted in 400, 400 italic, and 500.
 - Hairline divisions, open ground, and tabular metadata in place of cards, badges, or colored tags.
 - Violet reserved for the current navigation item, counts, focus rings, hover, and primary actions.
-- One authored motion: the portrait turns face-up when the home page opens.
+- One authored motion: the header sigil draws in four strokes once per tab, then stays still. Reduced motion and unavailable session storage show the completed mark.
 - Six-pixel ceiling on radii; thumbnails tighten to three.
 
 ## Colors
@@ -207,11 +207,11 @@ Buttons, images, chips, code blocks, and embeds use 6px corners. YouTube thumbna
 
 ### Navigation
 
-70px bar on one hairline. Brand at 16px uppercase 500; destinations at 12px uppercase muted. Hover and current brighten to primary text; the current destination gets a 2px violet underline on the hairline. The theme control is a 36px square with a hairline border showing a sun in ink and a moon on paper; it stores the choice in `localStorage.theme`.
+70px bar on one hairline. Brand at 16px uppercase 500 beside the approved 24 × 38px violet sigil; destinations at 12px uppercase muted. Hover and current brighten to primary text; the current destination gets a 2px violet underline on the hairline. The theme control is a 36px square with a hairline border showing a sun in ink and a moon on paper; it stores the choice in `localStorage.theme`.
 
 ### Hero
 
-Display name, muted role line, one paragraph of prose, focus chips (hairline, 6px, 11px uppercase), and the portrait with a strong hairline and ambient shadow. The portrait animates once from 82° with a brief blur over 620ms on an exponential ease-out; reduced-motion collapses it.
+Display name, muted role line, one paragraph of prose, focus chips (hairline, 6px, 11px uppercase), and the portrait with a strong hairline and ambient shadow.
 
 ### Index Section
 
