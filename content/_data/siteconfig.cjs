@@ -16,7 +16,9 @@ module.exports = {
     // OpenGraph default image, in case you don't have an `image`
     // set in your Markdown frontmatter; relevant for social
     // sharing.
-    openGraphDefaultImage: "/assets/images/opengraph.png",
+    openGraphDefaultImage: "/assets/images/opengraph-sigil.png",
+    openGraphDefaultImageAlt:
+        "Julián Duque, Software Engineering Architect at MuleSoft. AI, Architecture, Community. Portrait and violet personal sigil.",
     // GitHub ID (optional, remove it not needed)
     socialGitHub: "julianduque",
     // LinkedIn ID  (optional, remove it not needed)

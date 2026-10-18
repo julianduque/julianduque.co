@@ -138,5 +138,15 @@
     name="twitter:image"
     content="{% if image %}{{ image | addHash | absoluteUrl }}{% else %}{{ siteconfig.openGraphDefaultImage | addHash | absoluteUrl }}{% endif %}"
 />
+{% if not image %}
+<meta
+    property="og:image:alt"
+    content="{{ siteconfig.openGraphDefaultImageAlt }}"
+/>
+<meta
+    name="twitter:image:alt"
+    content="{{ siteconfig.openGraphDefaultImageAlt }}"
+/>
+{% endif %}
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site" content="@{{ siteconfig.socialX }}" />
