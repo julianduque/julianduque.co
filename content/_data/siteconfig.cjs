@@ -4,7 +4,7 @@ module.exports = {
     // Website title, shown in the navigation and in page titles
     title: "Julián Duque",
     // Site URL to generate absolute URLs. Used across the board.
-    url: process.env.URL || "http://localhost:8080",
+    url: process.env.URL || "https://www.julianduque.co",
     // Profile image for the home page
     image: "/assets/images/headshot.jpg",
     // Image alt text for the profile image

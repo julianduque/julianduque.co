@@ -7,7 +7,7 @@ permalink: /blog.rss
 <feed xmlns="http://www.w3.org/2005/Atom">
     <title>{{ siteconfig.title }}</title>
     <subtitle>{{ siteconfig.description }}</subtitle>
-    <link href="{{ '/blog.rss' | absoluteUrl }}" rel="self" />
+    <link href="{{ '/blog.rss' | siteAbsoluteUrl }}" rel="self" />
     <link href="{{ siteconfig.url }}" />
     <updated>
         {{ collections.posts | getNewestCollectionItemDate | dateToRfc3339 }}
@@ -17,7 +17,7 @@ permalink: /blog.rss
         <name>{{ siteconfig.author }}</name>
     </author>
     {%- for post in collections.posts | reverse %} {% set absolutePostUrl %}{{
-    post.url | url | absoluteUrl(metadata.url) }}{% endset %}
+    post.url | url | siteAbsoluteUrl(metadata.url) }}{% endset %}
     <entry>
         <title>{{ post.data.title }}</title>
         <link href="{{ absolutePostUrl }}" />

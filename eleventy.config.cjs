@@ -57,7 +57,7 @@ module.exports = function (eleventyConfig) {
     );
 
     // Set absolute url
-    eleventyConfig.addNunjucksFilter("absoluteUrl", (path) => {
+    eleventyConfig.addNunjucksFilter("siteAbsoluteUrl", (path) => {
         return new URL(path, siteconfig.url).toString();
     });
 

@@ -4,13 +4,13 @@
         "@type": "Article",
         "headline": "{{ title }}",
         "image": [
-            "{% if image %}{{ image | absoluteUrl }}{% else %}{{ siteconfig.openGraphDefaultImage | absoluteUrl }}{% endif %}"
+            "{% if image %}{{ image | siteAbsoluteUrl }}{% else %}{{ siteconfig.openGraphDefaultImage | siteAbsoluteUrl }}{% endif %}"
         ],
         "author": {
             "@type": "Person",
             "name": "{{ siteconfig.author }}"
         },
-        "mainEntityOfPage": "{{ page.url | absoluteUrl }}",
+        "mainEntityOfPage": "{{ page.url | siteAbsoluteUrl }}",
         "datePublished": "{{ page.date | isodate }}",
         "description": "{{ content | striptags | truncate(140) }}"
     }

@@ -38,21 +38,21 @@ layout: base.njk
         </button>
         <a
             class="button button-quiet button-small"
-            href="https://www.linkedin.com/sharing/share-offsite/?url={{ page.url | absoluteUrl | urlencode }}"
+            href="https://www.linkedin.com/sharing/share-offsite/?url={{ page.url | siteAbsoluteUrl | urlencode }}"
             rel="noopener"
         >
             LinkedIn
         </a>
         <a
             class="button button-quiet button-small"
-            href="https://bsky.app/intent/compose?text={{ (title + ' ' + (page.url | absoluteUrl)) | urlencode }}"
+            href="https://bsky.app/intent/compose?text={{ (title + ' ' + (page.url | siteAbsoluteUrl)) | urlencode }}"
             rel="noopener"
         >
             Bluesky
         </a>
         <a
             class="button button-quiet button-small"
-            href="https://x.com/intent/post?text={{ title | urlencode }}&url={{ page.url | absoluteUrl | urlencode }}&via={{ siteconfig.socialX }}"
+            href="https://x.com/intent/post?text={{ title | urlencode }}&url={{ page.url | siteAbsoluteUrl | urlencode }}&via={{ siteconfig.socialX }}"
             rel="noopener"
         >
             X

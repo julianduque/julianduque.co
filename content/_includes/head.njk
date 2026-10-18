@@ -94,9 +94,9 @@
     rel="alternate"
     type="application/rss+xml"
     title="{{ siteconfig.title }}"
-    href="{{ '/blog.rss' | absoluteUrl }}"
+    href="{{ '/blog.rss' | siteAbsoluteUrl }}"
 />
-<link rel="canonical" href="{{ page.url | absoluteUrl }}" />
+<link rel="canonical" href="{{ page.url | siteAbsoluteUrl }}" />
 {% for name, item in meta %}
 <meta name="{{ name }}" content="{{ item.value }}" />
 {% endfor %}
@@ -120,7 +120,7 @@
     name="description"
     content="{% if description %}{{ description }}{% else %}{{ siteconfig.description }}{% endif %}"
 />
-<meta property="og:url" content="{{ page.url | absoluteUrl }}" />
+<meta property="og:url" content="{{ page.url | siteAbsoluteUrl }}" />
 <meta property="og:type" content="website" />
 <meta
     property="og:title"
@@ -132,11 +132,11 @@
 />
 <meta
     property="og:image"
-    content="{% if image %}{{ image | addHash | absoluteUrl }}{% else %}{{ siteconfig.openGraphDefaultImage | addHash | absoluteUrl }}{% endif %}"
+    content="{% if image %}{{ image | addHash | siteAbsoluteUrl }}{% else %}{{ siteconfig.openGraphDefaultImage | addHash | siteAbsoluteUrl }}{% endif %}"
 />
 <meta
     name="twitter:image"
-    content="{% if image %}{{ image | addHash | absoluteUrl }}{% else %}{{ siteconfig.openGraphDefaultImage | addHash | absoluteUrl }}{% endif %}"
+    content="{% if image %}{{ image | addHash | siteAbsoluteUrl }}{% else %}{{ siteconfig.openGraphDefaultImage | addHash | siteAbsoluteUrl }}{% endif %}"
 />
 {% if not image %}
 <meta
